@@ -1,6 +1,6 @@
 {
   "name": "@yupma/ui-styles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A style library for YupMa design system",
   "main": "lib/dist/index.css",
   "style": "lib/scss/lib_ui.scss",
