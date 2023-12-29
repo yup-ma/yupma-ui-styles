@@ -1,0 +1,204 @@
+// Text color utilities.
+// naming convention: ym-text-{color-palette-variable-name}
+// notes::after- Strictly based design system color palette. See variable.scss
+// for a comprehensive list.
+
+@mixin ym-reset-color {
+    color: inherit;
+}
+
+@mixin ym-text-brand {
+    color: $brand;
+}
+
+@mixin ym-text-brand-light {
+    color: $brand-light;
+}
+
+@mixin ym-text-transparent {
+    color: transparent;
+}
+
+@mixin ym-text-white($hover: true) {
+    color: $white;
+}
+
+@mixin ym-text-contrast-light {
+    color: $white-contrast;
+}
+
+@mixin ym-text-body {
+    color: $body-color;
+}
+
+@mixin ym-text-secondary {
+    color: $ym-text-color-secondary;
+}
+
+@mixin ym-sm-text-body {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-text-body;
+    }
+}
+
+@mixin ym-text-black-normal {
+    color: $black-normal;
+}
+
+@mixin ym-text-gray-200 {
+    color: $gray-200;
+}
+
+@mixin ym-text-gray-300 {
+    color: $gray-300;
+}
+
+@mixin ym-text-gray-400 {
+    color: $gray-400;
+}
+
+@mixin ym-text-gray-500 {
+    color: $gray-500;
+}
+
+@mixin ym-text-gray-600 {
+    color: $gray-600;
+}
+
+@mixin ym-text-gray-700 {
+    color: $gray-700;
+}
+
+@mixin ym-text-gray-800 {
+    color: $gray-800;
+}
+
+@mixin ym-text-gray-900($active: true, $focus: true, $hover: true) {
+    color: $gray-900;
+}
+
+@mixin ym-text-gray-950 {
+    color: $gray-950;
+}
+
+@mixin ym-text-blue-200 {
+    color: $blue-200;
+}
+
+@mixin ym-text-blue-300 {
+    color: $blue-300;
+}
+
+@mixin ym-text-blue-400 {
+    color: $blue-400;
+}
+
+@mixin ym-text-blue-500 {
+    color: $blue-500;
+}
+
+@mixin ym-text-blue-600($hover: true) {
+    color: $blue-600;
+}
+
+@mixin ym-text-blue-700 {
+    color: $blue-700;
+}
+
+@mixin ym-text-blue-800($hover: true) {
+    color: $blue-800;
+}
+
+@mixin ym-text-blue-900 {
+    color: $blue-900;
+}
+
+@mixin ym-text-green-400 {
+    color: $green-400;
+}
+
+@mixin ym-text-green-500 {
+    color: $green-500;
+}
+
+@mixin ym-text-green-600 {
+    color: $green-600;
+}
+
+@mixin ym-text-green-700 {
+    color: $green-700;
+}
+
+@mixin ym-text-green-800 {
+    color: $green-800;
+}
+
+@mixin ym-text-green-900 {
+    color: $green-900;
+}
+
+@mixin ym-text-orange-300 {
+    color: $orange-300;
+}
+
+@mixin ym-text-orange-400 {
+    color: $orange-400;
+}
+
+@mixin ym-text-orange-500 {
+    color: $orange-500;
+}
+
+@mixin ym-text-orange-600 {
+    color: $orange-600;
+}
+
+@mixin ym-text-orange-700 {
+    color: $orange-700;
+}
+
+@mixin ym-text-orange-800 {
+    color: $orange-800;
+}
+
+@mixin ym-text-orange-900 {
+    color: $orange-900;
+}
+
+@mixin ym-text-red-500 {
+    color: $red-500;
+}
+
+@mixin ym-text-red-600 {
+    color: $red-600;
+}
+
+@mixin ym-text-red-700 {
+    color: $red-700;
+}
+
+@mixin ym-text-red-800 {
+    color: $red-800;
+}
+
+@mixin ym-text-red-900 {
+    color: $red-900;
+}
+
+@mixin ym-text-purple-600 {
+    color: $purple-600;
+}
+
+@mixin ym-text-purple-700 {
+    color: $purple-700;
+}
+
+@mixin ym-text-purple-800 {
+    color: $purple-800;
+}
+
+@mixin ym-dark-invert-keep-hue {
+    .ym-dark & {
+        filter: invert(0.8) hue-rotate(180deg);
+    }
+}

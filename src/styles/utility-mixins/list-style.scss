@@ -1,0 +1,9 @@
+// List style utilities.
+// naimg convention: ym-list-style-{value}
+@mixin ym-list-style-none {
+    list-style-type: none;
+}
+
+@mixin ym-list-style-position-inside {
+    list-style-position: inside;
+}

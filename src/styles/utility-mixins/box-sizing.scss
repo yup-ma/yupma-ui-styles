@@ -1,0 +1,11 @@
+@mixin ym-box-sizing-border-box {
+    box-sizing: border-box;
+}
+
+@mixin ym-box-sizing-content-box {
+    box-sizing: content-box;
+}
+
+@mixin ym-reset-box-sizing {
+    box-sizing: inherit;
+}

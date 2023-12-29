@@ -1,0 +1,6 @@
+@mixin ym-mask-chevron-down {
+    mask-image: url('#{$ym-icon-chevron-down}');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+}

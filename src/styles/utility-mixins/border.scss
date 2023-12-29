@@ -1,0 +1,459 @@
+// Border style utilities.
+// naming convention: ym-border-{position}-{style}
+@mixin ym-border {
+    border: solid $ym-border-size-1 $border-color;
+}
+
+@mixin ym-border-t {
+    border-top: solid $ym-border-size-1 $border-color;
+}
+
+@mixin ym-border-b {
+    border-bottom: solid $ym-border-size-1 $border-color;
+}
+
+@mixin ym-border-l {
+    border-left: solid $ym-border-size-1 $border-color;
+}
+
+@mixin ym-border-r {
+    border-right: solid $ym-border-size-1 $border-color;
+}
+
+@mixin ym-border-none {
+    border-style: none;
+}
+
+@mixin ym-border-t-none {
+    border-top-style: none;
+}
+
+@mixin ym-border-solid {
+    border-style: solid;
+}
+
+@mixin ym-border-dashed($hover: true) {
+    border-style: dashed;
+}
+
+@mixin ym-border-dotted($hover: true) {
+    border-style: dotter;
+}
+
+@mixin ym-border-t-solid($hover: true) {
+    border-top-style: solid;
+}
+
+@mixin ym-border-t-dashed() {
+    border-top-style: dashed;
+}
+
+@mixin ym-border-t-double {
+    border-top-style: double;
+}
+
+@mixin ym-border-r-solid {
+    border-right-style: solid;
+}
+
+@mixin ym-border-b-solid($hover: true) {
+    border-bottom-style: solid;
+}
+
+@mixin ym-border-b-initial {
+    border-bottom-style: initial;
+}
+
+@mixin ym-border-l-solid {
+    border-left-style: solid;
+}
+
+@mixin ym-border-l-none {
+    border-left-style: none;
+}
+
+@mixin ym-border-r-none {
+    border-right-style: none;
+}
+
+// Responsive border style utilities.
+// naming convention: ym-{breakpoint}-border-{position}-{style}
+@mixin ym-md-border-l-solid {
+    @include ym-media-breakpoint-up(md) {
+        border-left-style: solid;
+    }
+}
+
+// Border color utilities.
+// naming convention: ym-border-{position}-{color-paletter-variable}
+// notes:
+// - Prefer design system color palette. See variable.scss
+// for a comprehensive list.
+@mixin ym-border-white {
+    border-color: $white;
+}
+
+@mixin ym-border-transparent {
+    border-color: transparent;
+}
+
+@mixin ym-border-t-transparent {
+    border-top-color: transparent;
+}
+
+@mixin ym-border-r-transparent {
+    border-right-color: transparent;
+}
+
+@mixin ym-border-b-transparent {
+    border-bottom-color: transparent;
+}
+
+@mixin ym-border-l-transparent {
+    border-left-color: transparent;
+}
+
+@mixin ym-border-gray-50 {
+    border-color: $gray-50;
+}
+
+@mixin ym-border-gray-100 {
+    border-color: $gray-100;
+}
+
+@mixin ym-border-gray-200($active: true, $focus: true, $hover: true) {
+    border-color: $gray-200;
+}
+
+@mixin ym-border-gray-300 {
+    border-color: $gray-300;
+}
+
+@mixin ym-border-gray-400 {
+    border-color: $gray-400;
+}
+
+@mixin ym-border-gray-500 {
+    border-color: $gray-500;
+}
+
+@mixin ym-border-red-500 {
+    border-color: $red-500;
+}
+
+@mixin ym-border-orange-500 {
+    border-color: $orange-500
+}
+
+@mixin ym-border-green-500 {
+    border-color: $green-500;
+}
+
+@mixin ym-border-blue-200($hover: true) {
+    border-color: $blue-200;
+}
+
+@mixin ym-border-blue-300 {
+    border-color: $blue-300;
+}
+
+@mixin ym-border-blue-500 {
+    border-color: $blue-500;
+}
+
+@mixin ym-border-blue-600 {
+    border-color: $blue-600;
+}
+
+@mixin ym-border-blue-700 {
+    border-color: $blue-700;
+}
+
+@mixin ym-border-purple-700 {
+    border-color: $purple-700;
+}
+
+@mixin ym-border-gray-a-08 {
+    border-color: $t-gray-a-08;
+}
+
+@mixin ym-border-gray-a-24 {
+    border-color: $t-gray-a-24;
+}
+
+@mixin ym-border-t-gray-50 {
+    border-top-color: $gray-50
+}
+
+@mixin ym-border-t-gray-100 {
+    border-top-color: $gray-100
+}
+
+@mixin ym-border-t-gray-200 {
+    border-top-color: $gray-200;
+}
+
+@mixin ym-border-r-gray-100 {
+    border-right-color: $gray-100;
+}
+
+@mixin ym-border-r-gray-200 {
+    border-right-color: $gray-200;
+}
+
+@mixin ym-border-b-gray-10 {
+    border-bottom-color: $gray-10;
+}
+
+@mixin ym-border-b-gray-50 {
+    border-bottom-color: $gray-50;
+}
+
+@mixin ym-border-b-gray-100 {
+    border-bottom-color: $gray-100;
+}
+
+@mixin ym-border-b-gray-200 {
+    border-bottom-color: $gray-200;
+}
+
+@mixin ym-border-l-gray-50 {
+    border-left-color: $gray-50
+}
+
+@mixin ym-border-l-gray-100 {
+    border-left-color: $gray-100;
+}
+
+@mixin ym-border-l-gray-200 {
+    border-left-color: $gray-200;
+}
+
+@mixin ym-border-l-gray-500 {
+    border-left-color: $gray-500;
+}
+
+@mixin ym-border-t-blue-600 {
+    border-top-color: $blue-600;
+}
+
+@mixin ym-border-r-blue-600 {
+    border-right-color: $blue-600;
+}
+
+@mixin ym-border-b-blue-600 {
+    border-bottom-color: $blue-600;
+}
+
+@mixin ym-border-l-blue-600 {
+    border-left-color: $blue-600;
+}
+
+// Border width utilities.
+// naming convention: ym-border-{position}-{border-width}
+// notes: 
+// - Base new utilities in this group in the $ym-border-size variable
+@mixin ym-border-0 {
+    border-width: 0;
+}
+
+@mixin ym-border-t-0 {
+    border-top-width: 0;
+}
+
+@mixin ym-border-b-0 {
+    border-bottom-width: 0;
+}
+
+@mixin ym-border-l-0 {
+    border-left-width: 0;
+}
+
+@mixin ym-border-r-0 {
+    border-right-width: 0;
+}
+
+@mixin ym-border-1 {
+    border-width: $ym-border-size-1;
+}
+
+@mixin ym-border-2 {
+    border-width: $ym-border-size-2;
+}
+
+@mixin ym-border-3 {
+    border-width: $ym-border-size-3;
+}
+
+@mixin ym-border-4 {
+    border-width: $ym-border-size-4;
+}
+
+@mixin ym-border-8 {
+    border-width: $ym-border-size-8;
+}
+
+@mixin ym-border-t-1 {
+    border-top-width: $ym-border-size-1;
+}
+
+@mixin ym-border-b-1 {
+    border-bottom-width: $ym-border-size-1;
+}
+
+@mixin ym-border-l-1 {
+    border-left-width: $ym-border-size-1;
+}
+
+@mixin ym-border-r-1 {
+    border-right-width: $ym-border-size-1;
+}
+
+@mixin ym-border-l-4 {
+    border-left-width: $ym-border-size-4;
+}
+
+@mixin ym-border-t-2 {
+    border-top-width: $ym-border-size-2;
+}
+
+@mixin ym-border-b-2 {
+    border-bottom-width: $ym-border-size-2;
+}
+
+@mixin ym-border-r-2 {
+    border-right-width: $ym-border-size-2;
+}
+
+@mixin ym-border-top-0 {
+    border-top: 0;
+}
+
+@mixin ym-border-right-0 {
+    border-right: 0;
+}
+
+@mixin ym-border-bottom-0 {
+    border-bottom: 0;
+}
+
+@mixin ym-border-left-0 {
+    border-left: 0;
+}
+
+// Border-radius utilities.
+// naming convention: ym-rounded-{roundness-size}
+// notes::after- Base new utilities in this group in the $ym-border-radius variables
+@mixin ym-rounded-0 {
+    border-radius: 0;
+}
+
+@mixin ym-rounded-2 {
+    border-radius: $ym-border-radius-2;
+}
+
+@mixin ym-rounded-3 {
+    border-radius: $ym-border-radius-3;
+}
+
+@mixin ym-rounded-6 {
+    border-radius: $ym-border-radius-6;
+}
+
+@mixin ym-rounded-7 {
+    border-radius: $ym-border-radius-7;
+}
+
+@mixin ym-rounded-base($hover: true) {
+    border-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-full {
+    border-radius: $ym-border-radius-full;
+}
+
+@mixin ym-rounded-small {
+    border-radius: $ym-border-radius-small;
+}
+
+@mixin ym-rounded-lg {
+    border-radius: $ym-border-radius-large;
+}
+
+@mixin ym-rounded-pill {
+    border-radius: $ym-spacing-scale-4;
+}
+
+@mixin ym-rounded-top-left-base {
+    border-top-left-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-top-left-none {
+    border-top-left-radius: 0;
+}
+
+@mixin ym-rounded-top-right-base {
+    border-top-right-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-top-right-none {
+    border-top-right-radius: 0;
+}
+
+@mixin ym-rounded-top-base {
+    border-top-left-radius: $ym-border-radius-base;
+    border-top-right-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-bottom-left-base {
+    border-bottom-left-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-bottom-left-none {
+    border-bottom-left-radius: 0;
+}
+
+@mixin ym-rounded-bottom-right-base {
+    border-bottom-right-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-bottom-right-none {
+    border-bottom-right-radius: 0;
+}
+
+@mixin ym-rounded-bottom-base {
+    border-bottom-left-radius: $ym-border-radius-base;
+    border-bottom-right-radius: $ym-border-radius-base;
+}
+
+@mixin ym-rounded-top-left-small {
+    border-top-left-radius: $ym-border-radius-small;
+}
+
+@mixin ym-rounded-top-right-small {
+    border-top-right-radius: $ym-border-radius-small;
+}
+
+@mixin ym-rounded-bottom-left-small {
+    border-bottom-left-radius: $ym-border-radius-small;
+}
+
+@mixin ym-rounded-bottom-right-small {
+    border-bottom-right-radius: $ym-border-radius-small;
+}
+
+@mixin ym-rounded-top-left-6 {
+    border-top-left-radius: $ym-border-radius-6;
+}
+
+@mixin ym-rounded-top-right-6 {
+    border-top-right-radius: $ym-border-radius-6;
+}
+
+@mixin ym-rounded-bottom-left-6 {
+    border-bottom-left-radius: $ym-border-radius-6;
+}
+
+@mixin ym-rounded-top-right-6 {
+    border-top-right-radius: $ym-border-radius-6;
+}

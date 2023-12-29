@@ -1,0 +1,1484 @@
+// Padding utilities.
+// naming convention: ym-p{position}-{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+@mixin ym-p-0 {
+    padding: 0;
+}
+
+@mixin ym-p-1 {
+    padding: $ym-spacing-scale-1;
+}
+
+@mixin ym-p-2 {
+    padding: $ym-spacing-scale-2;
+}
+
+@mixin ym-p-3 {
+    padding: $ym-spacing-scale-3;
+}
+
+@mixin ym-p-4 {
+    padding: $ym-spacing-scale-4;
+}
+
+@mixin ym-p-5 {
+    padding: $ym-spacing-scale-5;
+}
+
+@mixin ym-p-6 {
+    padding: $ym-spacing-scale-6;
+}
+
+@mixin ym-p-7 {
+    padding: $ym-spacing-scale-7;
+}
+
+@mixin ym-p-9 {
+    padding: $ym-spacing-scale-9;
+}
+
+@mixin ym-p-13 {
+    padding: $ym-spacing-scale-13;
+}
+
+@mixin ym-px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@mixin ym-px-1 {
+    padding-left: $ym-spacing-scale-1;
+    padding-right: $ym-spacing-scale-1;
+}
+
+@mixin ym-px-2 {
+    padding-left: $ym-spacing-scale-2;
+    padding-right: $ym-spacing-scale-2;
+}
+
+@mixin ym-px-3 {
+    padding-left: $ym-spacing-scale-3;
+    padding-right: $ym-spacing-scale-3;
+}
+
+@mixin ym-px-4 {
+    padding-left: $ym-spacing-scale-4;
+    padding-right: $ym-spacing-scale-4;
+}
+
+@mixin ym-px-5 {
+    padding-left: $ym-spacing-scale-5;
+    padding-right: $ym-spacing-scale-5;
+}
+
+@mixin ym-px-6 {
+    padding-left: $ym-spacing-scale-6;
+    padding-right: $ym-spacing-scale-6;
+}
+
+@mixin ym-px-7 {
+    padding-left: $ym-spacing-scale-7;
+    padding-right: $ym-spacing-scale-7;
+}
+
+@mixin ym-lg-px-7 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-px-7;
+    }
+}
+
+@mixin ym-px-8 {
+    padding-left: $ym-spacing-scale-8;
+    padding-right: $ym-spacing-scale-8;
+}
+
+@mixin ym-px-9 {
+    padding-left: $ym-spacing-scale-9;
+    padding-right: $ym-spacing-scale-9;
+}
+
+@mixin ym-pr-0 {
+    padding-right: 0;
+}
+
+@mixin ym-pr-1 {
+    padding-right: $ym-spacing-scale-1;
+}
+
+@mixin ym-pr-2 {
+    padding-right: $ym-spacing-scale-2;
+}
+
+@mixin ym-pr-3 {
+    padding-right: $ym-spacing-scale-3;
+}
+
+@mixin ym-pr-4 {
+    padding-right: $ym-spacing-scale-4;
+}
+
+@mixin ym-pr-5 {
+    padding-right: $ym-spacing-scale-5;
+}
+
+@mixin ym-pr-6 {
+    padding-right: $ym-spacing-scale-6;
+}
+
+@mixin ym-pr-7 {
+    padding-right: $ym-spacing-scale-7;
+}
+
+@mixin ym-pr-8 {
+    padding-right: $ym-spacing-scale-8;
+}
+
+@mixin ym-pr-9 {
+    padding-right: $ym-spacing-scale-9;
+}
+
+@mixin ym-pr-10 {
+    padding-right: $ym-spacing-scale-10;
+}
+
+@mixin ym-pl-0 {
+    padding-left: 0;
+}
+
+@mixin ym-pl-1 {
+    padding-left: $ym-spacing-scale-1;
+}
+
+@mixin ym-pl-2 {
+    padding-left: $ym-spacing-scale-2;
+}
+
+@mixin ym-pl-3 {
+    padding-left: $ym-spacing-scale-3;
+}
+
+@mixin ym-pl-4 {
+    padding-left: $ym-spacing-scale-4;
+}
+
+@mixin ym-pl-5 {
+    padding-left: $ym-spacing-scale-5;
+}
+
+@mixin ym-pl-6 {
+    padding-left: $ym-spacing-scale-6;
+}
+
+@mixin ym-pl-7 {
+    padding-left: $ym-spacing-scale-7;
+}
+
+@mixin ym-pl-8 {
+    padding-left: $ym-spacing-scale-8;
+}
+
+@mixin ym-pl-9 {
+    padding-left: $ym-spacing-scale-9;
+}
+
+@mixin ym-pl-10 {
+    padding-left: $ym-spacing-scale-10;
+}
+
+@mixin ym-pl-11 {
+    padding-left: $ym-spacing-scale-11;
+}
+
+@mixin ym-pl-11-5 {
+    padding-left: $ym-spacing-scale-11-5;
+}
+
+@mixin ym-pt-0 {
+    padding-top: 0;
+}
+
+@mixin ym-pt-1 {
+    padding-top: $ym-spacing-scale-1;
+}
+
+@mixin ym-pt-2 {
+    padding-top: $ym-spacing-scale-2;
+}
+
+@mixin ym-pt-3 {
+    padding-top: $ym-spacing-scale-3;
+}
+
+@mixin ym-pt-4 {
+    padding-top: $ym-spacing-scale-4;
+}
+
+@mixin ym-pt-5 {
+    padding-top: $ym-spacing-scale-5;
+}
+
+@mixin ym-pt-6 {
+    padding-top: $ym-spacing-scale-6;
+}
+
+@mixin ym-pt-7 {
+    padding-top: $ym-spacing-scale-7;
+}
+
+@mixin ym-pt-8 {
+    padding-top: $ym-spacing-scale-8;
+}
+
+@mixin ym-pt-9 {
+    padding-top: $ym-spacing-scale-9;
+}
+
+@mixin ym-pt-11 {
+    padding-top: $ym-spacing-scale-11;
+}
+
+@mixin ym-pt-12 {
+    padding-top: $ym-spacing-scale-12;
+}
+
+@mixin ym-pt-13 {
+    padding-top: $ym-spacing-scale-13;
+}
+
+@mixin ym-md-pt-12 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-12;
+    }
+}
+
+@mixin ym-pb-0 {
+    padding-bottom: 0;
+}
+
+@mixin ym-pb-1 {
+    padding-bottom: $ym-spacing-scale-1;
+}
+
+@mixin ym-pb-2 {
+    padding-bottom: $ym-spacing-scale-2;
+}
+
+@mixin ym-pb-3 {
+    padding-bottom: $ym-spacing-scale-3;
+}
+
+@mixin ym-pb-4 {
+    padding-bottom: $ym-spacing-scale-4;
+}
+
+@mixin ym-pb-5 {
+    padding-bottom: $ym-spacing-scale-5;
+}
+
+@mixin ym-pb-6 {
+    padding-bottom: $ym-spacing-scale-6;
+}
+
+@mixin ym-pb-7 {
+    padding-bottom: $ym-spacing-scale-7;
+}
+
+@mixin ym-pb-8 {
+    padding-bottom: $ym-spacing-scale-8;
+}
+
+@mixin ym-pb-9 {
+    padding-bottom: $ym-spacing-scale-9;
+}
+
+@mixin ym-pb-11 {
+    padding-bottom: $ym-spacing-scale-11;
+}
+
+@mixin ym-pb-13 {
+    padding-bottom: $ym-spacing-scale-13;
+}
+
+@mixin ym-py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@mixin ym-py-1 {
+    padding-top: $ym-spacing-scale-1;
+    padding-bottom: $ym-spacing-scale-1;
+}
+
+@mixin ym-py-2 {
+    padding-top: $ym-spacing-scale-2;
+    padding-bottom: $ym-spacing-scale-2;
+}
+
+@mixin ym-py-3 {
+    padding-top: $ym-spacing-scale-3;
+    padding-bottom: $ym-spacing-scale-3;
+}
+
+@mixin ym-py-4 {
+    padding-top: $ym-spacing-scale-4;
+    padding-bottom: $ym-spacing-scale-4;
+}
+
+@mixin ym-py-5 {
+    padding-top: $ym-spacing-scale-5;
+    padding-bottom: $ym-spacing-scale-5;
+}
+
+@mixin ym-py-6 {
+    padding-top: $ym-spacing-scale-6;
+    padding-bottom: $ym-spacing-scale-6;
+}
+
+@mixin ym-py-7 {
+    padding-top: $ym-spacing-scale-7;
+    padding-bottom: $ym-spacing-scale-7;
+}
+
+@mixin ym-py-8 {
+    padding-top: $ym-spacing-scale-8;
+    padding-bottom: $ym-spacing-scale-8;
+}
+
+@mixin ym-py-13 {
+    padding-top: $ym-spacing-scale-13;
+    padding-bottom: $ym-spacing-scale-13;
+}
+
+// Margin utilities.
+// naming convention: ym-m{position}-{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+@mixin ym-m-o {
+    margin: 0;
+}
+
+@mixin ym-m-2 {
+    margin: $ym-spacing-scale-2;
+}
+
+@mixin ym-m-3 {
+    margin: $ym-spacing-scale-3;
+}
+
+@mixin ym-m-4 {
+    margin: $ym-spacing-scale-4;
+}
+
+@mixin ym-m-5 {
+    margin: $ym-spacing-scale-5;
+}
+
+@mixin ym-m-7 {
+    margin: $ym-spacing-scale-7;
+}
+
+@mixin ym-m-auto {
+    margin: auto;
+}
+
+@mixin ym-mt-auto {
+    margin-top: auto;
+}
+
+@mixin ym-mt-0 {
+    margin-top: 0;
+}
+
+@mixin ym-mt-1 {
+    margin-top: $ym-spacing-scale-1;
+}
+
+@mixin ym-mt-n1 {
+    margin-top: -$ym-spacing-scale-1;
+}
+
+@mixin ym-md-mt-n2 {
+    @include ym-media-breakpoint-up(md) {
+        margin-top: -$ym-spacing-scale-2;
+    }
+}
+
+@mixin ym-mt-2 {
+    margin-top: $ym-spacing-scale-2;
+}
+
+@mixin ym-mt-n2 {
+    margin-top: -$ym-spacing-scale-2;
+}
+
+@mixin ym-mt-3 {
+    margin-top: $ym-spacing-scale-3;
+}
+
+@mixin ym-mt-n3 {
+    margin-top: -$ym-spacing-scale-3;
+}
+
+@mixin ym-mt-4 {
+    margin-top: $ym-spacing-scale-4;
+}
+
+@mixin ym-mt-n4 {
+    margin-top: -$ym-spacing-scale-4;
+}
+
+@mixin ym-mt-5 {
+    margin-top: $ym-spacing-scale-5;
+}
+
+@mixin ym-mt-n5 {
+    margin-top: -$ym-spacing-scale-5;
+}
+
+@mixin ym-mt-6 {
+    margin-top: $ym-spacing-scale-6;
+}
+
+@mixin ym-mt-n6 {
+    margin-top: -$ym-spacing-scale-6;
+}
+
+@mixin ym-mt-7 {
+    margin-top: $ym-spacing-scale-7;
+}
+
+@mixin ym-mt-8 {
+    margin-top: $ym-spacing-scale-8;
+}
+
+@mixin ym-mt-9 {
+    margin-top: $ym-spacing-scale-9;
+}
+
+@mixin ym-mt-11 {
+    margin-top: $ym-spacing-scale-11;
+}
+
+@mixin ym-md-mt-11 {
+    @include ym-media-breakpoint-up(md) {
+        margin-top: $ym-spacing-scale-11;
+    }
+}
+
+@mixin ym-mr-auto {
+    margin-right: auto;
+}
+
+@mixin ym-mr-0 {
+    margin-right: 0;
+}
+
+@mixin ym-mr-1 {
+    margin-right: $ym-spacing-scale-1;
+}
+
+@mixin ym-mr-n1 {
+    margin-right: -$ym-spacing-scale-1;
+}
+
+@mixin ym-mr-2 {
+    margin-right: $ym-spacing-scale-2;
+}
+
+@mixin ym-mr-n2 {
+    margin-right: -$ym-spacing-scale-2;
+}
+
+@mixin ym-mr-3 {
+    margin-right: $ym-spacing-scale-3;
+}
+
+@mixin ym-mr-n3 {
+    margin-right: -$ym-spacing-scale-3;
+}
+
+@mixin ym-mr-4 {
+    margin-right: $ym-spacing-scale-4;
+}
+
+@mixin ym-mr-n4 {
+    margin-right: -$ym-spacing-scale-4;
+}
+
+@mixin ym-mr-5 {
+    margin-right: $ym-spacing-scale-5;
+}
+
+@mixin ym-mr-n5 {
+    margin-right: -$ym-spacing-scale-5;
+}
+
+@mixin ym-mr-6 {
+    margin-right: $ym-spacing-scale-6;
+}
+
+@mixin ym-mr-7 {
+    margin-right: $ym-spacing-scale-7;
+}
+
+@mixin ym-sm-mr-3 {
+    @include ym-media-breakpoint-up(sm) {
+        margin-right: $ym-spacing-scale-3;
+    }
+}
+
+@mixin ym-mb-auto {
+    margin-bottom: auto;
+}
+
+@mixin ym-mb-0 {
+    margin-bottom: 0;
+}
+
+@mixin ym-mb-1 {
+    margin-bottom: $ym-spacing-scale-1;
+}
+
+@mixin ym-mb-n1 {
+    margin-bottom: -$ym-spacing-scale-1;
+}
+
+@mixin ym-mb-2 {
+    margin-bottom: $ym-spacing-scale-2;
+}
+
+@mixin ym-mb-n2 {
+    margin-bottom: -$ym-spacing-scale-2;
+}
+
+@mixin ym-mb-3 {
+    margin-bottom: $ym-spacing-scale-3;
+}
+
+@mixin ym-mb-n3 {
+    margin-bottom: -$ym-spacing-scale-3;
+}
+
+@mixin ym-mb-4 {
+    margin-bottom: $ym-spacing-scale-4;
+}
+
+@mixin ym-mb-n4 {
+    margin-bottom: -$ym-spacing-scale-4;
+}
+
+@mixin ym-mb-5 {
+    margin-bottom: $ym-spacing-scale-5;
+}
+
+@mixin ym-mb-6 {
+    margin-bottom: $ym-spacing-scale-6;
+}
+
+@mixin ym-mb-7 {
+    margin-bottom: $ym-spacing-scale-7;
+}
+
+@mixin ym-mb-8 {
+    margin-bottom: $ym-spacing-scale-8;
+}
+
+@mixin ym-mb-9 {
+    margin-bottom: $ym-spacing-scale-9;
+}
+
+@mixin ym-mb-11 {
+    margin-bottom: $ym-spacing-scale-11;
+}
+
+@mixin ym-mb-12 {
+    margin-bottom: $ym-spacing-scale-12;
+}
+
+@mixin ym-ml-auto {
+    margin-left: auto;
+}
+
+@mixin ym-sm-ml-auto {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-ml-auto;
+    }
+}
+
+@mixin ym-ml-0 {
+    margin-left: 0;
+}
+
+@mixin ym-ml-1 {
+    margin-left: $ym-spacing-scale-1;
+}
+
+@mixin ym-ml-n1 {
+    margin-left: -$ym-spacing-scale-1;
+}
+
+@mixin ym-ml-2 {
+    margin-left: $ym-spacing-scale-2;
+}
+
+@mixin ym-ml-n2 {
+    margin-left: -$ym-spacing-scale-2;
+}
+
+@mixin ym-ml-3 {
+    margin-left: $ym-spacing-scale-3;
+}
+
+@mixin ym-ml-n3 {
+    margin-left: -$ym-spacing-scale-3;
+}
+
+@mixin ym-ml-4 {
+    margin-left: $ym-spacing-scale-4;
+}
+
+@mixin ym-ml-n4 {
+    margin-left: -$ym-spacing-scale-4;
+}
+
+@mixin ym-ml-5 {
+    margin-left: $ym-spacing-scale-5;
+}
+
+@mixin ym-ml-n5 {
+    margin-left: -$ym-spacing-scale-5;
+}
+
+@mixin ym-ml-6 {
+    margin-left: $ym-spacing-scale-6;
+}
+
+@mixin ym-ml-7 {
+    margin-left: $ym-spacing-scale-7;
+}
+
+@mixin ym-ml-11 {
+    margin-left: $ym-spacing-scale-11;
+}
+
+@mixin ym-my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@mixin ym-my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin ym-my-1 {
+    margin-top: $ym-spacing-scale-1;
+    margin-bottom: $ym-spacing-scale-1;
+}
+
+@mixin ym-my-2 {
+    margin-top: $ym-spacing-scale-2;
+    margin-bottom: $ym-spacing-scale-2;
+}
+
+@mixin ym-my-3 {
+    margin-top: $ym-spacing-scale-3;
+    margin-bottom: $ym-spacing-scale-3;
+}
+
+@mixin ym-my-4 {
+    margin-top: $ym-spacing-scale-4;
+    margin-bottom: $ym-spacing-scale-4;
+}
+
+@mixin ym-my-5 {
+    margin-top: $ym-spacing-scale-5;
+    margin-bottom: $ym-spacing-scale-5;
+}
+
+@mixin ym-my-6 {
+    margin-top: $ym-spacing-scale-6;
+    margin-bottom: $ym-spacing-scale-6;
+}
+
+@mixin ym-my-7 {
+    margin-top: $ym-spacing-scale-7;
+    margin-bottom: $ym-spacing-scale-7;
+}
+
+@mixin ym-my-8 {
+    margin-top: $ym-spacing-scale-8;
+    margin-bottom: $ym-spacing-scale-8;
+}
+
+@mixin ym-my-9 {
+    margin-top: $ym-spacing-scale-9;
+    margin-bottom: $ym-spacing-scale-9;
+}
+
+@mixin ym-my-11 {
+    margin-top: $ym-spacing-scale-11;
+    margin-bottom: $ym-spacing-scale-11;
+}
+
+@mixin ym-my-12 {
+    margin-top: $ym-spacing-scale-12;
+    margin-bottom: $ym-spacing-scale-12;
+}
+
+@mixin ym-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin ym-mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@mixin ym-mx-1 {
+    margin-left: $ym-spacing-scale-1;
+    margin-right: $ym-spacing-scale-1;
+}
+
+@mixin ym-mx-2 {
+    margin-left: $ym-spacing-scale-2;
+    margin-right: $ym-spacing-scale-2;
+}
+
+@mixin ym-mx-3 {
+    margin-left: $ym-spacing-scale-3;
+    margin-right: $ym-spacing-scale-3;
+}
+
+@mixin ym-mx-4 {
+    margin-left: $ym-spacing-scale-4;
+    margin-right: $ym-spacing-scale-4;
+}
+
+@mixin ym-mx-5 {
+    margin-left: $ym-spacing-scale-5;
+    margin-right: $ym-spacing-scale-5;
+}
+
+@mixin ym-mx-6 {
+    margin-left: $ym-spacing-scale-6;
+    margin-right: $ym-spacing-scale-6;
+}
+
+@mixin ym-mx-7 {
+    margin-left: $ym-spacing-scale-7;
+    margin-right: $ym-spacing-scale-7;
+}
+
+@mixin ym-mx-8 {
+    margin-left: $ym-spacing-scale-8;
+    margin-right: $ym-spacing-scale-8;
+}
+
+// Negative margin utilities.
+// naming convention: $ym-m{position}-n{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+@mixin ym-my-n1 {
+    margin-top: -#{$ym-spacing-scale-1};
+    margin-bottom: -#{$ym-spacing-scale-1};
+}
+
+@mixin ym-mx-n1 {
+    margin-left: -#{$ym-spacing-scale-1};
+    margin-right: -#{$ym-spacing-scale-1};
+}
+
+@mixin ym-my-n2 {
+    margin-top: -#{$ym-spacing-scale-2};
+    margin-bottom: -#{$ym-spacing-scale-2};
+}
+
+@mixin ym-mx-n2 {
+    margin-left: -#{$ym-spacing-scale-2};
+    margin-right: -#{$ym-spacing-scale-2};
+}
+
+@mixin ym-my-n3 {
+    margin-top: -#{$ym-spacing-scale-3};
+    margin-bottom: -#{$ym-spacing-scale-3};
+}
+
+@mixin ym-mx-n3 {
+    margin-left: -#{$ym-spacing-scale-3};
+    margin-right: -#{$ym-spacing-scale-3};
+}
+
+@mixin ym-my-n4 {
+    margin-top: -#{$ym-spacing-scale-4};
+    margin-bottom: -#{$ym-spacing-scale-4};
+}
+
+@mixin ym-mx-n4 {
+    margin-left: -#{$ym-spacing-scale-4};
+    margin-right: -#{$ym-spacing-scale-4};
+}
+
+@mixin ym-mx-n5 {
+    margin-left: -#{$ym-spacing-scale-5};
+    margin-right: -#{$ym-spacing-scale-5};
+}
+
+@mixin ym-mx-n6 {
+    margin-left: -#{$ym-spacing-scale-6};
+    margin-right: -#{$ym-spacing-scale-6};
+}
+
+// Gap utilities.
+// naming convention: ym-gap-{direction}-{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+// - Utilities should be refactored to use gap after dropping Safari 13.x support
+@mixin ym-gap-x-3 {
+    >*+* {
+        margin-left: #{$ym-spacing-scale-3};
+    }
+}
+
+@mixin ym-gap-x-5 {
+    >*+* {
+        margin-left: #{$ym-spacing-scale-5};
+    }
+}
+
+@mixin ym-gap-y-3 {
+    >*+* {
+        margin-top: #{$ym-spacing-scale-3};
+    }
+}
+
+@mixin ym-gap-2 {
+    gap: $ym-spacing-scale-2;
+}
+
+@mixin ym-gap-3 {
+    gap: $ym-spacing-scale-3;
+}
+
+@mixin ym-sm-gap-3 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-gap-3;
+    }
+}
+
+@mixin ym-gap-4 {
+    gap: $ym-spacing-scale-4;
+}
+
+@mixin ym-gap-5 {
+    gap: $ym-spacing-scale-5;
+}
+
+@mixin ym-gap-6 {
+    gap: $ym-spacing-scale-6;
+}
+
+@mixin ym-gap-7 {
+    gap: $ym-spacing-scale-7;
+}
+
+// Column gap utilities.
+// naming convention: ym-column-gap-{spacing-scale-index}
+// notes: 
+// - Utilities should striclty follow $ym-spacing-scale
+
+@mixin ym-column-gap-6 {
+    column-gap: $ym-spacing-scale-6;
+}
+
+// Responsive margin utilities.
+// naming convention: ym-{breakpoint}-m{position}-{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+@mixin ym-xs-mb-3 {
+    @include ym-media-breakpoint-down(sm) {
+        @include ym-mb-3;
+    }
+}
+
+@mixin ym-xs-mb-4 {
+    @include ym-media-breakpoint-down(sm) {
+        @include ym-mb-4;
+    }
+}
+
+@mixin ym-sm-ml-3 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-ml-3;
+    }
+}
+
+@mixin ym-sm-ml-5 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-ml-5;
+    }
+}
+
+@mixin ym-sm-ml-7 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-ml-7;
+    }
+}
+
+@mixin ym-sm-mt-0 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-mt-0;
+    }
+}
+
+@mixin ym-sm-mt-5 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-mt-5;
+    }
+}
+
+@mixin ym-sm-mt-6 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-mt-6;
+    }
+}
+
+@mixin ym-sm-mb-7 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-mb-7;
+    }
+}
+
+@mixin ym-sm-my-12 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-my-12;
+    }
+}
+
+@mixin ym-sm-mx-0 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-mx-0;
+    }
+}
+
+@mixin ym-md-mt-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mt-0;
+    }
+}
+
+@mixin ym-md-mt-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mt-5;
+    }
+}
+
+@mixin ym-md-mb-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mb-0;
+    }
+}
+
+@mixin ym-md-mb-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mb-3;
+    }
+}
+
+@mixin ym-md-mb-6 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mb-6;
+    }
+}
+
+@mixin ym-md-mb-12 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mb-12;
+    }
+}
+
+@mixin nym-lg-mb-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mb-0;
+    }
+}
+
+@mixin nym-lg-mb-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mb-5;
+    }
+}
+
+@mixin ym-md-ml-auto {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-ml-auto
+    }
+}
+
+@mixin ym-md-ml-2 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-ml-2
+    }
+}
+
+@mixin ym-md-ml-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-ml-3
+    }
+}
+
+@mixin ym-md-mr-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mr-3
+    }
+}
+
+@mixin ym-md-mr-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-mr-5
+    }
+}
+
+@mixin ym-lg-mr-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mr-2;
+    }
+}
+
+@mixin ym-lg-mr-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mr-3;
+    }
+}
+
+@mixin ym-lg-mr-10 {
+    @include ym-media-breakpoint-up(lg) {
+        margin-right: $ym-spacing-scale-10;
+    }
+}
+
+@mixin ym-lg-mr-12 {
+    @include ym-media-breakpoint-up(lg) {
+        margin-right: $ym-spacing-scale-12;
+    }
+}
+
+@mixin ym-lg-ml-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-ml-2;
+    }
+}
+
+@mixin ym-lg-ml-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-ml-3;
+    }
+}
+
+@mixin ym-lg-ml-10 {
+    @include ym-media-breakpoint-up(lg) {
+        margin-left: $ym-spacing-scale-10;
+    }
+}
+
+@mixin ym-lg-ml-12 {
+    @include ym-media-breakpoint-up(lg) {
+        margin-left: $ym-spacing-scale-12;
+    }
+}
+
+@mixin ym-xl-ml-3 {
+    @include ym-media-breakpoint-up(xl) {
+        margin-left: $ym-spacing-scale-3;
+    }
+}
+
+@mixin ym-lg-mx-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mx-2;
+    }
+}
+
+@mixin ym-lg-mx-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mx-3;
+    }
+}
+
+@mixin ym-lg-mx-12 {
+    @include ym-media-breakpoint-up(lg) {
+        margin-left: $ym-spacing-scale-12;
+        margin-right: $ym-spacing-scale-12;
+    }
+}
+
+@mixin ym-lg-my-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-my-5;
+    }
+}
+
+@mixin ym-lg-mt-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mt-0;
+    }
+}
+
+@mixin ym-lg-mt-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-mt-5;
+    }
+}
+
+// Responsive padding utilities.
+// naming convention: ym-{breakpoint}-p{position}-{spacing-scale-index}
+// notes: 
+// - Utilities should strictly follow $ym-spacing-scale
+@mixin ym-sm-pr-2 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pr-2;
+    }
+}
+
+@mixin ym-sm-pr-3 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pr-3;
+    }
+}
+
+@mixin ym-sm-pr-5 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pr-5;
+    }
+}
+
+@mixin ym-sm-pl-0 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pl-0;
+    }
+}
+
+@mixin ym-sm-pl-5 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pl-5;
+    }
+}
+
+@mixin ym-sm-pl-6 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-pl-6;
+    }
+}
+
+@mixin ym-md-pt-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-0
+    }
+}
+
+@mixin ym-md-pt-1 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-1;
+    }
+}
+
+@mixin ym-md-pt-2 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-2;
+    }
+}
+
+@mixin ym-md-pt-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-3;
+    }
+}
+
+@mixin ym-md-pt-4 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-4;
+    }
+}
+
+@mixin ym-md-pt-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-5;
+    }
+}
+
+@mixin ym-md-pt-11 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pt-11;
+    }
+}
+
+@mixin ym-md-pr-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pr-0;
+    }
+}
+
+@mixin ym-md-pr-1 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pr-1;
+    }
+}
+
+@mixin ym-md-pr-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pr-3;
+    }
+}
+
+@mixin ym-md-pr-4 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pr-4;
+    }
+}
+
+@mixin ym-md-pr-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pr-5;
+    }
+}
+
+@mixin ym-md-pb-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-0;
+    }
+}
+
+@mixin ym-md-pb-1 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-1;
+    }
+}
+
+@mixin ym-md-pb-2 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-2;
+    }
+}
+
+@mixin ym-md-pb-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-3;
+    }
+}
+
+@mixin ym-md-pb-4 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-4;
+    }
+}
+
+@mixin ym-md-pb-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pb-5;
+    }
+}
+
+@mixin ym-md-pl-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-0;
+    }
+}
+
+@mixin ym-md-pl-1 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-1;
+    }
+}
+
+@mixin ym-md-pl-2 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-2;
+    }
+}
+
+@mixin ym-md-pl-3 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-3;
+    }
+}
+
+@mixin ym-md-pl-4 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-4;
+    }
+}
+
+@mixin ym-md-pl-5 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-5;
+    }
+}
+
+@mixin ym-md-pl-7 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-pl-7;
+    }
+}
+
+@mixin ym-md-px-7 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-px-7;
+    }
+}
+
+@mixin ym-lg-pt-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-0;
+    }
+}
+
+@mixin ym-lg-pt-1 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-1;
+    }
+}
+
+@mixin ym-lg-pt-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-2;
+    }
+}
+
+@mixin ym-lg-pt-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-3;
+    }
+}
+
+@mixin ym-lg-pt-4 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-4;
+    }
+}
+
+@mixin ym-lg-pt-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pt-5;
+    }
+}
+
+@mixin ym-lg-pr-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-0;
+    }
+}
+
+@mixin ym-lg-pr-1 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-1;
+    }
+}
+
+@mixin ym-lg-pr-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-2;
+    }
+}
+
+@mixin ym-lg-pr-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-3;
+    }
+}
+
+@mixin ym-lg-pr-4 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-4;
+    }
+}
+
+@mixin ym-lg-pr-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pr-5;
+    }
+}
+
+@mixin ym-lg-pb-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-0;
+    }
+}
+
+@mixin ym-lg-pb-1 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-1;
+    }
+}
+
+@mixin ym-lg-pb-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-2;
+    }
+}
+
+@mixin ym-lg-pb-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-3;
+    }
+}
+
+@mixin ym-lg-pb-4 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-4;
+    }
+}
+
+@mixin ym-lg-pb-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pb-5;
+    }
+}
+
+@mixin ym-lg-pl-0 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-0;
+    }
+}
+
+@mixin ym-lg-pl-1 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-1;
+    }
+}
+
+@mixin ym-lg-pl-2 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-2;
+    }
+}
+
+@mixin ym-lg-pl-3 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-3;
+    }
+}
+
+@mixin ym-lg-pl-4 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-4;
+    }
+}
+
+@mixin ym-lg-pl-5 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-pl-5;
+    }
+}
+
+// Remove margin and padding from empty elements
+// to prevent them from inadvetantly taking up 
+// space when empty. Note that for :empty to match 
+// the element can not even have whitespace in it
+@mixin ym-collapse-empty {
+    &:empty {
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@yupma/ui-styles",
+  "version": "0.1.0",
+  "description": "A style library for YupMa design system",
+  "main": "lib/dist/index.css",
+  "style": "lib/scss/lib_ui.scss",
+  "files": [
+    "lib/dist",
+    "lib/scss"
+  ],
+  "scripts": {
+    "build": "npm run packaging && npm run generate-utilities && npm run compile-scss && npm run token",
+    "packaging": "node src/build/build.js",
+    "generate-utilities": "node src/build/generate-utilities.js",
+    "compile-scss": "node src/build/compile-scss.js",
+    "token": "node src/build/token.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Styles",
+    "Design",
+    "YupMa",
+    "css",
+    "scss",
+    "ui",
+    "library"
+  ],
+  "author": "YupMa",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "postcss": "^8.4.29",
+    "postcss-scss": "^4.0.8",
+    "sass": "^1.66.1"
+  }
+}

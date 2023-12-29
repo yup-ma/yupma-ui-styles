@@ -1,0 +1,41 @@
+// Grid utilities
+// naming convention: ym-grid-{breakpoint}-{property}-{value?}
+@mixin ym-grid-template-rows-auto {
+    grid-template-rows: auto;
+}
+
+@mixin ym-grid-col-start-1 {
+    grid-column-start: 1;
+}
+
+@mixin ym-grid-template-columns-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin ym-sm-grid-template-columns-2 {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-grid-template-columns-2;
+    }
+}
+
+@mixin ym-md-grid-template-columns-2 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-grid-template-columns-2;
+    }
+}
+
+@mixin ym-md-grid-template-columns-3 {
+    @include ym-media-breakpoint-up(md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin ym-grid-template-columns-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin ym-lg-grid-template-columns-4 {
+    @include ym-media-breakpoint-up(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

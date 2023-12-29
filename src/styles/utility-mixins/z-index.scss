@@ -1,0 +1,29 @@
+// z-index utilities
+// naming convention: ym-z-index-{value}
+@mixin ym-z-index-0 {
+    z-index: 0;
+}
+
+@mixin ym-z-index-1 {
+    z-index: 1;
+}
+
+@mixin ym-z-index-2 {
+    z-index: 2;
+}
+
+@mixin ym-z-index-3 {
+    z-index: 3;
+}
+
+@mixin ym-z-index-200 {
+    z-index: 200;
+}
+
+@mixin ym-z-index-9999 {
+    z-index: 9999;
+}
+
+@mixin ym-isolate {
+    isolation: isolate;
+}

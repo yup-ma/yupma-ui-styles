@@ -1,0 +1,93 @@
+// SVG fill color utilities.
+// naming convention: ym-fill-{color-palette-variable-name}
+// notes: 
+// - Strictly based design system color palette. See variable.scss 
+// for a comprehensive list.
+@mixin ym-fill-current-color {
+    fill: currentColor;
+}
+
+@mixin ym-fill-blue-200 {
+    fill: $blue-200;
+}
+
+@mixin ym-fill-blue-500 {
+    fill: $blue-500;
+}
+
+@mixin ym-stop-color-gray-50 {
+    stop-color: $gray-50;
+}
+
+@mixin ym-stop-color-gray-100 {
+    stop-color: $gray-100;
+}
+
+@mixin ym-stop-color-gray-200 {
+    stop-color: $gray-200;
+}
+
+@mixin ym-stroke-white {
+    stroke: $white;
+}
+
+@mixin ym-stroke-gray-200 {
+    stroke: $gray-200;
+}
+
+@mixin ym-stroke-blue-400 {
+    stroke: $blue-400;
+}
+
+@mixin ym-stroke-transparent {
+    stroke: transparent;
+}
+
+@mixin ym-fill-gray-200 {
+    fill: $gray-200;
+}
+
+@mixin ym-fill-gray-400 {
+    fill: $gray-400;
+}
+
+@mixin ym-fill-gray-600 {
+    fill: $gray-600;
+}
+
+@mixin ym-fill-gray-700 {
+    fill: $gray-700;
+}
+
+@mixin ym-fill-green-500 {
+    fill: $green-500;
+}
+
+@mixin ym-fill-green-700 {
+    fill: $green-700;
+}
+
+@mixin ym-fill-transparent {
+    fill: transparent;
+}
+
+@mixin ym-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    & svg {
+        fill: currentColor;
+    }
+}
+
+@each $ym-svg-size,
+$ym-svg-value in $ym-svg-dimensions {
+    .ym-svg-#{$ym-svg-size} {
+        & svg {
+            width: $ym-svg-value;
+            height: $ym-svg-value;
+        }
+    }
+}

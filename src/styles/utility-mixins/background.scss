@@ -1,0 +1,358 @@
+// Background color utilities
+// naming convention: ym-bg-{color-palette-variable-name}
+// notes:
+// - Strictly based design system color palette. See variable.scss
+// for a comprehensive list
+@mixin ym-bg-transparent($hover: true) {
+    background-color: transparent;
+}
+
+@mixin ym-bg-current-color {
+    background-color: currentColor;
+}
+
+@mixin ym-bg-brand {
+    background-color: $brand;
+}
+
+@mixin ym-bg-brand-light {
+    background-color: $brand-light;
+}
+
+@mixin ym-bg-white {
+    background-color: $white;
+}
+
+@mixin ym-bg-black {
+    background-color: $black;
+}
+
+@mixin ym-bg-black-normal {
+    background-color: $black-normal;
+}
+
+@mixin ym-reset-bg {
+    background-color: inherit;
+}
+
+@mixin ym-bg-gray-10 {
+    background-color: $gray-10;
+}
+
+@mixin ym-bg-gray-50($active: true, $focus: true, $hover: true) {
+    background-color: $gray-50;
+}
+
+@mixin ym-bg-gray-100 {
+    background-color: $gray-100;
+}
+
+@mixin ym-bg-gray-200 {
+    background-color: $gray-200;
+}
+
+@mixin ym-bg-gray-300 {
+    background-color: $gray-300;
+}
+
+@mixin ym-bg-gray-400 {
+    background-color: $gray-400;
+}
+
+@mixin ym-bg-gray-500 {
+    background-color: $gray-500;
+}
+
+@mixin ym-bg-gray-600 {
+    background-color: $gray-600;
+}
+
+@mixin ym-bg-gray-700 {
+    background-color: $gray-700;
+}
+
+@mixin ym-bg-gray-900 {
+    background-color: $gray-900;
+}
+
+@mixin ym-bg-blue-50($hover: true) {
+    background-color: $blue-50;
+}
+
+@mixin ym-bg-blue-100 {
+    background-color: $blue-100;
+}
+
+@mixin ym-bg-blue-200 {
+    background-color: $blue-200;
+}
+
+@mixin ym-bg-blue-500 {
+    background-color: $blue-500;
+}
+
+@mixin ym-bg-blue-600 {
+    background-color: $blue-600;
+}
+
+@mixin ym-bg-blue-700 {
+    background-color: $blue-700;
+}
+
+@mixin ym-bg-green-50 {
+    background-color: $green-50;
+}
+
+@mixin ym-bg-green-100 {
+    background-color: $green-100;
+}
+
+@mixin ym-bg-green-200 {
+    background-color: $green-200;
+}
+
+@mixin ym-bg-green-500 {
+    background-color: $green-500;
+}
+
+@mixin ym-bg-green-600 {
+    background-color: $green-600;
+}
+
+@mixin ym-bg-green-700 {
+    background-color: $green-700;
+}
+
+@mixin ym-bg-orange-50 {
+    background-color: $orange-50;
+}
+
+@mixin ym-bg-orange-100 {
+    background-color: $orange-100;
+}
+
+@mixin ym-bg-orange-200 {
+    background-color: $orange-200;
+}
+
+@mixin ym-bg-orange-400 {
+    background-color: $orange-400;
+}
+
+@mixin ym-bg-orange-500 {
+    background-color: $orange-500;
+}
+
+@mixin ym-bg-orange-600 {
+    background-color: $orange-600;
+}
+
+@mixin ym-bg-orange-700 {
+    background-color: $orange-700;
+}
+
+@mixin ym-bg-purple-50 {
+    background-color: $purple-50;
+}
+
+@mixin ym-bg-purple-800 {
+    background-color: $purple-800
+}
+
+@mixin ym-bg-red-50 {
+    background-color: $red-50;
+}
+
+@mixin ym-bg-red-100 {
+    background-color: $red-100;
+}
+
+@mixin ym-bg-red-200 {
+    background-color: $red-200;
+}
+
+@mixin ym-bg-red-500 {
+    background-color: $red-500;
+}
+
+@mixin ym-bg-red-600 {
+    background-color: $red-600;
+}
+
+@mixin ym-bg-red-700 {
+    background-color: $red-700;
+}
+
+@mixin ym-bg-t-gray-a-08($hover: true) {
+    background-color: $t-gray-a-08;
+}
+
+@mixin ym-bg-data-viz-blue-500 {
+    background-color: $data-viz-blue-600;
+}
+
+@mixin ym-bg-data-viz-blue-600 {
+    background-color: $data-viz-blue-600;
+}
+
+@mixin ym-bg-data-viz-blue-700 {
+    background-color: $data-viz-blue-700;
+}
+
+@mixin ym-bg-data-viz-blue-800 {
+    background-color: $data-viz-blue-800;
+}
+
+@mixin ym-bg-data-viz-blue-900 {
+    background-color: $data-viz-blue-900;
+}
+
+@mixin ym-bg-data-viz-blue-950 {
+    background-color: $data-viz-blue-950;
+}
+
+@mixin ym-bg-data-viz-orange-500 {
+    background-color: $data-viz-orange-500;
+}
+
+@mixin ym-bg-data-viz-orange-600 {
+    background-color: $data-viz-orange-600;
+}
+
+@mixin ym-bg-data-viz-orange-700 {
+    background-color: $data-viz-orange-700;
+}
+
+@mixin ym-bg-data-viz-orange-800 {
+    background-color: $data-viz-orange-800;
+}
+
+@mixin ym-bg-data-viz-orange-900 {
+    background-color: $data-viz-orange-900;
+}
+
+@mixin ym-bg-data-viz-orange-950 {
+    background-color: $data-viz-orange-950;
+}
+
+@mixin ym-bg-data-viz-aqua-500 {
+    background-color: $data-viz-aqua-500;
+}
+
+@mixin ym-bg-data-viz-aqua-600 {
+    background-color: $data-viz-aqua-600;
+}
+
+@mixin ym-bg-data-viz-aqua-700 {
+    background-color: $data-viz-aqua-700;
+}
+
+@mixin ym-bg-data-viz-aqua-800 {
+    background-color: $data-viz-aqua-800;
+}
+
+@mixin ym-bg-data-viz-aqua-900 {
+    background-color: $data-viz-aqua-900;
+}
+
+@mixin ym-bg-data-viz-aqua-950 {
+    background-color: $data-viz-aqua-950;
+}
+
+@mixin ym-bg-data-viz-green-500 {
+    background-color: $data-viz-green-500
+}
+
+@mixin ym-bg-data-viz-green-600 {
+    background-color: $data-viz-green-600;
+}
+
+@mixin ym-bg-data-viz-green-700 {
+    background-color: $data-viz-green-700;
+}
+
+@mixin ym-bg-data-viz-green-800 {
+    background-color: $data-viz-green-800;
+}
+
+@mixin ym-bg-data-viz-green-900 {
+    background-color: $data-viz-green-900;
+}
+
+@mixin ym-bg-data-viz-green-950 {
+    background-color: $data-viz-green-950;
+}
+
+@mixin ym-bg-data-viz-magenta-500 {
+    background-color: $data-viz-magenta-500;
+}
+
+@mixin ym-bg-data-viz-magenta-600 {
+    background-color: $data-viz-magenta-600;
+}
+
+@mixin ym-bg-data-viz-magenta-700 {
+    background-color: $data-viz-magenta-700;
+}
+
+@mixin ym-bg-data-viz-magenta-800 {
+    background-color: $data-viz-magenta-800;
+}
+
+@mixin ym-bg-data-viz-magenta-900 {
+    background-color: $data-viz-magenta-900;
+}
+
+@mixin ym-bg-data-viz-magenta-950 {
+    background-color: $data-viz-magenta-950;
+}
+
+@mixin ym-bg-none {
+    background: none;
+}
+
+// Background position utilities.
+// naming convention: ym-bg-{position}
+@mixin ym-bg-center {
+    background-position: center;
+}
+
+// Background size utilities.
+// naming convention: ym-bg-{repeat-pattern}
+@mixin ym-bg-size-100p {
+    background-size: 100% 100%;
+}
+
+@mixin ym-bg-size-cover {
+    background-size: cover;
+}
+
+@mixin ym-bg-size-contain {
+    background-size: contain;
+}
+
+// Background repeat utilities.
+// naming convention: ym-bg-{repeat-pattern}
+@mixin ym-bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+// Background image utilities.
+// naming convention: ym-bg-{image-name}
+@mixin ym-bg-chevron-left {
+    background-image: url('#{$ym-icon-chevron-left}');
+}
+
+@mixin ym-bg-chevron-right {
+    background-image: url('#{$ym-icon-chevron-right}');
+}
+
+@mixin ym-bg-chevron-down {
+    background-image: url('#{$ym-icon-chevron-down}')
+}
+
+// Backdrop filter utilities
+// naming convention: ym-filter-{filter-type}-{filter-intensity}
+@mixin ym-backdrop-filter-blur-1 {
+    backdrop-filter: blur($ym-spacing-scale-1);
+}

@@ -1,0 +1,293 @@
+// Flexbox utilities
+// naming convention: ym-{breakpoint}-{property}-{value}
+@mixin ym-align-items-baseline {
+    align-items: baseline;
+}
+
+@mixin ym-align-items-center {
+    align-items: center;
+}
+
+@mixin ym-align-items-flex-start {
+    align-items: flex-start;
+}
+
+@mixin ym-align-items-flex-end {
+    align-items: flex-end;
+}
+
+@mixin ym-align-items-stretch {
+    align-items: stretch;
+}
+
+@mixin ym-lg-align-items-baseline {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-align-items-baseline;
+    }
+}
+
+@mixin ym-sm-align-items-center {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-align-items-center;
+    }
+}
+
+@mixin ym-md-align-items-center {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-align-items-center;
+    }
+}
+
+@mixin ym-lg-align-items-center {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-align-items-center;
+    }
+}
+
+@mixin ym-sm-align-items-flex-start {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-align-items-flex-start;
+    }
+}
+
+@mixin ym-sm-align-items-flex-end {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-align-items-flex-end;
+    }
+}
+
+@mixin ym-lg-align-items-flex-end {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-align-items-flex-end;
+    }
+}
+
+@mixin ym-flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+@mixin ym-lg-flex-wrap-wrap {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-flex-wrap-wrap;
+    }
+}
+
+@mixin ym-xl-flex-wrap-wrap {
+    @include ym-media-breakpoint-up(xl) {
+        @include ym-flex-wrap-wrap;
+    }
+}
+
+@mixin ym-sm-flex-wrap-wrap {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-flex-wrap-wrap;
+    }
+}
+
+@mixin ym-flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+@mixin ym-flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+@mixin ym-sm-flex-wrap-nowrap {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-flex-wrap-nowrap;
+    }
+}
+
+@mixin ym-flex-direction-column {
+    flex-direction: column;
+}
+
+@mixin ym-sm-flex-direction-column {
+    @include ym-media-breakpoint-down(md) {
+        @include ym-flex-direction-column;
+    }
+}
+
+@mixin ym-md-flex-direction-column {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-flex-direction-column;
+    }
+}
+
+@mixin ym-lg-flex-direction-column {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-flex-direction-column;
+    }
+}
+
+@mixin ym-xs-flex-direction-column {
+    @include ym-media-breakpoint-down(sm) {
+        @include ym-flex-direction-column;
+    }
+}
+
+@mixin ym-flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+@mixin ym-flex-direction-row {
+    flex-direction: row;
+}
+
+@mixin ym-sm-flex-direction-row {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-flex-direction-row;
+    }
+}
+
+@mixin ym-md-flex-direction-row {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-flex-direction-row;
+    }
+}
+
+@mixin ym-lg-flex-direction-row {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-flex-direction-row;
+    }
+}
+
+@mixin ym-xl-flex-direction-row {
+    @include ym-media-breakpoint-up(xl) {
+        @include ym-flex-direction-row;
+    }
+}
+
+@mixin ym-flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+@mixin ym-flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+@mixin ym-flex-grow-0 {
+    flex-grow: 0;
+}
+
+@mixin ym-flex-grow-1 {
+    flex-grow: 1;
+}
+
+@mixin ym-flex-grow-2 {
+    flex-grow: 2;
+}
+
+@mixin ym-md-flex-grow-0 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-flex-grow-0;
+    }
+}
+
+@mixin ym-md-flex-grow-1 {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-flex-grow-1;
+    }
+}
+
+@mixin ym-lg-flex-grow-1 {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-flex-grow-1;
+    }
+}
+
+@mixin ym-flex-basis-0 {
+    flex-basis: 0;
+}
+
+@mixin ym-flex-basis-quarter {
+    flex-basis: 25%;
+}
+
+@mixin ym-flex-basis-third {
+    flex-basis: 33%;
+}
+
+@mixin ym-flex-basis-two-thirds {
+    flex-basis: 66%;
+}
+
+@mixin ym-flex-flow-row-wrap {
+    flex-flow: row wrap;
+}
+
+@mixin ym-justify-content-center {
+    justify-content: center;
+}
+
+@mixin ym-justify-content-end {
+    justify-content: end;
+}
+
+@mixin ym-sm-justify-content-end {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-justify-content-end;
+    }
+}
+
+@mixin ym-md-justify-content-end {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-justify-content-end;
+    }
+}
+
+@mixin ym-lg-justify-content-end {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-justify-content-end;
+    }
+}
+
+@mixin ym-justify-content-space-between {
+    justify-content: space-between;
+}
+
+@mixin ym-md-justify-content-space-between {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-justify-content-space-between;
+    }
+}
+
+@mixin ym-justify-content-start {
+    justify-content: flex-start;
+}
+
+@mixin ym-md-justify-content-start {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-justify-content-start;
+    }
+}
+
+@mixin ym-lg-justify-content-start {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-justify-content-start;
+    }
+}
+
+@mixin ym-align-self-start {
+    align-self: flex-start;
+}
+
+@mixin ym-align-self-end {
+    align-self: flex-end;
+}
+
+@mixin ym-align-self-center {
+    align-self: center;
+}
+
+@mixin ym-sm-align-self-center {
+    @include ym-media-breakpoint-up(md) {
+        @include ym-align-self-center;
+    }
+}
+
+// Order utilities
+// naming convention: ym-order-{position}
+@mixin ym-order-n1 {
+    order: -1;
+}

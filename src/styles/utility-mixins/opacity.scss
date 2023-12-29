@@ -1,0 +1,29 @@
+// Opacity utilities
+// naming convention: ym-opacity-{amount}
+@mixin ym-opacity-0 {
+    opacity: 0;
+}
+
+@mixin ym-opacity-3 {
+    opacity: 0.3;
+}
+
+@mixin ym-opacity-4 {
+    opacity: 0.4;
+}
+
+@mixin ym-opacity-5 {
+    opacity: 0.5;
+}
+
+@mixin ym-opacity-6 {
+    opacity: 0.6;
+}
+
+@mixin ym-opacity-7 {
+    opacity: 0.7;
+}
+
+@mixin ym-opacity-10 {
+    opacity: 1;
+}

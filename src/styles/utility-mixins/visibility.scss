@@ -1,0 +1,9 @@
+// Visibility utilities.
+// naming convention: ym-visibility-[value]
+@mixin ym-visibility-hidden {
+    visibility: hidden;
+}
+
+@mixin ym-visibility-visible {
+    visibility: visible;
+}

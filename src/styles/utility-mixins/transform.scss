@@ -1,0 +1,58 @@
+// Transform utilities.
+// naming convention: ym-{transform}-{position}-{value}, or
+//                    ym-{transform}-{value}
+@mixin ym-translate-x-0 {
+    transform: translateX(0);
+}
+
+@mixin ym-translate-x-100 {
+    transform: translateX(100%);
+}
+
+@mixin ym-translate-x-n50 {
+    transform: translateX(-50%);
+}
+
+@mixin ym-translate-y-0 {
+    transform: translateY(0);
+}
+
+@mixin ym-translate-y-100 {
+    transform: translateY(100%);
+}
+
+@mixin ym-translate-y-n50 {
+    transform: translateY(-50%);
+}
+
+@mixin ym-translate-y-n100 {
+    transform: translateY(-100%);
+}
+
+@mixin ym-translate-n50 {
+    transform: translate(-50%, -50%);
+}
+
+@mixin ym-rotate-90 {
+    transform: rotate(90deg);
+}
+
+@mixin ym-rotate-180 {
+    transform: rotate(180deg);
+}
+
+@mixin ym-rotate-270 {
+    transform: rotate(270deg);
+}
+
+@mixin ym-flip-horizontal {
+    transform: scale(-1, 1);
+}
+
+@mixin ym-flip-vertical {
+    transform: scale(1, -1);
+}
+
+@mixin ym-flip-both {
+    transform: scale(-1, -1);
+}

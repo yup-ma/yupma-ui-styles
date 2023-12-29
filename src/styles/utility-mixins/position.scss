@@ -1,0 +1,213 @@
+// Position utilities.
+// naming convention: ym-{property-value}
+@mixin ym-relative {
+    position: relative;
+}
+
+@mixin ym-absolute {
+    position: absolute;
+}
+
+@mixin ym-static {
+    position: static;
+}
+
+@mixin ym-fixed {
+    position: fixed;
+}
+
+@mixin ym-sticky {
+    position: sticky;
+}
+
+@mixin ym-lg-sticky {
+    @include ym-media-breakpoint-up(lg) {
+        @include ym-sticky;
+    }
+}
+
+// Placement utilities.
+// For absolute or fixed positioned elements
+// naming convention: ym-{position}-{spacing-scale-index}
+
+// Placement utilities
+// naming convention: ym-{position}-{value}
+@mixin ym-top-auto {
+    top: auto;
+}
+
+@mixin ym-top-0 {
+    top: 0;
+}
+
+@mixin ym-top-1 {
+    top: $ym-spacing-scale-1;
+}
+
+@mixin ym-top-2 {
+    top: $ym-spacing-scale-2;
+}
+
+@mixin ym-top-3 {
+    top: $ym-spacing-scale-3;
+}
+
+@mixin ym-top-4 {
+    top: $ym-spacing-scale-4;
+}
+
+@mixin ym-top-5 {
+    top: $ym-spacing-scale-5;
+}
+
+@mixin ym-top-6 {
+    top: $ym-spacing-scale-6;
+}
+
+@mixin ym-top-7 {
+    top: $ym-spacing-scale-7;
+}
+
+@mixin ym-top-8 {
+    top: $ym-spacing-scale-8;
+}
+
+@mixin ym-top-half {
+    top: 50%;
+}
+
+@mixin ym-top-66vh {
+    top: 66vh;
+}
+
+@mixin ym-top-100vh {
+    top: 100vh;
+}
+
+@mixin ym-right-auto {
+    right: auto;
+}
+
+@mixin ym-right-0 {
+    right: 0;
+}
+
+@mixin ym-right-1 {
+    right: $ym-spacing-scale-1;
+}
+
+@mixin ym-right-2 {
+    right: $ym-spacing-scale-2;
+}
+
+@mixin ym-right-3 {
+    right: $ym-spacing-scale-3;
+}
+
+@mixin ym-right-4 {
+    right: $ym-spacing-scale-4;
+}
+
+@mixin ym-right-5 {
+    right: $ym-spacing-scale-5;
+}
+
+@mixin ym-right-6 {
+    right: $ym-spacing-scale-6;
+}
+
+@mixin ym-right-7 {
+    right: $ym-spacing-scale-7;
+}
+
+@mixin ym-bottom-0 {
+    bottom: 0;
+}
+
+@mixin ym-bottom-1 {
+    bottom: $ym-spacing-scale-1;
+}
+
+@mixin ym-bottom-2 {
+    bottom: $ym-spacing-scale-2;
+}
+
+@mixin ym-bottom-3 {
+    bottom: $ym-spacing-scale-3;
+}
+
+@mixin ym-bottom-4 {
+    bottom: $ym-spacing-scale-4;
+}
+
+@mixin ym-bottom-5 {
+    bottom: $ym-spacing-scale-5;
+}
+
+@mixin ym-bottom-6 {
+    bottom: $ym-spacing-scale-6;
+}
+
+@mixin ym-bottom-7 {
+    bottom: $ym-spacing-scale-7;
+}
+
+@mixin ym-left-auto {
+    left: auto;
+}
+
+@mixin ym-left-0 {
+    left: 0;
+}
+
+@mixin ym-left-1 {
+    left: $ym-spacing-scale-1;
+}
+
+@mixin ym-left-2 {
+    left: $ym-spacing-scale-2;
+}
+
+@mixin ym-left-3 {
+    left: $ym-spacing-scale-3;
+}
+
+@mixin ym-left-4 {
+    left: $ym-spacing-scale-4;
+}
+
+@mixin ym-left-5 {
+    left: $ym-spacing-scale-5;
+}
+
+@mixin ym-left-6 {
+    left: $ym-spacing-scale-6;
+}
+
+@mixin ym-left-7 {
+    left: $ym-spacing-scale-7;
+}
+
+@mixin ym-left-n5 {
+    left: -$ym-spacing-scale-5;
+}
+
+@mixin ym-left-half {
+    left: 50%;
+}
+
+@mixin ym-top-n4 {
+    top: -$ym-spacing-scale-4;
+}
+
+@mixin ym-top-n5 {
+    top: -$ym-spacing-scale-5;
+}
+
+@mixin ym-float-left {
+    float: left;
+}
+
+@mixin ym-float-right {
+    float: right;
+}

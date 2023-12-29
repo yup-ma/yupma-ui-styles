@@ -1,0 +1,21 @@
+// Composite utilites
+// naming convention: ym--{name}
+// purpose: This is for composite classes that provide significant readability and maintainability nprofit.
+
+// PLEASE NOTE: When considering to abstract a set of utility classes, please prefer, in order:
+//   1. Not abstracting
+//   2. Create a component
+//   3. Create a constant scoped within a specific module
+//   4. Create a composite class if there are many preexisting occurences with a clear design responsibility
+
+// notes:
+//   - Composite classes should be very short and not have any nested rules.
+@mixin ym--flex-center {
+    @include ym-display-flex;
+    @include ym-align-items-center;
+    @include ym-justify-content-center;
+}
+
+@mixin ym--focus($focus: true) {
+    @include ym-focus;
+}

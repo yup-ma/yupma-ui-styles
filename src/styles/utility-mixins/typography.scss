@@ -1,0 +1,167 @@
+// Font family utility
+// naming convention: ym-font-family-{family-name}
+// notes: 
+// - Strictly based on design system typography specs
+@mixin ym-font-monospace {
+    font-family: $ym-monospace-font;
+    font-variant-ligatures: none;
+}
+
+@mixin ym-font-regular {
+    font-family: $ym-regular-font;
+}
+
+// Font style utility
+// naming convention: ym-font-style-{family-name}
+@mixin ym-font-style-italic {
+    font-style: italic;
+}
+
+@mixin ym-font-style-normal {
+    font-style: normal;
+}
+
+// Font size utility
+// naming convention: ym-font-{type-scale-size}
+// notes: 
+// - Strictly based on design system type scale. See 
+// $ym-type-scale for further references.
+@mixin ym-font-xs {
+    font-size: $ym-font-size-xs;
+}
+
+@mixin ym-font-sm {
+    font-size: $ym-font-size-sm;
+}
+
+@mixin ym-font-base {
+    font-size: $ym-font-size;
+}
+
+@mixin ym-font-lg {
+    font-size: $ym-font-size-lg;
+}
+
+@mixin ym-font-size-h-display {
+    font-size: $ym-font-size-h-display;
+}
+
+@mixin ym-font-size-h1 {
+    font-size: $ym-font-size-h1;
+}
+
+@mixin ym-font-size-h2 {
+    font-size: $ym-font-size-h2;
+}
+
+@mixin ym-font-size-h-display-xl {
+    font-size: $ym-font-size-h-display-xl;
+}
+
+@mixin ym-font-size-h1-xl {
+    font-size: $ym-font-size-h1-xl;
+}
+
+@mixin ym-font-size-h2-xl {
+    font-size: $ym-font-size-h2-xl;
+}
+
+@mixin ym-font-icon-size {
+    font-size: $default-icon-size;
+}
+
+@each $ym-icon-size in $ym-icon-sizes {
+    .ym-font-icon-size-#{$ym-icon-size} {
+        font-size: $ym-icon-size + px;
+    }
+}
+
+@mixin ym-reset-font-size {
+    font-size: inherit;
+}
+
+// Font-weight utilities.
+// naming convention: ym-font-weight-[bold/normal/number]
+@mixin ym-font-weight-100 {
+    font-weight: 100;
+}
+
+@mixin ym-font-weight-300 {
+    font-weight: 300;
+}
+
+@mixin ym-font-weight-normal {
+    font-weight: $ym-font-weight-normal;
+}
+
+@mixin ym-font-weight-semibold {
+    font-weight: $ym-font-weight-semibold;
+}
+
+@mixin ym-font-weight-bold {
+    font-weight: $ym-font-weight-bold;
+}
+
+@mixin ym-sm-font-weight-bold {
+    @include ym-media-breakpoint-up(sm) {
+        @include ym-font-weight-bold;
+    }
+}
+
+// Line height utilities.
+// naming convention: ym-line-height-{line-height-in-pixels}
+// notes: 
+// - Strictly based in ym-line-height-{n} variables
+@mixin ym-line-height-0 {
+    line-height: 0;
+}
+
+@mixin ym-line-height-1 {
+    line-height: 1;
+}
+
+@mixin ym-line-height-normal {
+    line-height: $ym-line-height-16;
+}
+
+@mixin ym-line-height-12 {
+    line-height: $ym-line-height-12;
+}
+
+@mixin ym-line-height-20 {
+    line-height: $ym-line-height-20;
+}
+
+@mixin ym-line-height-24 {
+    line-height: $ym-line-height-24;
+}
+
+@mixin ym-line-height-28 {
+    line-height: $ym-line-height-28;
+}
+
+@mixin ym-line-height-32 {
+    line-height: $ym-line-height-32;
+}
+
+@mixin ym-line-height-36 {
+    line-height: $ym-line-height-36;
+}
+
+@mixin ym-line-height-42 {
+    line-height: $ym-line-height-42;
+}
+
+@mixin ym-line-height-52 {
+    line-height: $ym-line-height-52;
+}
+
+@mixin ym-reset-line-height {
+    line-height: inherit;
+}
+
+// Letter spacing utilities
+// naming convention: ym-letter-spacing-{letter-spacing}{unit}
+@mixin ym-letter-spacing-06em {
+    letter-spacing: 0.06em;
+}

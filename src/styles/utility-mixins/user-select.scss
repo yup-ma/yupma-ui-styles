@@ -1,0 +1,9 @@
+// User select utilities
+// naming convention: ym-user-select-{config-name}
+@mixin ym-user-select-none {
+    user-select: none;
+}
+
+@mixin ym-user-select-text {
+    user-select: text;
+}

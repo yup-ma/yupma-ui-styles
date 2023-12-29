@@ -1,0 +1,50 @@
+// Utility class library
+
+// ===========
+// = WARNING =
+// ===========
+
+// Please take caution to make sure that the utility naming and values are consistent. We'd like to
+// be able to automate this file in the future.
+
+// naming conventions
+// - Prefix the utility names with the ym- namespace
+// - Use t(op), b(ottom), l(eft), r(ight) to indicate
+//   positioning variations, i.e. ym-border-b-1
+
+@import './accessibility';
+@import './animation';
+@import './appearance';
+@import './background';
+@import './border';
+@import './box-shadow';
+@import './box-sizing';
+@import './clearfix';
+@import './color';
+@import './composite';
+@import './content';
+@import './cursor';
+@import './display';
+@import './flex';
+@import './grid';
+@import './isolation';
+@import './list-style';
+@import './masks';
+@import './mix-blend-mode';
+@import './opacity';
+@import './outline';
+@import './overflow';
+@import './pointer-events';
+@import './position';
+@import './sizing';
+@import './spacing';
+@import './svg';
+@import './table';
+@import './text';
+@import './transform';
+@import './transition';
+@import './typography';
+@import './user-select';
+@import './vertical-align';
+@import './visibility';
+@import './z-index';

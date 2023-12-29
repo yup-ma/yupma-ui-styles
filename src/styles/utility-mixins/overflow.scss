@@ -1,0 +1,42 @@
+// Overflow utilities.
+// naming convention: ym-overflow-{property-value} |
+// ym-overflow-x{property-value} | ym-overflow-y-{property-value}
+@mixin ym-overflow-hidden {
+    overflow: hidden;
+}
+
+@mixin ym-overflow-x-auto {
+    overflow-x: auto;
+}
+
+@mixin ym-overflow-y-auto {
+    overflow-y: auto;
+}
+
+@mixin ym-overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+@mixin ym-overflow-wrap-break {
+    overflow-wrap: break-word;
+}
+
+@mixin ym-overflow-wrap-anywhere {
+    overflow-wrap: anywhere;
+}
+
+@mixin ym-overflow-x-scroll {
+    overflow-x: scroll;
+}
+
+@mixin ym-overflow-scroll {
+    overflow: scroll;
+}
+
+@mixin ym-overflow-auto {
+    overflow: auto;
+}
+
+@mixin ym-overflow-visible {
+    overflow: visible;
+}

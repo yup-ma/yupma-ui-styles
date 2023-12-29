@@ -1,0 +1,35 @@
+// See https://github.com/twbs/bootstrap/blob/v4-dev/scss/mixins/_screen-reader.scss
+// Only display content to screen readers
+
+@mixin ym-sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@mixin ym-sr-only-focusable {
+    &:not(:focus) {
+        @include ym-sr-only();
+    }
+}
+
+//Use in conjuction with .sr-only to only display content when it's focused.
+// Useful for "Skip to main content" links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+
+// @mixin ym-sr-only-focusable() {
+//     &:active,
+//     &:focus {
+//         position: static;
+//         width: auto;
+//         height: auto;
+//         overflow: visible;
+//         clip: auto;
+//         white-space: normal;
+//     }
+// }

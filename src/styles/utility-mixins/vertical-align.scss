@@ -1,0 +1,20 @@
+// Vertical align utilities
+@mixin ym-vertical-align-baseline {
+    vertical-align: baseline;
+}
+
+@mixin ym-vertical-align-middle {
+    vertical-align: middle;
+}
+
+@mixin ym-vertical-align-top {
+    vertical-align: top;
+}
+
+@mixin ym-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+@mixin ym-vertical-align-text-bottom {
+    vertical-align: text-bottom;
+}

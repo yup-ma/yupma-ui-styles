@@ -1,0 +1,5 @@
+// Table utilities.
+// naming convention: ym-table-{table-property}-{value}
+@mixin ym-table-layout-fixed {
+    table-layout: fixed;
+}

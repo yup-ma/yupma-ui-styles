@@ -1,0 +1,452 @@
+@import 'functions';
+
+// $ym-spacing-scale-1: 2 px;
+// $ym-spacing-scale-2: 4 px;
+// $ym-spacing-scale-3: 8 px;
+// $ym-spacing-scale-4: 12 px;
+// $ym-spacing-scale-5: 16 px;
+// $ym-spacing-scale-6: 24 px;
+// $ym-spacing-scale-7: 32 px;
+// $ym-spacing-scale-8: 40 px;
+// $ym-spacing-scale-9: 48 px;
+// $ym-spacing-scale-10: 56 px;
+// $ym-spacing-scale-11: 64 px;
+// $ym-spacing-scale-12: 72 px;
+// $ym-spacing-scale-13: 80 px;
+// $ym-spacing-scale-14: 96 px;
+// $ym-spacing-scale-15: 120 px;
+// $ym-spacing-scale-20: 160 px;
+
+// Layout
+$grid-size: px-to-rem(8px) !default;
+$ym-spacing-scale-1: 0.25 * $grid-size; //2px or 4px is used for spacing within a component or between icons and related text.
+$ym-spacing-scale-2: 0.5 * $grid-size; //2px or 4px is used for spacing within a component or between icons and related text.
+$ym-spacing-scale-3: $grid-size; //8px is used to separate related elements and for small padding.
+$ym-spacing-scale-4: 1.5 * $grid-size; //12px is used only for right and left padding of buttons, form elements and horizontal tabs.
+$ym-spacing-scale-5: 2 * $grid-size; //16px is used to separate unrelated elements or groups and for normal padding.
+$ym-spacing-scale-6: 3 * $grid-size; //24px is used to separate sub-sections of content.
+$ym-spacing-scale-7: 4 * $grid-size; //32px is used to separate sections of content.
+$ym-spacing-scale-8: 5 * $grid-size; //40px
+$ym-spacing-scale-9: 6 * $grid-size; //48px
+$ym-spacing-scale-10: 7 * $grid-size; //56px
+$ym-spacing-scale-11: 8 * $grid-size; //64px
+$ym-spacing-scale-11-5: 9 * $grid-size; //72px
+$ym-spacing-scale-12: 10 * $grid-size; //80px
+$ym-spacing-scale-13: 12 * $grid-size; //96px
+$ym-spacing-scale-15: 15 * $grid-size; //120px
+$ym-spacing-scale-20: 20 * $grid-size; //160px
+$ym-spacing-scale-26: 26 * $grid-size; //208px
+$ym-spacing-scale-28: 28 * $grid-size; //224px
+$ym-spacing-scale-30: 30 * $grid-size; //240px
+$ym-spacing-scale-34: 34 * $grid-size; //272px
+$ym-spacing-scale-48: 48 * $grid-size; //384px
+$ym-spacing-scale-54: 54 * $grid-size; //432px
+$ym-spacing-scale-62: 62 * $grid-size; //496px
+$ym-spacing-scale-75: 75 * $grid-size; //640px
+$ym-spacing-scale-80: 80 * $grid-size; //640px
+
+// Responsive breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$breakpoints: (
+  xs: 0,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
+
+// Max widths
+$limited-layout-width: 990px !default;
+$container-xl: 1280px !default;
+
+// Color schema
+$black: #000 !default;
+$black-normal: #333 !default;
+
+$white: #fff !default;
+$white-contrast: #fff !default;
+$white-normal: #f0f0f0 !default;
+$white-dark: #eaeaea !default;
+$white-transparent: rgba(255, 255, 255, 0.8) !default;
+$transparent-rgba: rgba($white, 0);
+
+$green: #2da160 !default;
+$green-50: tint($green, 80%);
+$green-100: tint($green, 60%);
+$green-200: tint($green, 40%);
+$green-300: tint($green, 20%);
+$green-400: $green;
+$green-500: darken($green, 20%);
+$green-600: darken($green, 30%);
+$green-700: darken($green, 50%);
+$green-800: darken($green, 75%);
+$green-900: darken($green, 80%);
+$green-950: darken($green, 85%);
+
+$blue: #428fdc !default;
+$blue-50: tint($blue, 80%);
+$blue-100: tint($blue, 60%);
+$blue-200: tint($blue, 40%);
+$blue-300: tint($blue, 20%);
+$blue-400: $blue;
+$blue-500: darken($blue, 20%);
+$blue-600: darken($blue, 30%);
+$blue-700: darken($blue, 50%);
+$blue-800: darken($blue, 75%);
+$blue-900: darken($blue, 80%);
+$blue-950: darken($blue, 85%);
+
+$orange: #c17d10 !default;
+$orange-50: tint($orange, 80%);
+$orange-100: tint($orange, 60%);
+$orange-200: tint($orange, 40%);
+$orange-300: tint($orange, 20%);
+$orange-400: $orange;
+$orange-500: darken($orange, 20%);
+$orange-600: darken($orange, 30%);
+$orange-700: darken($orange, 50%);
+$orange-800: darken($orange, 75%);
+$orange-900: darken($orange, 80%);
+$orange-950: darken($orange, 85%);
+
+$red: #e72000 !default;
+$red-50: tint($red, 80%);
+$red-100: tint($red, 60%);
+$red-200: tint($red, 40%);
+$red-300: tint($red, 20%);
+$red-400: $red;
+$red-500: darken($red, 20%);
+$red-600: darken($red, 30%);
+$red-700: darken($red, 50%);
+$red-800: darken($red, 75%);
+$red-900: darken($red, 80%);
+$red-950: darken($red, 85%);
+
+$purple: #9475db !default;
+$purple-50: tint($purple, 80%);
+$purple-100: tint($purple, 60%);
+$purple-200: tint($purple, 40%);
+$purple-300: tint($purple, 20%);
+$purple-400: $purple;
+$purple-500: darken($purple, 20%);
+$purple-600: darken($purple, 30%);
+$purple-700: darken($purple, 50%);
+$purple-800: darken($purple, 75%);
+$purple-900: darken($purple, 80%);
+$purple-950: darken($purple, 85%);
+
+$gray: #89888d !default;
+$gray-10: tint($gray, 85%);
+$gray-50: tint($gray, 80%);
+$gray-100: tint($gray, 60%);
+$gray-200: tint($gray, 40%);
+$gray-300: tint($gray, 20%);
+$gray-400: $gray;
+$gray-500: darken($gray, 20%);
+$gray-600: darken($gray, 30%);
+$gray-700: darken($gray, 50%);
+$gray-800: darken($gray, 75%);
+$gray-900: darken($gray, 80%);
+$gray-950: darken($gray, 85%);
+
+// Brand colors
+$brand: #0279e1 !default;
+$brand-light: #deefff !default;
+$brand-charcoal: #171321 !default;
+$brand-orange-01: #fca326 !default;
+$brand-orange-02: #fc6d26 !default;
+$brand-orange-03: #e24329 !default;
+$brand-purple-01: #a989f5 !default;
+$brand-purple-02: #7759c2 !default;
+$brand-gray-01: #d1d0d3 !default;
+$brand-gray-02: #a2a1a6 !default;
+$brand-gray-03: #74717a !default;
+$brand-gray-04: #45424d !default;
+$brand-gray-05: #2b2838 !default;
+
+// Data visualization color palette
+
+$data-viz-green: #81ac41 !default;
+$data-viz-green-50: tint($data-viz-green, 80%);
+$data-viz-green-100: tint($data-viz-green, 60%);
+$data-viz-green-200: tint($data-viz-green, 40%);
+$data-viz-green-300: tint($data-viz-green, 20%);
+$data-viz-green-400: $data-viz-green;
+$data-viz-green-500: darken($data-viz-green, 20%);
+$data-viz-green-600: darken($data-viz-green, 30%);
+$data-viz-green-700: darken($data-viz-green, 50%);
+$data-viz-green-800: darken($data-viz-green, 75%);
+$data-viz-green-900: darken($data-viz-green, 80%);
+$data-viz-green-950: darken($data-viz-green, 85%);
+
+$data-viz-aqua: #00acc4 !default;
+$data-viz-aqua-50: tint($data-viz-aqua, 80%);
+$data-viz-aqua-100: tint($data-viz-aqua, 60%);
+$data-viz-aqua-200: tint($data-viz-aqua, 40%);
+$data-viz-aqua-300: tint($data-viz-aqua, 20%);
+$data-viz-aqua-400: $data-viz-aqua;
+$data-viz-aqua-500: darken($data-viz-aqua, 20%);
+$data-viz-aqua-600: darken($data-viz-aqua, 30%);
+$data-viz-aqua-700: darken($data-viz-aqua, 50%);
+$data-viz-aqua-800: darken($data-viz-aqua, 75%);
+$data-viz-aqua-900: darken($data-viz-aqua, 80%);
+$data-viz-aqua-950: darken($data-viz-aqua, 85%);
+
+$data-viz-blue: #7992f5 !default;
+$data-viz-blue-50: tint($data-viz-blue, 80%);
+$data-viz-blue-100: tint($data-viz-blue, 60%);
+$data-viz-blue-200: tint($data-viz-blue, 40%);
+$data-viz-blue-300: tint($data-viz-blue, 20%);
+$data-viz-blue-400: $data-viz-blue;
+$data-viz-blue-500: darken($data-viz-blue, 20%);
+$data-viz-blue-600: darken($data-viz-blue, 30%);
+$data-viz-blue-700: darken($data-viz-blue, 50%);
+$data-viz-blue-800: darken($data-viz-blue, 75%);
+$data-viz-blue-900: darken($data-viz-blue, 80%);
+$data-viz-blue-950: darken($data-viz-blue, 85%);
+
+$data-viz-magenta: #e86e9a !default;
+$data-viz-magenta-50: tint($data-viz-magenta, 80%);
+$data-viz-magenta-100: tint($data-viz-magenta, 60%);
+$data-viz-magenta-200: tint($data-viz-magenta, 40%);
+$data-viz-magenta-300: tint($data-viz-magenta, 20%);
+$data-viz-magenta-400: $data-viz-magenta;
+$data-viz-magenta-500: darken($data-viz-magenta, 20%);
+$data-viz-magenta-600: darken($data-viz-magenta, 30%);
+$data-viz-magenta-700: darken($data-viz-magenta, 50%);
+$data-viz-magenta-800: darken($data-viz-magenta, 75%);
+$data-viz-magenta-900: darken($data-viz-magenta, 80%);
+$data-viz-magenta-950: darken($data-viz-magenta, 85%);
+
+$data-viz-orange: #9475db !default;
+$data-viz-orange-50: tint($data-viz-orange, 80%);
+$data-viz-orange-100: tint($data-viz-orange, 60%);
+$data-viz-orange-200: tint($data-viz-orange, 40%);
+$data-viz-orange-300: tint($data-viz-orange, 20%);
+$data-viz-orange-400: $data-viz-orange;
+$data-viz-orange-500: darken($data-viz-orange, 20%);
+$data-viz-orange-600: darken($data-viz-orange, 30%);
+$data-viz-orange-700: darken($data-viz-orange, 50%);
+$data-viz-orange-800: darken($data-viz-orange, 75%);
+$data-viz-orange-900: darken($data-viz-orange, 80%);
+$data-viz-orange-950: darken($data-viz-orange, 85%);
+
+$darken-normal-factor: 7%;
+$darken-dark-faactor: 10%;
+$darken-border-factor: 5%;
+$darken-border-dashed-factor: 25%;
+
+$t-gray-a-02: rgba($gray-950, 0.02);
+$t-gray-a-04: rgba($gray-950, 0.04);
+$t-gray-a-06: rgba($gray-950, 0.06);
+$t-gray-a-08: rgba($gray-950, 0.08);
+$t-gray-a-16: rgba($gray-950, 0.16);
+$t-gray-a-24: rgba($gray-950, 0.24);
+
+//Text
+$ym-text-color: $gray-900 !default;
+$ym-text-color-secondary: $gray-500 !default;
+$ym-text-color-disabled: $gray-400 !default;
+
+$ym-font-weight-light: 300;
+$ym-font-weight-normal: 400;
+$ym-font-weight-semibold: 500;
+$ym-font-weight-bold: 600;
+
+$ym-font-weights: (
+  'normal': $ym-font-weight-normal,
+  'bold': $ym-font-weight-bold,
+);
+
+// Line height
+$ym-line-height-12: px-to-rem(12px);
+$ym-line-height-16: px-to-rem(16px);
+$ym-line-height-20: px-to-rem(20px);
+$ym-line-height-24: px-to-rem(24px);
+$ym-line-height-28: px-to-rem(28px);
+$ym-line-height-32: px-to-rem(32px);
+$ym-line-height-36: px-to-rem(36px);
+$ym-line-height-42: px-to-rem(42px);
+$ym-line-height-44: px-to-rem(44px);
+$ym-line-height-52: px-to-rem(52px);
+
+// UI typescale
+
+// default (min-width: 0)
+$ym-font-size: px-to-rem(14px);
+$ym-font-size-xs: px-to-rem(10px);
+$ym-font-size-sm: px-to-rem(12px);
+$ym-font-size-lg: px-to-rem(16px);
+
+$ym-font-size-h-display: px-to-rem(28px);
+$ym-font-size-h1: px-to-rem(23px);
+$ym-font-size-h2: px-to-rem(19px);
+
+// breakpoint (min-width: 768px
+$ym-font-size-h-display-md: px-to-rem(31px);
+$ym-font-size-h1-md: px-to-rem(25px);
+$ym-font-size-h2-md: px-to-rem(20px);
+
+// breakpoint (min-width: 1200px)
+$ym-font-size-h-display-xl: px-to-rem(45px);
+$ym-font-size-h1-xl: px-to-rem(32px);
+$ym-font-size-h2-xl: px-to-rem(23px);
+
+// Fonts
+$ym-monospace-font: 'Courier New', Courier, monospace;
+$ym-regular-font: 'Roboto', sans-serif;
+
+$ym-fonts: (
+  'monospace': $ym-monospace-font,
+  'regular': $ym-regular-font,
+);
+
+$border-color: $gray-100 !default;
+
+// use px for borders rather than rem
+// we don't want borders to scale with font size
+// 1px can end up being rounded to 0 after
+// conversion to/from rem
+$ym-border-size-1: 1px;
+$ym-border-size-2: 2px;
+$ym-border-size-3: 3px;
+$ym-border-size-4: 4px;
+$ym-border-size-5: 5px;
+$ym-border-size-8: 8px;
+
+// border roundness
+$ym-border-radius-small: $ym-spacing-scale-1;
+$ym-border-radius-base: $ym-spacing-scale-2;
+$ym-border-radius-large: $ym-spacing-scale-3;
+$ym-border-radius-2: $ym-spacing-scale-2;
+$ym-border-radius-3: $ym-spacing-scale-3;
+$ym-border-radius-4: $ym-spacing-scale-4;
+$ym-border-radius-5: $ym-spacing-scale-5;
+$ym-border-radius-6: $ym-spacing-scale-6;
+$ym-border-radius-7: $ym-spacing-scale-7;
+$ym-border-radius-full: 50%;
+
+// transition parameters
+$ym-transition-duration-slow: 0.4s !default;
+$ym-transition-duration-medium: 0.2s !default;
+
+// Focus ring
+$outline-offset: 1px;
+$outline-width: 2px;
+$outline: #{$outline-offset + $outline-width};
+$focus-ring: 0 0 0 $outline-offset $white, 0 0 0 #{$outline-offset + $outline-width} $blue-400;
+$focus-ring-inset: inset 0 0 0 #{$outline-width + $outline-offset} $white, inset 0 0 0 $outline-offset $white;
+$focus-ring-dark: 0 0 0 $outline-offset rgba($black, 0.6), 0 0 0 #{$outline-offset + $outline-width} $blue-300;
+$focus-ring-outline: $outline-width solid $blue-400;
+
+// Toasts
+$toast-max-width: px-to-rem(586px);
+$toast-padding-right: px-to-rem(42px);
+$toast-background-color: #303030;
+
+// Chart tooltip
+$chart-tooltip-max-width: px-to-rem(512px);
+
+$ym-icon-chevron-left: 'data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L7.414 8l2.293-2.293a1 1 0 0 0-1.414-1.414l-3 3z"/></svg>';
+$ym-icon-chevron-right: 'data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" d="M10.707 7.293a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L8.586 8 6.293 5.707a1 1 0 0 1 1.414-1.414l3 3z"/></svg>';
+$ym-icon-chevron-down: 'data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" d="M7.293 10.707a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L8 8.586 5.707 6.293a1 1 0 0 0-1.414 1.414l3 3z"/></svg>';
+$ym-icon-select-chevron-down: 'data:image/svg+xml,%3Csvg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 0.21967C0.512563 -0.0732232 0.987437 -0.0732232 1.28033 0.21967L4 2.93934L6.71967 0.21967C7.01256 -0.073223 7.48744 -0.0732229 7.78033 0.21967C8.07322 0.512563 8.07322 0.987437 7.78033 1.28033L4.53033 4.53033C4.23744 4.82322 3.76256 4.82322 3.46967 4.53033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z" fill="%23666666"/%3E%3C/svg%3E%0A';
+$ym-icon-check: 'data:image/svg+xml,%3Csvg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1 3.05299L2.99123 5L7 1" stroke="white" stroke-width="2"/%3E%3C/svg%3E%0A';
+$ym-icon-indeterminate: 'data:image/svg+xml,%3Csvg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 1L8 1" stroke="white" stroke-width="2"/%3E%3C/svg%3E%0A';
+$ym-icon-radio: 'data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="3" cy="3" r="3" fill="white"/%3E%3C/svg%3E%0A';
+
+// Icons
+$default-icon-size: px-to-rem(16px);
+$ym-icon-sizes: 8 12 14 16 20 24 32 48 72;
+
+// Dropdowns
+$ym-dropdown-width: px-to-rem(240px);
+$ym-new-dropdown-width: px-to-rem(256px);
+$ym-dropdown-width-narrow: px-to-rem(160px);
+$ym-dropdown-width-wide: px-to-rem(400px);
+$ym-max-dropdown-max-height: px-to-rem(312px);
+
+// Broadcast messages
+$ym-broadcast-message-notification-max-width: px-to-rem(300px);
+
+// Modal widths
+$ym-modal-small-width: px-to-rem(512px);
+$ym-modal-medium-width: px-to-rem(768px);
+$ym-modal-large-width: px-to-rem(990px);
+
+// Modal bootstrap variables
+$modal-header-border-color: $gray-200;
+$modal-footer-border-color: $gray-200;
+$modal-title-line-height: $ym-line-height-20;
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: 0.64;
+
+// Bootstrap overrides
+$body-color: $ym-text-color !default;
+$enable-validation-icons: false;
+
+$secondary: $gray-50;
+$success: $green-500;
+$info: $blue-500;
+$warning: $orange-400;
+$danger: $red-500;
+
+$font-weight-bold: $ym-font-weight-bold;
+
+$font-family-sans-serif: $ym-regular-font !default;
+$font-family-monospace: $ym-monospace-font !default;
+
+$h1-font-size: $ym-font-size * 2.5;
+$h2-font-size: $ym-font-size * 2;
+$h3-font-size: $ym-font-size * 1.75;
+$h4-font-size: $ym-font-size * 1.5;
+$h5-font-size: $ym-font-size * 1.25;
+$h6-font-size: $ym-font-size;
+
+$spacer: $grid-size;
+$spacers: (
+  1: $ym-spacing-scale-2,
+  2: $ym-spacing-scale-3,
+  3: $ym-spacing-scale-5,
+  4: $ym-spacing-scale-6,
+  5: $ym-spacing-scale-7,
+  6: $ym-spacing-scale-8,
+  7: $ym-spacing-scale-9,
+  8: $ym-spacing-scale-10,
+  9: $ym-spacing-scale-11,
+);
+
+$table-accent-bg: $gray-50;
+$card-border-color: $gray-100;
+$card-cap-bg: $gray-10 !default;
+
+// Form input sizes
+$ym-form-input-sizes: (
+  xs: $grid-size * 10,
+  sm: $grid-size * 20,
+  md: $grid-size * 30,
+  lg: $grid-size * 40,
+  xl: $grid-size * 70,
+);
+
+$popover-bg: $white !default;
+$popover-arrow-width: 0.5rem;
+$popver-arrow-height: 0.25rem;
+$popover-arrow-color: $popover-bg;
+$popover-arrow-outer-color: $gray-100;
+
+$tooltip-opacity: 1;
+
+$ym-svg-dimensions: (
+  base: px-to-rem(14px),
+  xs: px-to-rem(8px),
+  sm: px-to-rem(10px),
+  lg: px-to-rem(16px),
+  xl: px-to-rem(20px),
+  xxl: px-to-rem(28px),
+  xxxl: px-to-rem(40px),
+);

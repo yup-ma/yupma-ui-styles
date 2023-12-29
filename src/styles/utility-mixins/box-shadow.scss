@@ -1,0 +1,169 @@
+// Inset border utilities
+// Uses box-shadow: inset to create a border that does not 
+// increase the box size of an ::-webkit-progress-inner-element
+// Naming convention: ym-inset-border-{border-position}-{border-size}-{color-name}
+@mixin ym-inset-border-1-gray-100 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $gray-100;
+}
+
+@mixin ym-inset-border-1-gray-200 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $gray-200;
+}
+
+@mixin ym-inset-border-1-gray-400 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $gray-400;
+}
+
+@mixin ym-inset-border-1-gray-600 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $gray-600;
+}
+
+@mixin ym-inset-border-2-gray-300 {
+    box-shadow: inset 0 0 0 $ym-border-size-2 $gray-300;
+}
+
+@mixin ym-inset-border-2-gray-400 {
+    box-shadow: inset 0 0 0 $ym-border-size-2 $gray-400;
+}
+
+@mixin ym-inset-border-y-1-gray-200 {
+    box-shadow: inset 0 #{$ym-border-size-1} 0 0 $gray-200,
+    inset 0 -#{$ym-border-size-1} 0 0 $gray-200;
+}
+
+@mixin ym-inset-border-y-1-gray-100 {
+    box-shadow: inset 0 #{$ym-border-size-1} 0 0 $gray-100,
+    inset 0 -#{$ym-border-size-1} 0 0 $gray-100;
+}
+
+@mixin ym-inset-border-b-1-gray-100 {
+    box-shadow: inset 0 -#{$ym-border-size-1} 0 0 $gray-100;
+}
+
+@mixin ym-inset-border-b-2-gray-100 {
+    box-shadow: inset 0 -#{$ym-border-size-2} 0 0 $gray-100;
+}
+
+@mixin ym-inset-border-l-4-gray-100 {
+    box-shadow: inset #{$ym-border-size-4} 0 0 0 $gray-100;
+}
+
+@mixin ym-inset-border-b-1-gray-200 {
+    box-shadow: inset 0 -#{$ym-border-size-1} 0 0 $gray-200;
+}
+
+@mixin ym-inset-border-b-2-gray-200 {
+    box-shadow: inset 0 -#{$ym-border-size-2} 0 0 $gray-200;
+}
+
+@mixin ym-inset-border-b-1-gray-300 {
+    box-shadow: inset 0 -#{$ym-border-size-1} 0 0 $gray-300;
+}
+
+@mixin ym-inset-border-b-2-gray-300 {
+    box-shadow: inset 0 -#{$ym-border-size-2} 0 0 $gray-300;
+}
+
+@mixin ym-inset-border-b-2-gray-500 {
+    box-shadow: inset 0 -#{$ym-border-size-2} 0 0 $gray-500;
+}
+
+@mixin ym-inset-border-b-1-gray-900 {
+    box-shadow: inset 0 -#{$ym-border-size-1} 0 0 $gray-900;
+}
+
+@mixin ym-inset-border-1-blue-500 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $blue-500;
+}
+
+@mixin ym-inset-border-1-blue-600 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $blue-600;
+}
+
+@mixin ym-inset-border-1-green-500 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $green-500;
+}
+
+@mixin ym-inset-border-1-green-600 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $green-600;
+}
+
+@mixin ym-inset-border-2-blue-400($focus: true) {
+    box-shadow: inset 0 0 0 $ym-border-size-2 $blue-400;
+}
+
+@mixin ym-inset-border-2-green-400 {
+    box-shadow: inset 0 0 0 $ym-border-size-2 $green-400;
+}
+
+@mixin ym-inset-border-1-orange-500 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $orange-500
+}
+
+@mixin ym-inset-border-1-orange-600 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $orange-600
+}
+
+@mixin ym-inset-border-1-red-400 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $red-400;
+}
+
+@mixin ym-inset-border-1-red-500 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $red-500;
+}
+
+@mixin ym-inset-border-1-red-600 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $red-600;
+}
+
+@mixin ym-inset-border-l-3-red-600 {
+    box-shadow: inset $ym-border-size-3 0 0 0 $red-600;
+}
+
+@mixin ym-inset-border-1-gray-a-08 {
+    box-shadow: inset 0 0 0 $ym-border-size-1 $t-gray-a-08;
+}
+
+// Box shadow utilities
+// naming convention: ym-shadow-{config-name}
+@mixin ym-shadow-none {
+    box-shadow: none;
+}
+
+@mixin ym-shadow {
+    box-shadow: 0 1px 4px 0 rgba(#000, 0.3);
+}
+
+@mixin ym-shadow-x0-y2-b4-s0 {
+    box-shadow: 0 2px 4px 0 rgba(#000, 0.1);
+}
+
+@mixin ym-shadow-blue-200-x0-y0-b4-s2 {
+    box-shadow: 0 0 4px 2px $blue-200;
+}
+
+@mixin ym-shadow-drawer {
+    box-shadow: -4px - 8px $gray-200;
+}
+
+@mixin ym-shadow-x0-y0-b3-s1-blue-500 {
+    box-shadow: inset 0 0 3px 1px $blue-500;
+}
+
+// New utilities to match design specs
+// Per https: //gitlab.com/gitlab-org/gitlab-ui/-/issues/615,
+// some of the above could be replaced.
+
+// These use gray instead of black to align with
+// tinted neutrals.
+@mixin ym-shadow-sm {
+    box-shadow: 0 1px 2px rgba($gray-950, 0.1);
+}
+
+@mixin ym-shadow-md {
+    box-shadow: 0 2px 8px rgba($gray-950, 0.16), 0 0 2px rgba($gray-950, 0.16);
+}
+
+@mixin ym-shadow-lg {
+    box-shadow: 0 4px 12px rgba($gray-950, 0.16), 0 0 4px rgba($gray-950, 0.16);
+}

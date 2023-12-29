@@ -1,0 +1,9 @@
+// Pointer events utilities
+// naming convention: ym-pointer-events-{property-value}
+@mixin ym-pointer-events-none {
+    pointer-events: none;
+}
+
+@mixin ym-pointer-events-auto {
+    pointer-events: auto;
+}

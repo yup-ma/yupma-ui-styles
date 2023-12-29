@@ -1,0 +1,37 @@
+// Transition utilities.
+// naming convention: ym-transition-{speed}
+@mixin ym-transition-property-border-color {
+    transition-property: border-color;
+}
+
+@mixin ym-transition-property-width {
+    transition-property: width;
+}
+
+@mixin ym-transition-property-stroke {
+    transition-property: stroke;
+}
+
+@mixin ym-transition-property-stroke-opacity {
+    transition-property: stroke-opacity;
+}
+
+@mixin ym-transition-duration-slow {
+    transition-duration: $ym-transition-duration-slow;
+}
+
+@mixin ym-transition-duration-medium {
+    transition-duration: $ym-transition-duration-medium;
+}
+
+@mixin ym-transition-timing-function-ease {
+    transition-timing-function: ease;
+}
+
+@mixin ym-transition-slow {
+    transition: all $ym-transition-duration-slow ease;
+}
+
+@mixin ym-transition-medium {
+    transition: all $ym-transition-duration-medium ease;
+}

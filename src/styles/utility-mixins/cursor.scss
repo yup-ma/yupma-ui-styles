@@ -1,0 +1,37 @@
+// Cursor utilities
+// naming convention: ym-cursor-{property-value}
+@mixin ym-cursor-default {
+    cursor: default;
+}
+
+@mixin ym-cursor-pointer($hover: true) {
+    cursor: pointer;
+}
+
+@mixin ym-cursor-grab {
+    cursor: grab;
+}
+
+@mixin ym-cursor-grabbing {
+    cursor: grabbing;
+}
+
+@mixin ym-cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+@mixin ym-cursor-text {
+    cursor: text;
+}
+
+@mixin ym-cursor-crosshair ($hover: true) {
+    cursor: crosshair;
+}
+
+@mixin ym-cursor-help {
+    cursor: help;
+}
+
+@mixin ym-cursor-move {
+    cursor: move;
+}

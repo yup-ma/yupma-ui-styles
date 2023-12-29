@@ -1,0 +1,103 @@
+@mixin ym-typescale-ui($selector: 'body') {
+    #{$selector} {
+        @include ym-font-base;
+        @include ym-text-gray-900;
+        @include ym-font-regular;
+        @include ym-font-weight-normal;
+        @include ym-line-height-normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h-display,
+    .ym-h1,
+    .ym-h2,
+    .ym-h3,
+    .ym-h4,
+    .ym-h5,
+    .ym-h6 {
+        @include ym-font-weight-bold;
+        @include ym-mt-0;
+        @include ym-mb-0;
+    }
+
+    .h-display {
+        @include ym-fluid-font-size($min: $ym-font-size-h-display, $max: $ym-font-size-h-display-xl);
+        @include ym-fluid-line-height($min: $ym-line-height-32, $max: $ym-line-height-36);
+    }
+
+    h1,
+    .ym-h1 {
+        @include ym-fluid-font-size($min: $ym-font-size-h1, $max: $ym-font-size-h1-xl);
+        @include ym-fluid-line-height($min: $ym-line-height-28, $max: $ym-line-height-36);
+    }
+
+    h2,
+    .ym-h2 {
+        @include ym-fluid-font-size($min: $ym-font-size-h2, $max: $ym-font-size-h2-xl);
+        @include ym-fluid-line-height($min: $ym-line-height-24, $max: $ym-line-height-28);
+    }
+
+    h3,
+    .ym-h3 {
+        @include ym-font-lg;
+        @include ym-line-height-20
+    }
+
+    h4,
+    .ym-h4 {
+        @include ym-font-base;
+        @include ym-line-height-20;
+    }
+
+    h5,
+    .ym-h5,
+    h6,
+    .ym-h6 {
+        @include ym-font-base;
+        @include ym-line-height-20;
+        @include ym-text-gray-700;
+    }
+
+    p,
+    .ym-paragraph {
+        @include ym-font-base;
+        @include ym-line-height-20;
+        @include ym-mt-0;
+        @include ym-mb-0;
+
+        +p,
+        +.ym-paragraph {
+            @include ym-mt-5;
+        }
+
+        &.lg {
+            @include ym-line-height-24
+        }
+    }
+
+    .sm {
+        @include ym-font-sm;
+    }
+
+    .lg {
+        @include ym-font-lg;
+    }
+
+    .monospace {
+        @include ym-font-monospace;
+    }
+
+    blockquote {
+        @include ym-text-gray-700;
+        @include ym-py-3;
+        @include ym-pl-6;
+        @include ym-my-3;
+        @include ym-mx-0;
+        @include ym-inset-border-l-4-gray-100;
+    }
+}

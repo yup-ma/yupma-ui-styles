@@ -1,0 +1,9 @@
+// Outline utilities.
+// naming convention: ym-outline-{style}
+@mixin ym-outline-0 {
+    outline: 0;
+}
+
+@mixin ym-outline-none {
+    outline: none;
+}

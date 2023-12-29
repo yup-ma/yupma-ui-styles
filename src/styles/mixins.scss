@@ -1,0 +1,160 @@
+// Have to define here to or import variables files to use below media
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$breakpoints: (
+    xs: 0,
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl,
+);
+
+@mixin str-truncated($max-width: 82%) {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+    max-width: $max-width;
+}
+
+@mixin str-truncated-line($max-width: 82%, $line-count: 3, $faded: false) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-count;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: $max-width;
+
+    @if $faded ==true {
+        mask-image: linear-gradient(180deg, #000 30%, transparent);
+    }
+}
+
+@mixin ym-fluid-font-size($min, $max) {
+    @include ym-responsive-property('font-size', $min, $max);
+}
+
+@mixin ym-fluid-line-height($min, $max) {
+    @include ym-responsive-property('line-height', $min, $max);
+}
+
+// Declare a property with a fluid value that decreases or 
+// rises depending on the viewport's size. The property type 
+// should be numeric.
+
+// Values are expected in rem units.
+// Fluid range: between 48rem (768px) - 75rem (1200px).
+
+// @param $property Property name, i.e. line-height, font-size, width, height, etc.
+// @param $min Property value lower bound.
+// @param $max Property value upper bound.
+@mixin ym-responsive-property($property, $min, $max) {
+    #{$property}: clamp-between($min, $max);
+}
+
+// Helper function for :focus
+@mixin ym-focus($color: false,
+    $important: false,
+    $inset: false,
+    $focus-ring: $focus-ring,
+    $outline: false,
+    $outline-offset: $outline-offset) {
+    @if $inset ==true {
+        @if $color {
+            box-shadow: inset 0 0 0 $outline-width $blue-400,
+            inset 0 0 0 #{$outline-width + $outline-offset} $white,
+            inset 0 0 0 #{$outline-width + $outline-offset + 1px} $color,
+            $focus-ring-inset if-important($important);
+            outline: none if-important($important);
+        }
+
+        @else if $outline ==true {
+            outline: $focus-ring-outline if-important($important);
+            outline-offset: $outline-offset;
+        }
+
+        @else {
+            box-shadow: inset 0 0 0 $outline-width $blue-400, $focus-ring-inset if-important($important);
+            outline: none if-important($important);
+        }
+    }
+
+    @else if $color {
+        box-shadow: inset 0 0 0 $ym-border-size-1 $color, $focus-ring if-important($important);
+        outline: none if-important($important);
+    }
+
+    @else if $outline ==true {
+        outline: $focus-ring-outline if-important($important);
+        outline-offset: $outline-offset;
+    }
+
+    @else {
+        box-shadow: $focus-ring if-important($important);
+        outline: none if-important($important);
+    }
+}
+
+@mixin ym-bg-gradient-blur($direction, $color) {
+    background-image: linear-gradient(to $direction, $transparent-rgba, $color 33%);
+}
+
+// Helper function for @media of at least the minimum breakpoint width.
+// @param $name Breakpoint name, such as 'sm' or 'md'.
+@mixin ym-media-breakpoint-up($name) {
+    $min: map-get($breakpoints, $name);
+
+    @if $min ==null {
+        @error "#{$name} is not a valid breakpoint for thi @media query.";
+    }
+
+    @if $min !=0 {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+// Helper function for @media of at most the maximum breakpoint width.
+// Not: before using, consider using a mobile-first approach, 
+// and define @media for larger breakpoints using 'ym-media-brakpoint-up'
+// while using this rule as the starting point instead.
+
+// @param $name Breakpoint, such as 'sm' or 'md'. 'xs' is not valid
+@mixin ym-media-breakpoint-down($name) {
+    $max: map-get($breakpoints, $name);
+
+    @if ($max ==null or $max ==0) {
+        @error "#{$name} is not a valid breakpoint for this @media query.";
+    }
+
+    // The maximum value is reduced by 0.02px to work around the limitations of
+    // 'min-' and 'max-' prefixes and with fractional viewport sizes.
+    // See: https://www.w3.org/TR/mediaqueries-4/#mq-min-max
+    // Use 0.02px rather than 0.01px to work around a current rounding bug in Safari.
+    $breakpoint-max-range-precision: 0.02px;
+
+    @media (max-width: ($max - $breakpoint-max-range-precision)) {
+        @content;
+    }
+
+}
+
+@mixin ym-media-pointer-mobile($is-mobile: true) {
+    @if ($is-mobile) {
+        @media (pointer: coarse) {
+            @content;
+        }
+    } @else {
+        @media (pointer: fine) {
+            @content;
+        }
+    }
+}

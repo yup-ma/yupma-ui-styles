@@ -1,0 +1,5 @@
+// Content utilities.
+// naming convention: ym-content-{value}
+@mixin ym-content-empty {
+    content: "";
+}

@@ -1,0 +1,123 @@
+@import '../mixins';
+
+// Text align utilities
+@mixin ym-text-left {
+    text-align: left;
+}
+
+@mixin ym-text-center {
+    text-align: center;
+}
+
+@mixin ym-text-right {
+    text-align: right;
+}
+
+@mixin ym-reset-text-align {
+    text-align: inherit;
+}
+
+// Text utilities
+@mixin ym-text-decoration-none($active: true, $focus: true, $hover: true) {
+    text-decoration: none;
+}
+
+@mixin ym-text-decoration-underline($active: true, $focus: true, $hover: true) {
+    text-decoration: underline;
+}
+
+@mixin ym-reset-text-decoration-color {
+    text-decoration-color: inherit;
+}
+
+@mixin ym-text-decoration-color-gray-500 {
+    text-decoration-color: $gray-500;
+}
+
+@mixin ym-text-decoration-color-gray-700 {
+    text-decoration-color: $gray-700;
+}
+
+@mixin ym-text-decoration-color-gray-900 {
+    text-decoration-color: $gray-900;
+}
+
+@mixin ym-text-transform-none {
+    text-transform: none;
+}
+
+@mixin ym-text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+@mixin ym-text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+// Text overflow utilities
+// naming convention: ym-text-overflow-{value}
+@mixin ym-text-overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+// Text indent utilities
+// naming convention: ym-text-indent-{value}
+@mixin ym-text-indent-0 {
+    text-indent: 0;
+}
+
+@mixin ym-text-indent-hide {
+    text-indent: -9999px;
+}
+
+// White-space utilities.
+// naming convention: ym-white-space-{value}
+@mixin ym-white-space-normal {
+    white-space: normal;
+}
+
+@mixin ym-white-space-nowrap {
+    white-space: nowrap;
+}
+
+@mixin ym-white-space-pre-wrap {
+    white-space: pre-wrap;
+}
+
+@mixin ym-white-space-pre-line {
+    white-space: pre-line;
+}
+
+// Responsive White-space utilities
+// naming convention: ym-{breakpoint}-white-space-{value}
+
+@mixin ym-md-white-space-nowrap {
+    @include ym-media-breakpoint-up(md) {
+        white-space: nowrap;
+    }
+}
+
+// Word utilities.
+// naming convention: ym-word-{action}-{value}
+@mixin ym-word-break-all {
+    word-break: break-all;
+}
+
+@mixin ym-word-break-word {
+    word-break: break-word;
+}
+
+@mixin ym-overflow-break-word {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+// single line ellipsis'd text
+@mixin ym-text-truncate {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
