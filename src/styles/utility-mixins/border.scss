@@ -356,6 +356,14 @@
     border-radius: $ym-border-radius-3;
 }
 
+@mixin ym-rounded-4 {
+    border-radius: $ym-border-radius-4;
+}
+
+@mixin ym-rounded-5 {
+    border-radius: $ym-border-radius-5;
+}
+
 @mixin ym-rounded-6 {
     border-radius: $ym-border-radius-6;
 }

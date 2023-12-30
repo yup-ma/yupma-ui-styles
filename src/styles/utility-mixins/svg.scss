@@ -71,23 +71,29 @@
     fill: transparent;
 }
 
-@mixin ym-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+// @mixin ym-svg {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-shrink: 0;
 
-    & svg {
-        fill: currentColor;
-    }
-}
+//     & svg {
+//         fill: currentColor;
+//     }
+// }
 
 @each $ym-svg-size,
 $ym-svg-value in $ym-svg-dimensions {
     .ym-svg-#{$ym-svg-size} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
         & svg {
             width: $ym-svg-value;
             height: $ym-svg-value;
+            fill: currentColor;
         }
     }
 }
