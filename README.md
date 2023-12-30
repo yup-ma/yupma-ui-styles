@@ -32,33 +32,33 @@ You have two options to include those stylesheets:
 - If you have a SCSS preprocessor setup, include the SCSS files in your own stylesheet:
 
 ```scss
-@import '@yupma/ui-styles/scss/yupma_ui.scss';
+@import '@yupma/ui-styles/lib/scss/yupma_ui.scss';
 ```
 
 - If you don't have a SCSS preprocessor setup, you can import the compiled CSS files directly:
 
 ```css
-@import '@yupma/ui-styles/dist/index.css';
+@import '@yupma/ui-styles/lib/dist/index.css';
 ```
 
 - CSS min version is also available
 
 ```css
-@import '@yupma/ui-styles/dist/index.min.css';
+@import '@yupma/ui-styles/lib/dist/index.min.css';
 ```
 
 ## Modification
 
 Feel free to customize this package to suit your needs. Please note that modifications are currently only feasible when using SCSS in your project. Here’s how you can do it:
 
-1. Update Variable Values: Begin by adjusting the values of the variables to your preference. You can locate all the available variables in the @yupma/ui-styles/scss/variables.scss file. Keep in mind that only the variables marked with the !default flag are customizable.
+1. Update Variable Values: Begin by adjusting the values of the variables to your preference. You can locate all the available variables in the `@yupma/ui-styles/lib/scss/variables.scss`` file. Keep in mind that only the variables marked with the !default flag are customizable.
 
 2. Import the SCSS File: After you've updated the variable values, proceed to import the SCSS file into your project. Here’s an example of how to do this:
 
 ```scss
 $blue: red; // Changing the default blue color to red
 $red: blue; // Changing the default red color to blue
-@import '@yupma/ui-styles/scss/yupma_ui.scss';
+@import '@yupma/ui-styles/lib/scss/yupma_ui.scss';
 ```
 
 ### Modifiable variables

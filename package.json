@@ -1,7 +1,8 @@
 {
   "name": "@yupma/ui-styles",
   "version": "0.1.4",
-  "description": "A style library for YupMa design system",
+  "description": "@yupma/ui-styles is a comprehensive style library for the YupMa design system. It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need.",
+  "author": "YupMa",
   "main": "lib/dist/index.css",
   "style": "lib/scss/lib_ui.scss",
   "homepage": "https://yupma.com/",
@@ -34,12 +35,6 @@
     "Web Design",
     "Frontend"
   ],
-  "exports": {
-    "./dist/*": "./lib/dist/*",
-    "./scss/*": "./lib/scss/*"
-  },
-  "author": "YupMa",
-  "license": "MIT",
   "devDependencies": {
     "fs-extra": "^11.2.0",
     "postcss": "^8.4.29",
@@ -49,5 +44,6 @@
   "engines": {
     "node": ">=10",
     "npm": ">=6"
-  }
+  },
+  "license": "MIT"
 }
