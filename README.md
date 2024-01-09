@@ -6,7 +6,7 @@
 ![YupMa logo](https://cdn.yupma.com/assets/logo-full.png)
 
 
-**YupMa UI Styles** is a comprehensive style library for the [YupMa design system](https://www.yupma.com). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need.
+**YupMa UI Styles** is a comprehensive style library for the [YupMa design system](https://yupma.com/?src=npm-ui-styles). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need.
 
 ## Installation
 
