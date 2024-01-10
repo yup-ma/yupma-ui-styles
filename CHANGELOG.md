@@ -2,7 +2,10 @@
 
 All notable changes to the CDS-lint Extension will be documented in this file.
 
-## [0.1.1] - [0.1.4] 
+## [0.1.6] 
+- Update color palette
+
+## [0.1.1] - [0.1.5] 
 - Minor bug fixes
 
 ## [0.1.0] 

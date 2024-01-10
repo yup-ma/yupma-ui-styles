@@ -46,10 +46,19 @@ You have two options to include those stylesheets:
 ```css
 @import '@yupma/ui-styles/lib/dist/index.min.css';
 ```
+or
+```html
+<link rel="stylesheet" href="https://www.unpkg.com/browse/@yupma/ui-styles@latest/lib/dist/index.min.css">
+```
 
 > The default font, `'Roboto', sans-serif`, is not being applied. You can either change the default font or update your styles to include it.
 
 ## What's New
+
+### [0.1.6] 
+- Update color palette
+
+---
 
 - Initial beta release of `@yupma/ui-styles`
 - SCSS & CSS both included in the package
