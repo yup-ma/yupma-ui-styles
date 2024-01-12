@@ -999,13 +999,13 @@
     }
 }
 
-@mixin nym-lg-mb-0 {
+@mixin ym-lg-mb-0 {
     @include ym-media-breakpoint-up(lg) {
         @include ym-mb-0;
     }
 }
 
-@mixin nym-lg-mb-5 {
+@mixin ym-lg-mb-5 {
     @include ym-media-breakpoint-up(lg) {
         @include ym-mb-5;
     }
