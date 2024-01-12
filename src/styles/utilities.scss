@@ -6640,22 +6640,22 @@
     margin-bottom: $ym-spacing-scale-12 !important;
     }
 }
-.nym-lg-mb-0 {
+.ym-lg-mb-0 {
     @include ym-media-breakpoint-up(lg) {
     margin-bottom: 0;
     }
 }
-.nym-lg-mb-0\! {
+.ym-lg-mb-0\! {
     @include ym-media-breakpoint-up(lg) {
     margin-bottom: 0 !important;
     }
 }
-.nym-lg-mb-5 {
+.ym-lg-mb-5 {
     @include ym-media-breakpoint-up(lg) {
     margin-bottom: $ym-spacing-scale-5;
     }
 }
-.nym-lg-mb-5\! {
+.ym-lg-mb-5\! {
     @include ym-media-breakpoint-up(lg) {
     margin-bottom: $ym-spacing-scale-5 !important;
     }
