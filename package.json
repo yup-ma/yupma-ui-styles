@@ -25,16 +25,11 @@
     "publish-prod": "npm run build && npm publish --access public"
   },
   "keywords": [
-    "Styles",
-    "Design",
     "YupMa",
-    "CSS",
-    "SCSS",
-    "UI",
-    "Library",
-    "UI Design",
-    "Web Design",
-    "Frontend"
+    "Design styles",
+    "UI kit",
+    "Tokens",
+    "Web Design"
   ],
   "devDependencies": {
     "fs-extra": "^11.2.0",
