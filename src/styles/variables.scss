@@ -42,10 +42,8 @@ $breakpoints: (
   xl: $breakpoint-xl,
 );
 
-// Max widths
-$limited-layout-width: 990px !default;
-$container-xl: 1280px !default;
 
+// --------------------Colors start-------------------------
 // Color schema
 $black: #000 !default;
 $black-normal: #333 !default;
@@ -137,7 +135,7 @@ $gray-900: darken($gray, 65%);
 $gray-950: darken($gray, 80%);
 
 // Brand colors
-$brand: #0279e1 !default;
+$brand-main: #0279e1 !default;
 $brand-light: #deefff !default;
 
 // Data visualization color palette
@@ -230,6 +228,17 @@ $t-white-a-24: rgba($white, 0.24);
 $ym-text-color: $black-normal !default;
 $ym-text-color-secondary: $gray-500 !default;
 $ym-text-color-disabled: $gray-400 !default;
+
+$secondary: $gray-500;
+$success: $green-500;
+$info: $blue-500;
+$warning: $orange-500;
+$danger: $red-500;
+// --------------------Colors end-------------------------
+
+// Max widths
+$limited-layout-width: 990px !default;
+$container-xl: 1280px !default;
 
 $ym-font-weight-light: 300;
 $ym-font-weight-normal: 400;
@@ -343,8 +352,7 @@ $default-icon-size: px-to-rem(16px);
 $ym-icon-sizes: 8 12 14 16 20 24 32 48 72;
 
 // Dropdowns
-$ym-dropdown-width: px-to-rem(240px);
-$ym-new-dropdown-width: px-to-rem(256px);
+$ym-dropdown-width: px-to-rem(256px);
 $ym-dropdown-width-narrow: px-to-rem(160px);
 $ym-dropdown-width-wide: px-to-rem(400px);
 $ym-max-dropdown-max-height: px-to-rem(312px);
@@ -367,12 +375,6 @@ $modal-backdrop-opacity: 0.64;
 // Bootstrap overrides
 $body-color: $ym-text-color !default;
 $enable-validation-icons: false;
-
-$secondary: $gray-500;
-$success: $green-500;
-$info: $blue-500;
-$warning: $orange-500;
-$danger: $red-500;
 
 $font-weight-bold: $ym-font-weight-bold;
 

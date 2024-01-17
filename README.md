@@ -48,18 +48,18 @@ You have two options to include those stylesheets:
 ```
 or
 ```html
-<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.8/lib/dist/index.min.css">
 ```
 or
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.8/lib/dist/index.min.css">
 ```
 
 > The default font, `'Roboto', sans-serif`, is not being applied. You can either change the default font or update your styles to include it.
 
 ## What's New
 
-### [0.1.6] - [0.1.7] 
+### [0.1.6] - [0.1.8] 
 - Update color palette
 
 ---

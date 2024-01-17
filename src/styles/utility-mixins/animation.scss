@@ -1,13 +1,90 @@
-@keyframes ym-spinner-rotate {
-    0% {
-        transform: rotate(0);
+@keyframes ym-keyframes-bounce {
+
+    from,
+    65%,
+    85% {
+        transform: scale(1)
     }
 
-    100% {
-        transform: rotate(360deg);
+    75% {
+        transform: scale(0.85)
+    }
+
+    82.5% {
+        transform: scale(1.05)
     }
 }
 
-@mixin ym-spin {
-    animation: ym-spinner-rotate 2s infinite linear;
+@keyframes ym-keyframes-fade-in {
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes ym-keyframes-pulse {
+
+    from,
+    75% {
+        transform: scale(0.85);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ym-keyframes-spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes ym-keyframes-appear-above {
+    from {
+        transform: translateY($ym-spacing-scale-2);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes ym-keyframes-appear-below {
+    from {
+        transform: translateY(calc($ym-spacing-scale-2 * -1));
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@mixin ym-motion-bounce {
+    animation: ym-keyframes-bounce 1s ease;
+}
+
+@mixin ym-motion-fade-in {
+    animation: ym-keyframes-fade-in 1s ease;
+}
+
+@mixin ym-motion-pulse {
+    animation: ym-keyframes-pulse 1s ease;
+}
+
+@mixin ym-motion-spin {
+    animation: ym-keyframes-spin 2s infinite linear;
+}
+
+@mixin ym-motion-appear-above {
+    animation: ym-keyframes-appear-above 1s ease;
+}
+
+@mixin ym-motion-appear-below {
+    animation: ym-keyframes-appear-below 1s ease;
 }

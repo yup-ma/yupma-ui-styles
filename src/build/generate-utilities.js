@@ -85,10 +85,10 @@ const generateUtilitiesPlugin = postcss.plugin('postcss-generate-utilities', () 
         buildUtilityClass(mixinName),
         ...buildStatefulClasses(mixinName, statefulFlags),
       ];
-      const importantUtilityClasses = [
-        buildUtilityClass(mixinName, true),
-        ...buildStatefulClasses(mixinName, statefulFlags, true),
-      ];
+      // const importantUtilityClasses = [
+      //   buildUtilityClass(mixinName, true),
+      //   ...buildStatefulClasses(mixinName, statefulFlags, true),
+      // ];
       allDeclarations[mixinName] = resolveDeclarations(rule, allDeclarations);
       const importantDeclsRule = createRuleWithImportantDecls(rule);
 
@@ -97,10 +97,10 @@ const generateUtilitiesPlugin = postcss.plugin('postcss-generate-utilities', () 
         root.append(utilityClass);
       });
 
-      importantUtilityClasses.forEach((utilityClass) => {
-        utilityClass.append(...importantDeclsRule.clone().nodes);
-        root.append(utilityClass);
-      });
+      // importantUtilityClasses.forEach((utilityClass) => {
+      //   utilityClass.append(...importantDeclsRule.clone().nodes);
+      //   root.append(utilityClass);
+      // });
 
       rule.remove();
     });

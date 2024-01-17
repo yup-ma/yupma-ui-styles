@@ -7,8 +7,8 @@
     color: inherit;
 }
 
-@mixin ym-text-brand {
-    color: $brand;
+@mixin ym-text-brand-main {
+    color: $brand-main;
 }
 
 @mixin ym-text-brand-light {
@@ -31,10 +31,6 @@
     color: $body-color;
 }
 
-@mixin ym-text-secondary {
-    color: $ym-text-color-secondary;
-}
-
 @mixin ym-sm-text-body {
     @include ym-media-breakpoint-up(sm) {
         @include ym-text-body;
@@ -43,6 +39,34 @@
 
 @mixin ym-text-black-normal {
     color: $black-normal;
+}
+
+@mixin ym-text-primary {
+    background-color: $brand-main;
+}
+
+@mixin ym-text-secondary {
+    background-color: $secondary;
+}
+
+@mixin ym-text-success {
+    background-color: $success;
+}
+
+@mixin ym-text-info {
+    background-color: $info;
+}
+
+@mixin ym-text-warning {
+    background-color: $warning;
+}
+
+@mixin ym-text-danger {
+    background-color: $danger;
+}
+
+@mixin ym-text-gray-100 {
+    color: $gray-200;
 }
 
 @mixin ym-text-gray-200 {
@@ -163,6 +187,10 @@
 
 @mixin ym-text-orange-900 {
     color: $orange-900;
+}
+
+@mixin ym-text-red-300 {
+    color: $red-300;
 }
 
 @mixin ym-text-red-500 {

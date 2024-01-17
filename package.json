@@ -15,6 +15,7 @@
     "lib/scss"
   ],
   "scripts": {
+    "update-readme": "node src/build/update-readme.js",
     "build": "npm run packaging && npm run generate-utilities && npm run compile-scss && npm run token",
     "packaging": "node src/build/build.js",
     "generate-utilities": "node src/build/generate-utilities.js",

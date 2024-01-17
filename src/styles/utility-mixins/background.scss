@@ -11,8 +11,8 @@
     background-color: currentColor;
 }
 
-@mixin ym-bg-brand {
-    background-color: $brand;
+@mixin ym-bg-brand-main {
+    background-color: $brand-main;
 }
 
 @mixin ym-bg-brand-light {
@@ -33,6 +33,30 @@
 
 @mixin ym-reset-bg {
     background-color: inherit;
+}
+
+@mixin ym-bg-primary {
+    background-color: $brand-main;
+}
+
+@mixin ym-bg-secondary {
+    background-color: $secondary;
+}
+
+@mixin ym-bg-success {
+    background-color: $success;
+}
+
+@mixin ym-bg-info {
+    background-color: $info;
+}
+
+@mixin ym-bg-warning {
+    background-color: $warning;
+}
+
+@mixin ym-bg-danger {
+    background-color: $danger;
 }
 
 @mixin ym-bg-gray-10 {
@@ -135,10 +159,6 @@
     background-color: $orange-200;
 }
 
-@mixin ym-bg-orange-400 {
-    background-color: $orange-400;
-}
-
 @mixin ym-bg-orange-500 {
     background-color: $orange-500;
 }
@@ -185,6 +205,10 @@
 
 @mixin ym-bg-t-gray-a-08($hover: true) {
     background-color: $t-gray-a-08;
+}
+
+@mixin ym-bg-t-white-a-08($hover: true) {
+    background-color: $t-white-a-08;
 }
 
 @mixin ym-bg-data-viz-blue-500 {
