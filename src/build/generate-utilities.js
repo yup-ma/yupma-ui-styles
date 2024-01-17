@@ -25,7 +25,8 @@ const buildUtilityClass = (name, important = false) => {
 
 const buildStatefulClasses = (name, statefulFlags = [], important = false) => {
   return statefulFlags.map((statefulFlag) => {
-    const baseSelector = `.ym-${statefulFlag}-${name.replace('ym-', '')}$1:${statefulFlag}`;
+    const state = statefulFlag === 'focus' ? 'focus-within' : statefulFlag;
+    const baseSelector = `.ym-${statefulFlag}-${name.replace('ym-', '')}$1:${state}`;
     const selector = baseSelector.replace('$1', important ? '\\!' : '');
 
     return postcss.rule({ selector });
