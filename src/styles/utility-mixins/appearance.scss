@@ -74,23 +74,11 @@
     box-shadow: 0 1px 0 1px rgba($gray-950, 0.16), 0 0 0 1px rgba($gray-950, 0.16);
 }
 
-@mixin ym-blockquote{
-    padding-left: $ym-spacing-scale-4;
-    padding-top: $ym-spacing-scale-3;
-    padding-bottom: $ym-spacing-scale-3;
-    padding-right: $ym-spacing-scale-3;
-    background-color: $brand-light;
-    border-radius: $ym-border-radius-3;
-    position: relative;
-    overflow: auto;
-
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: $ym-spacing-scale-2;
-        height: 100%;
-        background-color: $brand;
-    }
+@mixin ym-blockquote {
+    @include ym-text-gray-700;
+    @include ym-py-3;
+    @include ym-pl-6;
+    @include ym-my-3;
+    @include ym-mx-0;
+    @include ym-inset-border-l-4-gray-100;
 }

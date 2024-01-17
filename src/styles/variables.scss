@@ -1,22 +1,5 @@
 @import 'functions';
 
-// $ym-spacing-scale-1: 2 px;
-// $ym-spacing-scale-2: 4 px;
-// $ym-spacing-scale-3: 8 px;
-// $ym-spacing-scale-4: 12 px;
-// $ym-spacing-scale-5: 16 px;
-// $ym-spacing-scale-6: 24 px;
-// $ym-spacing-scale-7: 32 px;
-// $ym-spacing-scale-8: 40 px;
-// $ym-spacing-scale-9: 48 px;
-// $ym-spacing-scale-10: 56 px;
-// $ym-spacing-scale-11: 64 px;
-// $ym-spacing-scale-12: 72 px;
-// $ym-spacing-scale-13: 80 px;
-// $ym-spacing-scale-14: 96 px;
-// $ym-spacing-scale-15: 120 px;
-// $ym-spacing-scale-20: 160 px;
-
 // Layout
 $grid-size: px-to-rem(8px) !default;
 $ym-spacing-scale-1: 0.25 * $grid-size; //2px or 4px is used for spacing within a component or between icons and related text.
