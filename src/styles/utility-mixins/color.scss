@@ -23,46 +23,52 @@
     color: $white;
 }
 
-@mixin ym-text-contrast-light {
+@mixin ym-text-contrast {
     color: $white-contrast;
 }
 
-@mixin ym-text-body {
-    color: $body-color;
+@mixin ym-text-white-dark {
+    color: $white-dark;
 }
 
-@mixin ym-sm-text-body {
-    @include ym-media-breakpoint-up(sm) {
-        @include ym-text-body;
-    }
+@mixin ym-text-white-normal {
+    color: $white-normal;
 }
 
-@mixin ym-text-black-normal {
+@mixin ym-text-white-transparent {
+    color: $white-transparent;
+}
+
+@mixin ym-text-color {
     color: $black-normal;
 }
 
+@mixin ym-text-disabled {
+    color: $gray-400;
+}
+
 @mixin ym-text-primary {
-    background-color: $brand-main;
+    color: $brand-main;
 }
 
 @mixin ym-text-secondary {
-    background-color: $secondary;
+    color: $secondary;
 }
 
 @mixin ym-text-success {
-    background-color: $success;
+    color: $success;
 }
 
 @mixin ym-text-info {
-    background-color: $info;
+    color: $info;
 }
 
 @mixin ym-text-warning {
-    background-color: $warning;
+    color: $warning;
 }
 
 @mixin ym-text-danger {
-    background-color: $danger;
+    color: $danger;
 }
 
 @mixin ym-text-gray-100 {
@@ -211,6 +217,14 @@
 
 @mixin ym-text-red-900 {
     color: $red-900;
+}
+
+@mixin ym-text-purple-300 {
+    color: $purple-300;
+}
+
+@mixin ym-text-purple-500 {
+    color: $purple-600;
 }
 
 @mixin ym-text-purple-600 {

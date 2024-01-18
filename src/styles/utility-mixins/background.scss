@@ -23,6 +23,18 @@
     background-color: $white;
 }
 
+@mixin ym-bg-white-normal {
+    background-color: $white-normal;
+}
+
+@mixin ym-bg-white-dark {
+    background-color: $white-dark;
+}
+
+@mixin ym-bg-white-transparent {
+    background-color: $white-transparent;
+}
+
 @mixin ym-bg-black {
     background-color: $black;
 }
@@ -171,14 +183,6 @@
     background-color: $orange-700;
 }
 
-@mixin ym-bg-purple-50 {
-    background-color: $purple-50;
-}
-
-@mixin ym-bg-purple-800 {
-    background-color: $purple-800
-}
-
 @mixin ym-bg-red-50 {
     background-color: $red-50;
 }
@@ -201,6 +205,34 @@
 
 @mixin ym-bg-red-700 {
     background-color: $red-700;
+}
+
+@mixin ym-bg-purple-50 {
+    background-color: $purple-50;
+}
+
+@mixin ym-bg-purple-100 {
+    background-color: $purple-100;
+}
+
+@mixin ym-bg-purple-200 {
+    background-color: $purple-200;
+}
+
+@mixin ym-bg-purple-300 {
+    background-color: $purple-300
+}
+
+@mixin ym-bg-purple-500 {
+    background-color: $purple-500
+}
+
+@mixin ym-bg-purple-600 {
+    background-color: $purple-600
+}
+
+@mixin ym-bg-purple-700 {
+    background-color: $purple-700
 }
 
 @mixin ym-bg-t-gray-a-08($hover: true) {

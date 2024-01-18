@@ -47,7 +47,7 @@
 }
 
 @mixin ym-shadow-button {
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
 @mixin ym-shadow-button-inset {
