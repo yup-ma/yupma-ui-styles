@@ -31,6 +31,10 @@
     background-color: $white-dark;
 }
 
+@mixin ym-bg-white-contrast {
+    background-color: $white-contrast;
+}
+
 @mixin ym-bg-white-transparent {
     background-color: $white-transparent;
 }

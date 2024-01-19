@@ -113,6 +113,14 @@
     border-left-color: transparent;
 }
 
+@mixin ym-border-brand-main {
+    border-color: $brand-main;
+}
+
+@mixin ym-border-brand-light {
+    border-color: $brand-light;
+}
+
 @mixin ym-border-gray-50 {
     border-color: $gray-50;
 }
@@ -137,16 +145,75 @@
     border-color: $gray-500;
 }
 
+@mixin ym-border-red-50 {
+    border-color: $red-50;
+}
+
+@mixin ym-border-red-100 {
+    border-color: $red-100;
+}
+
+@mixin ym-border-red-200 {
+    border-color: $red-200;
+}
+
+@mixin ym-border-red-300 {
+    border-color: $red-300;
+}
+
 @mixin ym-border-red-500 {
     border-color: $red-500;
 }
 
+
+@mixin ym-border-orange-50 {
+    border-color: $orange-50;
+}
+
+@mixin ym-border-orange-100 {
+    border-color: $orange-100;
+}
+
+@mixin ym-border-orange-200 {
+    border-color: $orange-200;
+}
+
+@mixin ym-border-orange-300 {
+    border-color: $orange-300;
+}
+
 @mixin ym-border-orange-500 {
-    border-color: $orange-500
+    border-color: $orange-500;
+}
+
+
+@mixin ym-border-green-50 {
+    border-color: $green-50;
+}
+
+@mixin ym-border-green-100 {
+    border-color: $green-100;
+}
+
+@mixin ym-border-green-200 {
+    border-color: $green-200;
+}
+
+@mixin ym-border-green-300 {
+    border-color: $green-300;
 }
 
 @mixin ym-border-green-500 {
     border-color: $green-500;
+}
+
+
+@mixin ym-border-blue-50 {
+    border-color: $blue-50;
+}
+
+@mixin ym-border-blue-100 {
+    border-color: $blue-100;
 }
 
 @mixin ym-border-blue-200($hover: true) {
@@ -169,6 +236,27 @@
     border-color: $blue-700;
 }
 
+
+@mixin ym-border-purple-50 {
+    border-color: $purple-50;
+}
+
+@mixin ym-border-purple-100 {
+    border-color: $purple-100;
+}
+
+@mixin ym-border-purple-200 {
+    border-color: $purple-200;
+}
+
+@mixin ym-border-purple-300 {
+    border-color: $purple-300;
+}
+
+@mixin ym-border-purple-500 {
+    border-color: $purple-500;
+}
+
 @mixin ym-border-purple-700 {
     border-color: $purple-700;
 }
@@ -179,6 +267,14 @@
 
 @mixin ym-border-gray-a-24 {
     border-color: $t-gray-a-24;
+}
+
+@mixin ym-border-white-a-08 {
+    border-color: $t-white-a-08;
+}
+
+@mixin ym-border-white-a-24 {
+    border-color: $t-white-a-24;
 }
 
 @mixin ym-border-t-gray-50 {

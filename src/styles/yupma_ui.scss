@@ -1,3 +1,6 @@
+// Hard codes values are present at comment
+// // no var
+
 *,
 *::before,
 *::after {
@@ -19,8 +22,8 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background-color: #fff;
-    color: #333;
+    background-color: #fff; // no var
+    color: #333; // no var
     line-height: calc(1em + 0.5rem);
     -webkit-font-smoothing: antialiased;
 }
@@ -74,9 +77,11 @@ ul {
 }
 
 //Settings
+@import 'tokens';
 @import 'fonts';
 @import 'functions';
 @import 'variables';
 @import 'mixins';
-@import 'utility-mixins/index';
-@import 'typescale/index';
+@import 'typescale';
+@import 'utility-mixins';
+@include ym-typescale-ui;

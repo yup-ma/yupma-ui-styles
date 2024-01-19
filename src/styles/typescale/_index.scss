@@ -1,7 +1,7 @@
 @mixin ym-typescale-ui($selector: 'body') {
     #{$selector} {
         @include ym-font-base;
-        @include ym-text-gray-900;
+        @include ym-text-color;
         @include ym-font-regular;
         @include ym-font-weight-normal;
         @include ym-line-height-normal;
@@ -13,7 +13,7 @@
     h4,
     h5,
     h6,
-    .h-display,
+    .ym-h-display,
     .ym-h1,
     .ym-h2,
     .ym-h3,
@@ -25,7 +25,7 @@
         @include ym-mb-0;
     }
 
-    .h-display {
+    .ym-h-display {
         @include ym-fluid-font-size($min: $ym-font-size-h-display, $max: $ym-font-size-h-display-xl);
         @include ym-fluid-line-height($min: $ym-line-height-32, $max: $ym-line-height-36);
     }

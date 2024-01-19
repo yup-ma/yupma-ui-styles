@@ -6,7 +6,7 @@
 ![YupMa logo](https://cdn.yupma.com/assets/logo-full.png)
 
 
-**YupMa UI Styles** is a comprehensive style library for the [YupMa design system](https://yupma.com/?src=npm-ui-styles). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need.
+**YupMa UI Styles** is a comprehensive base style library for the [YupMa design system](https://yupma.com/?src=npm-ui-styles). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need. It provide modifier that you can use to create majestic UI for your product.
 
 ## Installation
 
@@ -48,18 +48,18 @@ You have two options to include those stylesheets:
 ```
 or
 ```html
-<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.8/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.7/lib/dist/index.min.css">
 ```
 or
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.8/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.7/lib/dist/index.min.css">
 ```
 
 > The default font, `'Roboto', sans-serif`, is not being applied. You can either change the default font or update your styles to include it.
 
 ## What's New
 
-### [0.1.6] - [0.1.8] 
+### [0.1.6] - [0.0.17] 
 - Update color palette
 
 ---
