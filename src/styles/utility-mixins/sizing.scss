@@ -238,6 +238,14 @@
     height: $ym-spacing-scale-20;
 }
 
+@mixin ym-h-28 {
+    height: $ym-spacing-scale-28;
+}
+
+@mixin ym-h-30 {
+    height: $ym-spacing-scale-30;
+}
+
 @mixin ym-h-full {
     height: 100%;
 }
@@ -430,10 +438,6 @@
     max-width: none;
 }
 
-@mixin ym-max-h-none {
-    max-height: none;
-}
-
 @mixin ym-max-w-full {
     max-width: 100%;
 }
@@ -444,6 +448,38 @@
 
 @mixin ym-max-h-20 {
     max-width: $ym-spacing-scale-20;
+}
+
+@mixin ym-max-h-26 {
+    max-height: $ym-spacing-scale-26;
+}
+
+@mixin ym-max-h-34 {
+    max-height: $ym-spacing-scale-34;
+}
+
+@mixin ym-max-h-48 {
+    max-height: $ym-spacing-scale-48;
+}
+
+@mixin ym-max-h-54 {
+    max-height: $ym-spacing-scale-54;
+}
+
+@mixin ym-max-h-62 {
+    max-height: $ym-spacing-scale-62;
+}
+
+@mixin ym-max-h-75 {
+    max-height: $ym-spacing-scale-75;
+}
+
+@mixin ym-max-h-80 {
+    max-height: $ym-spacing-scale-80;
+}
+
+@mixin ym-max-h-none {
+    max-height: none;
 }
 
 @mixin ym-max-h-24vh {

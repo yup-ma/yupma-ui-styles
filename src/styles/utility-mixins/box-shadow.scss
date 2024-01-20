@@ -8,7 +8,7 @@
 
 // Box shadow utilities
 // naming convention: ym-shadow-{config-name}
-@mixin ym-shadow-none {
+@mixin ym-shadow-none($focus: true) {
     box-shadow: none;
 }
 
@@ -17,7 +17,7 @@
 // }
 
 @mixin ym-shadow-drawer {
-    box-shadow: -4px - 8px $gray-200;
+    box-shadow: -4px 0 8px $gray-200;
 }
 
 // New utilities to match design specs
@@ -26,19 +26,19 @@
 
 // These use gray instead of black to align with
 // tinted neutrals.
-@mixin ym-shadow-layer-sm {
+@mixin ym-shadow-layer-sm($hover: true) {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 0px 5px 0px rgba(0, 0, 0, 0.05); // no var
 }
 
-@mixin ym-shadow-layer-md {
+@mixin ym-shadow-layer-md($hover: true) {
     box-shadow: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16); // no var
 }
 
-@mixin ym-shadow-layer-lg {
+@mixin ym-shadow-layer-lg($hover: true) {
     box-shadow: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16); // no var
 }
 
-@mixin ym-shadow-layer-xl {
+@mixin ym-shadow-layer-xl($hover: true) {
     box-shadow: -40px -40px 72px 0px #f3f3f3, 40px 40px 72px 0px #b3b3b3; // no var
 }
 

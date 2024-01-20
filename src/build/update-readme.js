@@ -1,3 +1,4 @@
+// npm run update-readme -- --type=major/minor/ptach/1.2.24
 const fs = require('fs');
 const path = require('path');
 

@@ -440,7 +440,7 @@
 // Border-radius utilities.
 // naming convention: ym-rounded-{roundness-size}
 // notes::after- Base new utilities in this group in the $ym-border-radius variables
-@mixin ym-rounded-0 {
+@mixin ym-rounded-0($hover: true) {
     border-radius: 0;
 }
 
@@ -472,19 +472,19 @@
     border-radius: $ym-border-radius-base;
 }
 
-@mixin ym-rounded-full {
+@mixin ym-rounded-full($hover: true) {
     border-radius: $ym-border-radius-full;
 }
 
-@mixin ym-rounded-small {
+@mixin ym-rounded-small($hover: true) {
     border-radius: $ym-border-radius-small;
 }
 
-@mixin ym-rounded-lg {
+@mixin ym-rounded-lg($hover: true) {
     border-radius: $ym-border-radius-large;
 }
 
-@mixin ym-rounded-pill {
+@mixin ym-rounded-pill($hover: true) {
     border-radius: $ym-spacing-scale-4;
 }
 
