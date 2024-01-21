@@ -80,11 +80,11 @@
     --ym-inset-border-l-4-gray-100: inset #{$ym-border-size-4} 0 0 0 $gray-100;
     --ym-shadow-drawer: -4px - 8px $gray-200;
     --ym-shadow-layer-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 0px 5px 0px rgba(0, 0, 0, 0.05);// no var
-    --ym-shadow-layer-md: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16);// no var
+    --ym-shadow-layer-base: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16);// no var
     --ym-shadow-layer-lg: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16);// no var
     --ym-shadow-layer-xl: -40px -40px 72px 0px #f3f3f3, 40px 40px 72px 0px #b3b3b3;// no var
-    --ym--focus-inset: inset 0 0 0 $ym-border-size-2 $brand-main;
-    --ym-shadow-button: 0px -1px 2px 0px rgba(0, 0, 0, 0.15);// no var
+    --ym--focus-inset: inset 0 0 0 2px $brand-main;
+    --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);// no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset;// no var
 
     // ----------------All color tokens start--------------------

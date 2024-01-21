@@ -60,7 +60,7 @@
 @mixin ym-kbd {
     display: inline-flex;
     box-sizing: border-box;
-    font-family: $ym-regular-font;
+    font-family: $ym-monospace-font;
     white-space: nowrap;
     user-select: none;
     font-size: $ym-font-size-sm;
