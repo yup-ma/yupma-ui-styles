@@ -1,4 +1,4 @@
-/* stylelint-disable property-no-vendor-prefix */
+// stylelint-disable property-no-vendor-prefix
 @mixin ym-appearance-none {
     appearance: none;
     -moz-appearance: none;
@@ -16,9 +16,9 @@
     -moz-appearance: textfield;
 }
 
-/* stylelint-enable property-no-vendor-prefix */
+// stylelint-enable property-no-vendor-prefix
 
-/*Hidding scrollbar*/
+// Hidding scrollbar
 @mixin ym-hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -37,7 +37,7 @@
     }
 }
 
-/*Hidding scrollbar*/
+// Hidding scrollbar
 @mixin ym-custom-scrollbar {
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
     scrollbar-width: 12px;

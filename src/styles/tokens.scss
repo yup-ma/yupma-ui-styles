@@ -78,6 +78,11 @@
     --ym-motion-keyframes-appear-below: ym-motion-keyframes-appear-below;
     --ym-motion-duration-slow:#{$ym-transition-duration-slow};
     --ym-motion-duration-medium:#{$ym-transition-duration-medium};
+    --ym-motion-linear: linear;
+    --ym-motion-ease-in-out: ease-in-out;
+    --ym-motion-ease-out: ease-out;
+    --ym-motion-ease-in: ease-in;
+    --ym-motion-ease: ease;
 
     --ym-inset-border-l-4-gray-100: inset #{$ym-border-size-4} 0 0 0 $gray-100;
     --ym-shadow-drawer: -4px - 8px $gray-200;

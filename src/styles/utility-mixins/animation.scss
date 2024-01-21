@@ -1,23 +1,23 @@
-@mixin ym-motion-bounce {
+@mixin ym-animation-bounce {
     animation: ym-motion-keyframes-bounce 1s ease;
 }
 
-@mixin ym-motion-fade-in {
+@mixin ym-animation-fade-in {
     animation: ym-motion-keyframes-fade-in 1s ease;
 }
 
-@mixin ym-motion-pulse {
+@mixin ym-animation-pulse {
     animation: ym-motion-keyframes-pulse 1s ease;
 }
 
-@mixin ym-motion-spin {
+@mixin ym-animation-spin {
     animation: ym-motion-keyframes-spin 2s infinite linear;
 }
 
-@mixin ym-motion-appear-above {
+@mixin ym-animation-appear-above {
     animation: ym-motion-keyframes-appear-above 1s ease;
 }
 
-@mixin ym-motion-appear-below {
+@mixin ym-animation-appear-below {
     animation: ym-motion-keyframes-appear-below 1s ease;
 }
