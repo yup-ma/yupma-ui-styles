@@ -94,6 +94,23 @@
     --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); // no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
 
+    // Dropdowns
+    --ym-dropdown-width: #{$ym-dropdown-width};
+    --ym-dropdown-width-narrow: #{$ym-dropdown-width-narrow};
+    --ym-dropdown-width-wide: #{$ym-dropdown-width-wide};
+    --ym-max-dropdown-max-height: #{$ym-max-dropdown-max-height};
+
+    // Broadcast messages
+    --ym-toast-max-width: #{$ym-toast-max-width};
+
+    // Modal widths
+    --ym-modal-small-width: #{$ym-modal-small-width};
+    --ym-modal-medium-width: #{$ym-modal-medium-width};
+    --ym-modal-large-width: #{$ym-modal-large-width};
+    --ym-modal-extra-large-width: #{$ym-modal-extra-large-width};
+    --ym-modal-backdrop-bg: #{$ym-modal-backdrop-bg};
+    --ym-modal-backdrop-opacity: #{$ym-modal-backdrop-opacity};
+
     // ----------------All color tokens start--------------------
     // --black:#{$black};
     // --black-normal:#{$black-normal};

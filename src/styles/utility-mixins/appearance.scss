@@ -71,7 +71,7 @@
     border-radius: $ym-border-radius-2;
     color: $gray-700;
     background-color: $gray-10;
-    box-shadow: 0 1px 0 1px rgba($gray-950, 0.16), 0 0 0 1px rgba($gray-950, 0.16);
+    box-shadow: 0 -1px 0 0 rgba($gray-950, 0.8);
 }
 
 @mixin ym-blockquote {
@@ -81,4 +81,60 @@
     @include ym-my-3;
     @include ym-mx-0;
     @include ym-inset-border-l-4-gray-100;
+}
+
+// Dropdowns
+@mixin ym-dropdown-width {
+    width: 100%;
+    max-width: $ym-dropdown-width;
+}
+
+@mixin ym-dropdown-width-narrow {
+    width: 100%;
+    max-width: $ym-dropdown-width-narrow;
+}
+
+@mixin ym-dropdown-width-wide {
+    width: 100%;
+    max-width: $ym-dropdown-width-wide;
+}
+
+@mixin ym-max-dropdown-max-height {
+    height: 100%;
+    max-height: $ym-max-dropdown-max-height;
+}
+
+// Toast messages
+@mixin ym-toast-max-width {
+    width: 100%;
+    max-width: $ym-toast-max-width;
+}
+
+// Modal widths
+@mixin ym-modal-small-width {
+    width: 100%;
+    max-width: $ym-modal-small-width;
+}
+
+@mixin ym-modal-medium-width {
+    width: 100%;
+    max-width: $ym-modal-medium-width;
+}
+
+@mixin ym-modal-large-width {
+    width: 100%;
+    max-width: $ym-modal-large-width;
+}
+
+@mixin ym-modal-extra-large-width {
+    width: 100%;
+    max-width: $ym-modal-extra-large-width;
+}
+
+@mixin ym-modal-backdrop-bg {
+    background-color: $ym-modal-backdrop-bg;
+}
+
+@mixin ym-modal-backdrop-opacity {
+    opacity: $ym-modal-backdrop-opacity;
 }

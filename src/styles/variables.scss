@@ -353,24 +353,25 @@ $ym-dropdown-width-wide: px-to-rem(400px);
 $ym-max-dropdown-max-height: px-to-rem(312px);
 
 // Broadcast messages
-$ym-broadcast-message-notification-max-width: px-to-rem(300px);
+$ym-toast-max-width: px-to-rem(300px);
 
 // Modal widths
-$ym-modal-small-width: px-to-rem(512px);
-$ym-modal-medium-width: px-to-rem(768px);
-$ym-modal-large-width: px-to-rem(990px);
+$ym-modal-small-width: px-to-rem(400px);
+$ym-modal-medium-width: px-to-rem(600px);
+$ym-modal-large-width: px-to-rem(800px);
+$ym-modal-extra-large-width: px-to-rem(930px);
+$ym-modal-backdrop-bg: #222;
+$ym-modal-backdrop-opacity: 0.6;
 
-// Modal bootstrap variables
-$modal-header-border-color: $gray-200;
-$modal-footer-border-color: $gray-200;
-$modal-title-line-height: $ym-line-height-20;
-$modal-backdrop-bg: #000;
-$modal-backdrop-opacity: 0.64;
+// // Modal bootstrap variables
+// $modal-header-border-color: $gray-200;
+// $modal-footer-border-color: $gray-200;
+// $modal-title-line-height: $ym-line-height-20;
 
-// Bootstrap overrides
-$enable-validation-icons: false;
+// // Bootstrap overrides
+// $enable-validation-icons: false;
 
-$font-weight-bold: $ym-font-weight-bold;
+// $font-weight-bold: $ym-font-weight-bold;
 
 $font-family-regular: $ym-regular-font !default;
 $font-family-monospace: $ym-monospace-font !default;
@@ -395,9 +396,9 @@ $spacers: (
   9: $ym-spacing-scale-11,
 );
 
-$table-accent-bg: $gray-50;
-$card-border-color: $gray-100;
-$card-cap-bg: $gray-10 !default;
+// $table-accent-bg: $gray-50;
+// $card-border-color: $gray-100;
+// $card-cap-bg: $gray-10 !default;
 
 // Form input sizes
 $ym-form-input-sizes: (
@@ -408,13 +409,13 @@ $ym-form-input-sizes: (
   xl: $grid-size * 70,
 );
 
-$popover-bg: $white !default;
-$popover-arrow-width: 0.5rem;
-$popver-arrow-height: 0.25rem;
-$popover-arrow-color: $popover-bg;
-$popover-arrow-outer-color: $gray-100;
+// $popover-bg: $white !default;
+// $popover-arrow-width: 0.5rem;
+// $popver-arrow-height: 0.25rem;
+// $popover-arrow-color: $popover-bg;
+// $popover-arrow-outer-color: $gray-100;
 
-$tooltip-opacity: 1;
+// $tooltip-opacity: 1;
 
 $ym-svg-dimensions: (
   base: px-to-rem(14px),
