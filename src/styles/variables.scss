@@ -264,6 +264,7 @@ $ym-font-size: px-to-rem(14px);
 $ym-font-size-xs: px-to-rem(10px);
 $ym-font-size-sm: px-to-rem(12px);
 $ym-font-size-lg: px-to-rem(16px);
+$ym-font-size-xl: px-to-rem(18px);
 
 $ym-font-size-h-display: px-to-rem(28px);
 $ym-font-size-h1: px-to-rem(23px);
@@ -350,10 +351,11 @@ $ym-icon-sizes: 8 12 14 16 20 24 32 48 72;
 $ym-dropdown-width: px-to-rem(256px);
 $ym-dropdown-width-narrow: px-to-rem(160px);
 $ym-dropdown-width-wide: px-to-rem(400px);
-$ym-max-dropdown-max-height: px-to-rem(312px);
+$ym-max-dropdown-max-height: px-to-rem(380px);
 
 // Broadcast messages
-$ym-toast-max-width: px-to-rem(300px);
+$ym-toast-min-width: px-to-rem(288px);
+$ym-toast-max-width: px-to-rem(568px);
 
 // Modal widths
 $ym-modal-small-width: px-to-rem(400px);
@@ -362,6 +364,13 @@ $ym-modal-large-width: px-to-rem(800px);
 $ym-modal-extra-large-width: px-to-rem(930px);
 $ym-modal-backdrop-bg: #222;
 $ym-modal-backdrop-opacity: 0.6;
+
+// Drawer widths
+$ym-drawer-small-width: px-to-rem(380px);
+$ym-drawer-medium-width: px-to-rem(600px);
+$ym-drawer-large-width: px-to-rem(900px);
+$ym-drawer-backdrop-bg: #222;
+$ym-drawer-backdrop-opacity: 0.6;
 
 // // Modal bootstrap variables
 // $modal-header-border-color: $gray-200;

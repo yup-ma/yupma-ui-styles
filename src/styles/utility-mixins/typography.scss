@@ -42,6 +42,10 @@
     font-size: $ym-font-size-lg;
 }
 
+@mixin ym-font-xl {
+    font-size: $ym-font-size-xl;
+}
+
 @mixin ym-font-size-h-display {
     font-size: $ym-font-size-h-display;
 }

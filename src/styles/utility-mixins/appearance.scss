@@ -105,6 +105,10 @@
 }
 
 // Toast messages
+@mixin ym-toast-min-width {
+    min-width: $ym-toast-min-width;
+}
+
 @mixin ym-toast-max-width {
     width: 100%;
     max-width: $ym-toast-max-width;
@@ -137,4 +141,28 @@
 
 @mixin ym-modal-backdrop-opacity {
     opacity: $ym-modal-backdrop-opacity;
+}
+
+// Drawer widths
+@mixin ym-drawer-small-width {
+    width: 100%;
+    max-width: $ym-drawer-small-width;
+}
+
+@mixin ym-drawer-medium-width {
+    width: 100%;
+    max-width: $ym-drawer-medium-width;
+}
+
+@mixin ym-drawer-large-width {
+    width: 100%;
+    max-width: $ym-drawer-large-width;
+}
+
+@mixin ym-drawer-backdrop-bg {
+    background-color: $ym-drawer-backdrop-bg;
+}
+
+@mixin ym-drawer-backdrop-opacity {
+    opacity: $ym-drawer-backdrop-opacity;
 }

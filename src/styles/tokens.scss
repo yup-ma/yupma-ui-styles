@@ -85,7 +85,7 @@
     --ym-motion-ease: ease;
 
     --ym-inset-border-l-4-gray-100: inset #{$ym-border-size-4} 0 0 0 $gray-100;
-    --ym-shadow-drawer: -4px - 8px $gray-200;
+    --ym-shadow-drawer: -4px 0 8px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 0px 5px 0px rgba(0, 0, 0, 0.05); // no var
     --ym-shadow-layer-md: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-lg: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16); // no var
@@ -101,6 +101,7 @@
     --ym-max-dropdown-max-height: #{$ym-max-dropdown-max-height};
 
     // Broadcast messages
+    --ym-toast-min-width: #{$ym-toast-min-width};
     --ym-toast-max-width: #{$ym-toast-max-width};
 
     // Modal widths
@@ -110,6 +111,13 @@
     --ym-modal-extra-large-width: #{$ym-modal-extra-large-width};
     --ym-modal-backdrop-bg: #{$ym-modal-backdrop-bg};
     --ym-modal-backdrop-opacity: #{$ym-modal-backdrop-opacity};
+
+    // Drawer widths
+    --ym-drawer-small-width: #{$ym-drawer-small-width};
+    --ym-drawer-medium-width: #{$ym-drawer-medium-width};
+    --ym-drawer-large-width: #{$ym-drawer-large-width};
+    --ym-drawer-backdrop-bg: #{$ym-drawer-backdrop-bg};
+    --ym-drawer-backdrop-opacity: #{$ym-drawer-backdrop-opacity};
 
     // ----------------All color tokens start--------------------
     // --black:#{$black};
