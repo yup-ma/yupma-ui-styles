@@ -48,18 +48,18 @@ You have two options to include those stylesheets:
 ```
 or
 ```html
-<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.25/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.26/lib/dist/index.min.css">
 ```
 or
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.25/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.26/lib/dist/index.min.css">
 ```
 
 > The default font used is `'Roboto', sans-serif` & `'Courier New', Courier, monospace`.
 
 ## What's New
 
-### [0.1.16] - [0.1.25] 
+### [0.1.16] - [0.1.26] 
 - Added clasess for SCSS variables for easy use in html directly
 
 ### [0.1.8] - [0.1.15] 
