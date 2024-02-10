@@ -390,6 +390,10 @@
     min-height: $ym-spacing-scale-8;
 }
 
+@mixin ym-min-h-9 {
+    min-height: $ym-spacing-scale-9;
+}
+
 @mixin ym-min-h-full {
     min-height: 100%;
 }
