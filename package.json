@@ -1,6 +1,6 @@
 {
   "name": "@yupma/ui-styles",
-  "version": "0.1.26",
+  "version": "0.1.30",
   "description": "@yupma/ui-styles is a comprehensive style library for the YupMa design system. It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need.",
   "author": "YupMa",
   "main": "lib/dist/index.css",

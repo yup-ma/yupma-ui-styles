@@ -427,11 +427,10 @@ $ym-form-input-sizes: (
 // $tooltip-opacity: 1;
 
 $ym-svg-dimensions: (
-  base: px-to-rem(14px),
-  xs: px-to-rem(8px),
-  sm: px-to-rem(10px),
-  lg: px-to-rem(16px),
-  xl: px-to-rem(20px),
-  xxl: px-to-rem(28px),
-  xxxl: px-to-rem(40px),
+  sm: px-to-rem(12px),
+  base: px-to-rem(16px),
+  md: px-to-rem(20px),
+  lg: px-to-rem(24px),
+  xl: px-to-rem(32px),
+  xxl: px-to-rem(48px),
 );
