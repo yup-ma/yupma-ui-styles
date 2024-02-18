@@ -90,7 +90,7 @@
     --ym-shadow-layer-md: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-lg: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-xl: -40px -40px 72px 0px #f3f3f3, 40px 40px 72px 0px #b3b3b3; // no var
-    --ym--focus-inset: inset 0 0 0 2px $brand-main;
+    --ym--focus-inset: inset 0 0 0 2px $primary;
     --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); // no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
 
@@ -183,6 +183,17 @@
     // --purple-800:#{$purple-800};
     // --purple-900:#{$purple-900};
     // --purple-950:#{$purple-950};
+    // --primary-50:#{$primary-50};
+    // --primary-100:#{$primary-100};
+    // --primary-200:#{$primary-200};
+    // --primary-300:#{$primary-300};
+    // --primary-400:#{$primary-400};
+    // --primary-500:#{$primary-500};
+    // --primary-600:#{$primary-600};
+    // --primary-700:#{$primary-700};
+    // --primary-800:#{$primary-800};
+    // --primary-900:#{$primary-900};
+    // --primary-950:#{$primary-950};
     // --gray-10:#{$gray-10};
     // --gray-50:#{$gray-50};
     // --gray-100:#{$gray-100};
@@ -195,8 +206,6 @@
     // --gray-800:#{$gray-800};
     // --gray-900:#{$gray-900};
     // --gray-950:#{$gray-950};
-    // --brand:#{$brand-main};
-    // --brand-light:#{$brand-light};
     // --data-viz-green-50:#{$data-viz-green-50};
     // --data-viz-green-100:#{$data-viz-green-100};
     // --data-viz-green-200:#{$data-viz-green-200};
@@ -273,8 +282,6 @@
 
 
     // ----------------Text color tokens start--------------------
-    --ym-text-brand-main: #{$brand-main};
-    --ym-text-brand-light: #{$brand-light};
     --ym-text-transparent: #{$transparent-rgba};
     --ym-text-white: #{$white};
     --ym-text-contrast-light: #{$white-contrast};
@@ -283,7 +290,7 @@
     --ym-text-white-transparent: #{$white-transparent};
     --ym-text-color: #{$black-normal};
     --ym-text-disabled: #{$gray-400};
-    --ym-text-primary: #{$brand-main};
+    --ym-text-primary: #{$primary};
     --ym-text-secondary: #{$secondary};
     --ym-text-success: #{$success};
     --ym-text-info: #{$info};
@@ -331,11 +338,16 @@
     --ym-text-purple-600: #{$purple-600};
     --ym-text-purple-700: #{$purple-700};
     --ym-text-purple-800: #{$purple-800};
+    --ym-text-purple-900: #{$purple-900};
+    --ym-text-primary-300: #{$primary-300};
+    --ym-text-primary-500: #{$primary-500};
+    --ym-text-primary-600: #{$primary-600};
+    --ym-text-primary-700: #{$primary-700};
+    --ym-text-primary-800: #{$primary-800};
+    --ym-text-primary-900: #{$primary-900};
     // ----------------Text color tokens end--------------------
 
     // ----------------Bg color tokens start--------------------
-    --ym-bg-brand-main: #{$brand-main};
-    --ym-bg-brand-light: #{$brand-light};
     --ym-bg-white: #{$white};
     --ym-bg-white-normal: #{$white-normal};
     --ym-bg-white-dark: #{$white-dark};
@@ -343,9 +355,9 @@
     --ym-bg-white-contrast: #{$white-contrast};
     --ym-bg-black: #{$black};
     --ym-bg-black-normal: #{$black-normal};
-    --ym-bg-primary: #{$brand-main};
     --ym-bg-secondary: #{$secondary};
     --ym-bg-success: #{$success};
+    --ym-bg-primary: #{$primary};
     --ym-bg-info: #{$info};
     --ym-bg-warning: #{$warning};
     --ym-bg-danger: #{$danger};
@@ -383,6 +395,12 @@
     --ym-bg-purple-500: #{$purple-500};
     --ym-bg-purple-600: #{$purple-600};
     --ym-bg-purple-700: #{$purple-700};
+    --ym-bg-primary-50: #{$primary-50};
+    --ym-bg-primary-100: #{$primary-100};
+    --ym-bg-primary-200: #{$primary-200};
+    --ym-bg-primary-500: #{$primary-500};
+    --ym-bg-primary-600: #{$primary-600};
+    --ym-bg-primary-700: #{$primary-700};
     --ym-bg-red-50: #{$red-50};
     --ym-bg-red-100: #{$red-100};
     --ym-bg-red-200: #{$red-200};
@@ -424,8 +442,12 @@
     // ----------------Bg color tokens end--------------------
 
     // ----------------Border color tokens end--------------------
-    --ym-border-brand-main: #{$brand-main};
-    --ym-border-brand-light: #{$brand-light};
+    --ym-border-primary: #{$primary};
+    --ym-border-secondary: #{$secondary};
+    --ym-border-success: #{$success};
+    --ym-border-info: #{$info};
+    --ym-border-warning: #{$warning};
+    --ym-border-danger: #{$danger};
     --ym-border-gray-50: #{$gray-50};
     --ym-border-gray-100: #{$gray-100};
     --ym-border-gray-200: #{$gray-200};
@@ -460,6 +482,13 @@
     --ym-border-purple-300: #{$purple-300};
     --ym-border-purple-500: #{$purple-500};
     --ym-border-purple-700: #{$purple-700};
+    --ym-border-primary-50: #{$primary-50};
+    --ym-border-primary-100: #{$primary-100};
+    --ym-border-primary-200: #{$primary-200};
+    --ym-border-primary-300: #{$primary-300};
+    --ym-border-primary-500: #{$primary-500};
+    --ym-border-primary-600: #{$primary-600};
+    --ym-border-primary-700: #{$primary-700};
     --ym-border-gray-a-08: #{$t-gray-a-08};
     --ym-border-gray-a-24: #{$t-gray-a-24};
     --ym-border-white-a-08: #{$t-white-a-08};

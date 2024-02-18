@@ -7,14 +7,6 @@
     color: inherit;
 }
 
-@mixin ym-text-brand-main {
-    color: $brand-main;
-}
-
-@mixin ym-text-brand-light {
-    color: $brand-light;
-}
-
 @mixin ym-text-transparent {
     color: transparent;
 }
@@ -48,7 +40,7 @@
 }
 
 @mixin ym-text-primary {
-    color: $brand-main;
+    color: $primary-500;
 }
 
 @mixin ym-text-secondary {
@@ -239,6 +231,39 @@
     color: $purple-800;
 }
 
+@mixin ym-text-purple-900 {
+    color: $purple-900;
+}
+
+
+
+@mixin ym-text-primary-300 {
+    color: $primary-300;
+}
+
+@mixin ym-text-primary-400 {
+    color: $primary-400;
+}
+
+@mixin ym-text-primary-500 {
+    color: $primary-500;
+}
+
+@mixin ym-text-primary-600 {
+    color: $primary-600;
+}
+
+@mixin ym-text-primary-700 {
+    color: $primary-700;
+}
+
+@mixin ym-text-primary-800 {
+    color: $primary-800;
+}
+
+@mixin ym-text-primary-900 {
+    color: $primary-900;
+}
 @mixin ym-dark-invert-keep-hue {
     .ym-dark & {
         filter: invert(0.8) hue-rotate(180deg);

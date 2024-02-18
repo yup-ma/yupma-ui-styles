@@ -11,14 +11,6 @@
     background-color: currentColor;
 }
 
-@mixin ym-bg-brand-main {
-    background-color: $brand-main;
-}
-
-@mixin ym-bg-brand-light {
-    background-color: $brand-light;
-}
-
 @mixin ym-bg-white {
     background-color: $white;
 }
@@ -52,7 +44,7 @@
 }
 
 @mixin ym-bg-primary {
-    background-color: $brand-main;
+    background-color: $primary;
 }
 
 @mixin ym-bg-secondary {
@@ -237,6 +229,31 @@
 
 @mixin ym-bg-purple-700 {
     background-color: $purple-700
+}
+
+
+@mixin ym-bg-primary-50 {
+    background-color: $primary-50;
+}
+
+@mixin ym-bg-primary-100 {
+    background-color: $primary-100;
+}
+
+@mixin ym-bg-primary-200 {
+    background-color: $primary-200;
+}
+
+@mixin ym-bg-primary-500 {
+    background-color: $primary-500;
+}
+
+@mixin ym-bg-primary-600 {
+    background-color: $primary-600;
+}
+
+@mixin ym-bg-primary-700 {
+    background-color: $primary-700;
 }
 
 @mixin ym-bg-t-gray-a-08($hover: true) {

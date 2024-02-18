@@ -113,13 +113,30 @@
     border-left-color: transparent;
 }
 
-@mixin ym-border-brand-main {
-    border-color: $brand-main;
+@mixin ym-border-primary {
+    border-color: $primary;
 }
 
-@mixin ym-border-brand-light {
-    border-color: $brand-light;
+@mixin ym-border-secondary {
+    border-color: $secondary;
 }
+
+@mixin ym-border-success {
+    border-color: $success;
+}
+
+@mixin ym-border-info {
+    border-color: $info;
+}
+
+@mixin ym-border-warning {
+    border-color: $warning;
+}
+
+@mixin ym-border-danger {
+    border-color: $danger;
+}
+
 
 @mixin ym-border-gray-50 {
     border-color: $gray-50;
@@ -259,6 +276,35 @@
 
 @mixin ym-border-purple-700 {
     border-color: $purple-700;
+}
+
+
+@mixin ym-border-primary-50 {
+    border-color: $primary-50;
+}
+
+@mixin ym-border-primary-100 {
+    border-color: $primary-100;
+}
+
+@mixin ym-border-primary-200 {
+    border-color: $primary-200;
+}
+
+@mixin ym-border-primary-300 {
+    border-color: $primary-300;
+}
+
+@mixin ym-border-primary-500 {
+    border-color: $primary-500;
+}
+
+@mixin ym-border-primary-600 {
+    border-color: $primary-600;
+}
+
+@mixin ym-border-primary-700 {
+    border-color: $primary-700;
 }
 
 @mixin ym-border-gray-a-08 {

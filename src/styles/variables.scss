@@ -135,8 +135,18 @@ $gray-900: darken($gray, 65%);
 $gray-950: darken($gray, 80%);
 
 // Brand colors
-$brand-main: #0279e1 !default;
-$brand-light: #deefff !default;
+$brand: #0279e1 !default;
+$primary-50: tint($brand, 80%);
+$primary-100: tint($brand, 65%);
+$primary-200: tint($brand, 50%);
+$primary-300: tint($brand, 35%);
+$primary-400: tint($brand, 20%);
+$primary-500: $brand;
+$primary-600: darken($brand, 20%);
+$primary-700: darken($brand, 35%);
+$primary-800: darken($brand, 50%);
+$primary-900: darken($brand, 65%);
+$primary-950: darken($brand, 80%);
 
 // Data visualization color palette
 
@@ -224,6 +234,7 @@ $t-white-a-08: rgba($white, 0.08);
 $t-white-a-16: rgba($white, 0.16);
 $t-white-a-24: rgba($white, 0.24);
 
+$primary: $primary-500;
 $secondary: $gray-500;
 $success: $green-500;
 $info: $blue-500;
