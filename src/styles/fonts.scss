@@ -1,17 +1,19 @@
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-    src: url('/fonts/Roboto/*') format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+// @font-face {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 100 900;
+//     font-display: swap;
+//     font-style: normal;
+//     src: url('/fonts/Roboto/*') format('ttf');
+// }
 
 // @font-face {
 //     font-family: 'Roboto', sans-serif;
 //     font-weight: 100;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Thin') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Thin.ttf') format('truetype');
 // }
 
 // @font-face {
@@ -19,7 +21,7 @@
 //     font-weight: 300;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Light') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Light.ttf') format('truetype');
 // }
 
 // @font-face {
@@ -27,7 +29,7 @@
 //     font-weight: 400;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Regular') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 // }
 
 // @font-face {
@@ -35,7 +37,7 @@
 //     font-weight: 500;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Medium') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype');
 // }
 
 // @font-face {
@@ -43,7 +45,7 @@
 //     font-weight: 700;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Bold') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 // }
 
 // @font-face {
@@ -51,5 +53,5 @@
 //     font-weight: 900;
 //     font-display: swap;
 //     font-style: normal;
-//     src: url('../fonts/Roboto/Roboto-Black') format('ttf');
+//     src: url('./fonts/Roboto/Roboto-Black.ttf') format('truetype');
 // }

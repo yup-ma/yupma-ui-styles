@@ -4,3 +4,4 @@
 .gitattributes
 .gitignore
 package-lock.json
+/src/styles/fonts
