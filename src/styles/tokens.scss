@@ -90,7 +90,7 @@
     --ym-shadow-layer-md: 0px 0px 2px 0px rgba(23, 23, 23, 0.16), 0px 2px 8px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-lg: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-xl: -40px -40px 72px 0px #f3f3f3, 40px 40px 72px 0px #b3b3b3; // no var
-    --ym--focus-inset: inset 0 0 0 2px $primary;
+    --ym--focus-inset: inset 0 0 0 2px $info;
     --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); // no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
 
@@ -139,28 +139,28 @@
     // --green-800:#{$green-800};
     // --green-900:#{$green-900};
     // --green-950:#{$green-950};
-    // --blue-50:#{$blue-50};
-    // --blue-100:#{$blue-100};
-    // --blue-200:#{$blue-200};
-    // --blue-300:#{$blue-300};
-    // --blue-400:#{$blue-400};
-    // --blue-500:#{$blue-500};
-    // --blue-600:#{$blue-600};
-    // --blue-700:#{$blue-700};
-    // --blue-800:#{$blue-800};
-    // --blue-900:#{$blue-900};
-    // --blue-950:#{$blue-950};
-    // --orange-50:#{$orange-50};
-    // --orange-100:#{$orange-100};
-    // --orange-200:#{$orange-200};
-    // --orange-300:#{$orange-300};
-    // --orange-400:#{$orange-400};
-    // --orange-500:#{$orange-500};
-    // --orange-600:#{$orange-600};
-    // --orange-700:#{$orange-700};
-    // --orange-800:#{$orange-800};
-    // --orange-900:#{$orange-900};
-    // --orange-950:#{$orange-950};
+    --blue-50:#{$blue-50};
+    --blue-100:#{$blue-100};
+    --blue-200:#{$blue-200};
+    --blue-300:#{$blue-300};
+    --blue-400:#{$blue-400};
+    --blue-500:#{$blue-500};
+    --blue-600:#{$blue-600};
+    --blue-700:#{$blue-700};
+    --blue-800:#{$blue-800};
+    --blue-900:#{$blue-900};
+    --blue-950:#{$blue-950};
+    --orange-50:#{$orange-50};
+    --orange-100:#{$orange-100};
+    --orange-200:#{$orange-200};
+    --orange-300:#{$orange-300};
+    --orange-400:#{$orange-400};
+    --orange-500:#{$orange-500};
+    --orange-600:#{$orange-600};
+    --orange-700:#{$orange-700};
+    --orange-800:#{$orange-800};
+    --orange-900:#{$orange-900};
+    --orange-950:#{$orange-950};
     // --red-50:#{$red-50};
     // --red-100:#{$red-100};
     // --red-200:#{$red-200};
