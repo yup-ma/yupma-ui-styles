@@ -1,4 +1,115 @@
-
 .ym-active-shadow-button-inset:active:not(:disabled) {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
+}
+
+// -----------------
+// For arrow inicator and scroll indicator
+
+.ym-custom-scrollbar-container {
+    --color: var(--ym-text-color);
+    --bg-color: var(--ym-bg-white);
+    --bg-color-transparent: transparent;
+
+    &.ym-custom-dark-scrollbar-container {
+        color: var(--ym-text-white);
+        --bg-color: var(--ym-bg-black-normal);
+        --bg-color-transparent: transparent;
+    }
+
+    .left-indicator,
+    .right-indicator {
+        width: var(--ym-spacing-scale-9);
+        height: 100%;
+        display: flex;
+        flex-shrink: 0;
+        background-color: var(--bg-color);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        pointer-events: none;
+        transition: var(--ym-transition-duration-medium);
+        visibility: hidden;
+    }
+
+    .left-indicator {
+        left: 0;
+        background: linear-gradient(90deg, var(--bg-color) 40%, var(--bg-color-transparent) 100%);
+    }
+
+    .right-indicator {
+        right: 0;
+        background: linear-gradient(-90deg, var(--bg-color) 40%, var(--bg-color-transparent) 100%);
+    }
+
+    .left-scroll-arrow,
+    .right-scroll-arrow {
+        top: 50%;
+        opacity: 0;
+
+        &:hover,
+        &:focus {
+            color: var(--color);
+            opacity: 1;
+        }
+    }
+
+    .left-scroll-arrow {
+        left: 8px;
+        transform: translateY(-50%);
+    }
+
+    .right-scroll-arrow {
+        right: 8px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &.vertical-scrollbars {
+
+        .left-indicator,
+        .right-indicator {
+            width: 100%;
+            height: var(--ym-spacing-scale-9);
+            background-color: var(--bg-color);
+            top: auto;
+            left: 0;
+        }
+
+        .left-indicator {
+            top: 0;
+            background: linear-gradient(180deg, var(--bg-color) 40%, var(--bg-color-transparent) 100%);
+        }
+
+        .right-indicator {
+            bottom: 0;
+            right: auto;
+            background: linear-gradient(0deg, var(--bg-color) 40%, var(--bg-color-transparent) 100%);
+        }
+
+        .left-scroll-arrow,
+        .right-scroll-arrow {
+            top: auto;
+            left: 50%;
+        }
+
+        .left-scroll-arrow {
+            top: 8px;
+            transform: translateX(-50%) rotate(90deg);
+        }
+
+        .right-scroll-arrow {
+            right: auto;
+            bottom: var(--ym-spacing-scale-3);
+            transform: translateX(-50%) rotate(-90deg);
+        }
+    }
+
+    &:hover,
+    &:focus-within {
+
+        .left-scroll-arrow,
+        .right-scroll-arrow {
+            opacity: 1;
+        }
+
+    }
 }
