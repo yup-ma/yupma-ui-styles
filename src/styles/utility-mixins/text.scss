@@ -120,4 +120,5 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
+    @include ym-line-height-20;
 }

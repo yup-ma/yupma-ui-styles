@@ -120,9 +120,9 @@
     max-width: $ym-modal-small-width;
 }
 
-@mixin ym-modal-medium-width {
+@mixin ym-modal-base-width {
     width: 100%;
-    max-width: $ym-modal-medium-width;
+    max-width: $ym-modal-base-width;
 }
 
 @mixin ym-modal-large-width {
@@ -149,9 +149,9 @@
     max-width: $ym-drawer-small-width;
 }
 
-@mixin ym-drawer-medium-width {
+@mixin ym-drawer-base-width {
     width: 100%;
-    max-width: $ym-drawer-medium-width;
+    max-width: $ym-drawer-base-width;
 }
 
 @mixin ym-drawer-large-width {

@@ -93,6 +93,7 @@
     --ym--focus-inset: inset 0 0 0 2px $info;
     --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); // no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
+    --ym-shadow-scroll: 0px 0px 8px 0px rgba(23, 23, 23, 0.26); // no var
 
     // Dropdowns
     --ym-dropdown-width: #{$ym-dropdown-width};
@@ -106,7 +107,7 @@
 
     // Modal widths
     --ym-modal-small-width: #{$ym-modal-small-width};
-    --ym-modal-medium-width: #{$ym-modal-medium-width};
+    --ym-modal-base-width: #{$ym-modal-base-width};
     --ym-modal-large-width: #{$ym-modal-large-width};
     --ym-modal-extra-large-width: #{$ym-modal-extra-large-width};
     --ym-modal-backdrop-bg: #{$ym-modal-backdrop-bg};
@@ -114,7 +115,7 @@
 
     // Drawer widths
     --ym-drawer-small-width: #{$ym-drawer-small-width};
-    --ym-drawer-medium-width: #{$ym-drawer-medium-width};
+    --ym-drawer-base-width: #{$ym-drawer-base-width};
     --ym-drawer-large-width: #{$ym-drawer-large-width};
     --ym-drawer-backdrop-bg: #{$ym-drawer-backdrop-bg};
     --ym-drawer-backdrop-opacity: #{$ym-drawer-backdrop-opacity};

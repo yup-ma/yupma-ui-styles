@@ -80,6 +80,7 @@ ul {
 }
 
 //Settings
+@import '~@angular/cdk/overlay-prebuilt.css';
 @import 'tokens';
 @import 'fonts';
 @import 'functions';
@@ -89,4 +90,3 @@ ul {
 @import 'utility-mixins';
 @import 'utils';
 @include ym-typescale-ui;
-@import '~@angular/cdk/overlay-prebuilt.css';

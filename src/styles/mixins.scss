@@ -19,6 +19,7 @@ $breakpoints: (
     vertical-align: top;
     white-space: nowrap;
     max-width: $max-width;
+    @include ym-line-height-20;
 }
 
 @mixin str-truncated-line($max-width: 82%, $line-count: 3, $faded: false) {
@@ -27,6 +28,7 @@ $breakpoints: (
     -webkit-box-orient: vertical;
     overflow: hidden;
     max-width: $max-width;
+    @include ym-line-height-20;
 
     @if $faded ==true {
         mask-image: linear-gradient(180deg, #000 30%, transparent);

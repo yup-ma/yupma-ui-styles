@@ -370,7 +370,7 @@ $ym-toast-max-width: px-to-rem(568px);
 
 // Modal widths
 $ym-modal-small-width: px-to-rem(400px);
-$ym-modal-medium-width: px-to-rem(600px);
+$ym-modal-base-width: px-to-rem(600px);
 $ym-modal-large-width: px-to-rem(800px);
 $ym-modal-extra-large-width: px-to-rem(930px);
 $ym-modal-backdrop-bg: #222;
@@ -378,7 +378,7 @@ $ym-modal-backdrop-opacity: 0.6;
 
 // Drawer widths
 $ym-drawer-small-width: px-to-rem(380px);
-$ym-drawer-medium-width: px-to-rem(600px);
+$ym-drawer-base-width: px-to-rem(600px);
 $ym-drawer-large-width: px-to-rem(900px);
 $ym-drawer-backdrop-bg: #222;
 $ym-drawer-backdrop-opacity: 0.6;
