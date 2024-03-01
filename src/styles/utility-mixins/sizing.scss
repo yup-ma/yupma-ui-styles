@@ -238,6 +238,10 @@
     height: $ym-spacing-scale-20;
 }
 
+@mixin ym-h-26 {
+    height: $ym-spacing-scale-26;
+}
+
 @mixin ym-h-28 {
     height: $ym-spacing-scale-28;
 }
@@ -418,6 +422,10 @@
     max-width: $ym-spacing-scale-34;
 }
 
+@mixin ym-max-w-40 {
+    max-width: $ym-spacing-scale-40;
+}
+
 @mixin ym-max-w-48 {
     max-width: $ym-spacing-scale-48;
 }
@@ -460,6 +468,10 @@
 
 @mixin ym-max-h-34 {
     max-height: $ym-spacing-scale-34;
+}
+
+@mixin ym-max-h-40 {
+    max-height: $ym-spacing-scale-40;
 }
 
 @mixin ym-max-h-48 {

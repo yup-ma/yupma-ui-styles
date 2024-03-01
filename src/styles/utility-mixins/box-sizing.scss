@@ -9,3 +9,11 @@
 @mixin ym-reset-box-sizing {
     box-sizing: inherit;
 }
+
+@mixin ym-object-fit-contain{
+    object-fit: contain;
+}
+
+@mixin ym-object-fit-cover{
+    object-fit: cover;
+}
