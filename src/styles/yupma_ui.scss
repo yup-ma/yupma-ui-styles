@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: calc(1em + 0.5rem);
 }
 
 html,
@@ -19,11 +20,9 @@ body {
 
 body {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     background-color: #fff; // no var
     color: #333; // no var
-    line-height: calc(1em + 0.5rem);
     -webkit-font-smoothing: antialiased;
 }
 
