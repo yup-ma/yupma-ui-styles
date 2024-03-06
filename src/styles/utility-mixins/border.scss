@@ -311,12 +311,20 @@
     border-color: $t-gray-a-08;
 }
 
+@mixin ym-border-gray-a-16 {
+    border-color: $t-gray-a-16;
+}
+
 @mixin ym-border-gray-a-24 {
     border-color: $t-gray-a-24;
 }
 
 @mixin ym-border-white-a-08 {
     border-color: $t-white-a-08;
+}
+
+@mixin ym-border-white-a-16 {
+    border-color: $t-white-a-16;
 }
 
 @mixin ym-border-white-a-24 {

@@ -410,8 +410,14 @@
     --ym-bg-red-500: #{$red-500};
     --ym-bg-red-600: #{$red-600};
     --ym-bg-red-700: #{$red-700};
+    --ym-bg-t-gray-a-04: #{$t-gray-a-04};
+    --ym-bg-t-gray-a-06: #{$t-gray-a-06};
     --ym-bg-t-gray-a-08: #{$t-gray-a-08};
+    --ym-bg-t-gray-a-16: #{$t-gray-a-16};
+    --ym-bg-t-white-a-04: #{$t-white-a-04};
+    --ym-bg-t-white-a-06: #{$t-white-a-06};
     --ym-bg-t-white-a-08: #{$t-white-a-08};
+    --ym-bg-t-white-a-16: #{$t-white-a-16};
     --ym-bg-data-viz-blue-500: #{$data-viz-blue-600};
     --ym-bg-data-viz-blue-600: #{$data-viz-blue-600};
     --ym-bg-data-viz-blue-700: #{$data-viz-blue-700};
@@ -493,8 +499,10 @@
     --ym-border-primary-600: #{$primary-600};
     --ym-border-primary-700: #{$primary-700};
     --ym-border-gray-a-08: #{$t-gray-a-08};
+    --ym-border-gray-a-16: #{$t-gray-a-16};
     --ym-border-gray-a-24: #{$t-gray-a-24};
     --ym-border-white-a-08: #{$t-white-a-08};
+    --ym-border-white-a-16: #{$t-white-a-16};
     --ym-border-white-a-24: #{$t-white-a-24};
     // ----------------Border color tokens end--------------------
 }
