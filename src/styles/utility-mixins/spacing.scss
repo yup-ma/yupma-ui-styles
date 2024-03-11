@@ -854,6 +854,10 @@
     }
 }
 
+@mixin ym-gap-1 {
+    gap: $ym-spacing-scale-1;
+}
+
 @mixin ym-gap-2 {
     gap: $ym-spacing-scale-2;
 }

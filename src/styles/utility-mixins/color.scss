@@ -63,8 +63,12 @@
     color: $danger;
 }
 
+@mixin ym-text-gray-50 {
+    color: $gray-50;
+}
+
 @mixin ym-text-gray-100 {
-    color: $gray-200;
+    color: $gray-100;
 }
 
 @mixin ym-text-gray-200 {
@@ -264,6 +268,7 @@
 @mixin ym-text-primary-900 {
     color: $primary-900;
 }
+
 @mixin ym-dark-invert-keep-hue {
     .ym-dark & {
         filter: invert(0.8) hue-rotate(180deg);

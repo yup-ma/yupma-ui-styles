@@ -263,15 +263,11 @@
     // --data-viz-orange-800:#{$data-viz-orange-800};
     // --data-viz-orange-900:#{$data-viz-orange-900};
     // --data-viz-orange-950:#{$data-viz-orange-950};
-    // --t-gray-a-02:#{$t-gray-a-02};
     // --t-gray-a-04:#{$t-gray-a-04};
-    // --t-gray-a-06:#{$t-gray-a-06};
     // --t-gray-a-08:#{$t-gray-a-08};
     // --t-gray-a-16:#{$t-gray-a-16};
     // --t-gray-a-24:#{$t-gray-a-24};
-    // --t-white-a-02:#{$t-white-a-02};
     // --t-white-a-04:#{$t-white-a-04};
-    // --t-white-a-06:#{$t-white-a-06};
     // --t-white-a-08:#{$t-white-a-08};
     // --t-white-a-16:#{$t-white-a-16};
     // --t-white-a-24:#{$t-white-a-24};
@@ -298,7 +294,8 @@
     --ym-text-info: #{$info};
     --ym-text-warning: #{$warning};
     --ym-text-danger: #{$danger};
-    --ym-text-gray-100: #{$gray-200};
+    --ym-text-gray-50: #{$gray-50};
+    --ym-text-gray-100: #{$gray-100};
     --ym-text-gray-200: #{$gray-200};
     --ym-text-gray-300: #{$gray-300};
     --ym-text-gray-400: #{$gray-400};
@@ -350,6 +347,7 @@
     // ----------------Text color tokens end--------------------
 
     // ----------------Bg color tokens start--------------------
+    --ym-bg-transparent: #{$transparent-rgba};
     --ym-bg-white: #{$white};
     --ym-bg-white-normal: #{$white-normal};
     --ym-bg-white-dark: #{$white-dark};
@@ -411,13 +409,13 @@
     --ym-bg-red-600: #{$red-600};
     --ym-bg-red-700: #{$red-700};
     --ym-bg-t-gray-a-04: #{$t-gray-a-04};
-    --ym-bg-t-gray-a-06: #{$t-gray-a-06};
     --ym-bg-t-gray-a-08: #{$t-gray-a-08};
     --ym-bg-t-gray-a-16: #{$t-gray-a-16};
+    --ym-bg-t-gray-a-24: #{$t-gray-a-24};
     --ym-bg-t-white-a-04: #{$t-white-a-04};
-    --ym-bg-t-white-a-06: #{$t-white-a-06};
     --ym-bg-t-white-a-08: #{$t-white-a-08};
     --ym-bg-t-white-a-16: #{$t-white-a-16};
+    --ym-bg-t-white-a-24: #{$t-white-a-24};
     --ym-bg-data-viz-blue-500: #{$data-viz-blue-600};
     --ym-bg-data-viz-blue-600: #{$data-viz-blue-600};
     --ym-bg-data-viz-blue-700: #{$data-viz-blue-700};
@@ -451,6 +449,8 @@
     // ----------------Bg color tokens end--------------------
 
     // ----------------Border color tokens end--------------------
+    --ym-border-transparent: #{$transparent-rgba};
+    --ym-border-white: #{$white};
     --ym-border-primary: #{$primary};
     --ym-border-secondary: #{$secondary};
     --ym-border-success: #{$success};

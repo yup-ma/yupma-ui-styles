@@ -264,10 +264,6 @@
     background-color: $t-gray-a-04;
 }
 
-@mixin ym-bg-t-gray-a-06($hover: true) {
-    background-color: $t-gray-a-06;
-}
-
 @mixin ym-bg-t-gray-a-08($hover: true) {
     background-color: $t-gray-a-08;
 }
@@ -276,12 +272,12 @@
     background-color: $t-gray-a-16;
 }
 
-@mixin ym-bg-t-white-a-04($hover: true) {
-    background-color: $t-white-a-04;
+@mixin ym-bg-t-gray-a-24($hover: true) {
+    background-color: $t-gray-a-24;
 }
 
-@mixin ym-bg-t-white-a-06($hover: true) {
-    background-color: $t-white-a-06;
+@mixin ym-bg-t-white-a-04($hover: true) {
+    background-color: $t-white-a-04;
 }
 
 @mixin ym-bg-t-white-a-08($hover: true) {
@@ -290,6 +286,10 @@
 
 @mixin ym-bg-t-white-a-16($hover: true) {
     background-color: $t-white-a-16;
+}
+
+@mixin ym-bg-t-white-a-24($hover: true) {
+    background-color: $t-white-a-24;
 }
 
 @mixin ym-bg-data-viz-blue-500 {
