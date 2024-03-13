@@ -58,47 +58,47 @@ $breakpoints: (
 }
 
 // Helper function for :focus
-@mixin ym-focus($color: false,
-    $important: false,
-    $inset: false,
-    $focus-ring: $focus-ring,
-    $outline: false,
-    $outline-offset: $outline-offset) {
-    @if $inset ==true {
-        @if $color {
-            box-shadow: inset 0 0 0 $outline-width $blue-400,
-            inset 0 0 0 #{$outline-width + $outline-offset} $white,
-            inset 0 0 0 #{$outline-width + $outline-offset + 1px} $color,
-            $focus-ring-inset if-important($important);
-            outline: none if-important($important);
-        }
+// @mixin ym-focus($color: false,
+//     $important: false,
+//     $inset: false,
+//     $focus-ring: $focus-ring,
+//     $outline: false,
+//     $outline-offset: $outline-offset) {
+//     @if $inset ==true {
+//         @if $color {
+//             box-shadow: inset 0 0 0 $outline-width info,
+//             inset 0 0 0 #{$outline-width + $outline-offset} $white,
+//             inset 0 0 0 #{$outline-width + $outline-offset + 1px} $color,
+//             $focus-ring-inset if-important($important);
+//             outline: none if-important($important);
+//         }
 
-        @else if $outline ==true {
-            outline: $focus-ring-outline if-important($important);
-            outline-offset: $outline-offset;
-        }
+//         @else if $outline ==true {
+//             outline: $focus-ring-outline if-important($important);
+//             outline-offset: $outline-offset;
+//         }
 
-        @else {
-            box-shadow: inset 0 0 0 $outline-width $blue-400, $focus-ring-inset if-important($important);
-            outline: none if-important($important);
-        }
-    }
+//         @else {
+//             box-shadow: inset 0 0 0 $outline-width info, $focus-ring-inset if-important($important);
+//             outline: none if-important($important);
+//         }
+//     }
 
-    @else if $color {
-        box-shadow: inset 0 0 0 $ym-border-size-1 $color, $focus-ring if-important($important);
-        outline: none if-important($important);
-    }
+//     @else if $color {
+//         box-shadow: inset 0 0 0 $ym-border-size-1 $color, $focus-ring if-important($important);
+//         outline: none if-important($important);
+//     }
 
-    @else if $outline ==true {
-        outline: $focus-ring-outline if-important($important);
-        outline-offset: $outline-offset;
-    }
+//     @else if $outline ==true {
+//         outline: $focus-ring-outline if-important($important);
+//         outline-offset: $outline-offset;
+//     }
 
-    @else {
-        box-shadow: $focus-ring if-important($important);
-        outline: none if-important($important);
-    }
-}
+//     @else {
+//         box-shadow: $focus-ring if-important($important);
+//         outline: none if-important($important);
+//     }
+// }
 
 @mixin ym-bg-gradient-blur($direction, $color) {
     background-image: linear-gradient(to $direction, $transparent-rgba, $color 33%);

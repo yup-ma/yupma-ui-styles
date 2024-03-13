@@ -330,10 +330,10 @@ $ym-transition-duration-medium: 0.2s !default;
 $outline-offset: 1px;
 $outline-width: 2px;
 $outline: #{$outline-offset + $outline-width};
-$focus-ring: 0 0 0 $outline-offset $white, 0 0 0 #{$outline-offset + $outline-width} $blue-400;
+$focus-ring: 0 0 0 $outline-offset $white, 0 0 0 #{$outline-offset + $outline-width} $info;
 $focus-ring-inset: inset 0 0 0 #{$outline-width + $outline-offset} $white, inset 0 0 0 $outline-offset $white;
-$focus-ring-dark: 0 0 0 $outline-offset rgba($black, 0.6), 0 0 0 #{$outline-offset + $outline-width} $blue-300;
-$focus-ring-outline: $outline-width solid $blue-400;
+// $focus-ring-dark: 0 0 0 $outline-offset rgba($black, 0.6), 0 0 0 #{$outline-offset + $outline-width} $blue-300;
+$focus-ring-outline: $outline-width solid $info;
 
 // Toasts
 $toast-max-width: px-to-rem(586px);
