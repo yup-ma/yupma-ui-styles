@@ -136,18 +136,18 @@ $gray-900: darken($gray, 65%);
 $gray-950: darken($gray, 80%);
 
 // Brand colors
-$brand: #0279e1 !default;
-$primary-50: tint($brand, 80%);
-$primary-100: tint($brand, 65%);
-$primary-200: tint($brand, 50%);
-$primary-300: tint($brand, 35%);
-$primary-400: tint($brand, 20%);
-$primary-500: $brand;
-$primary-600: darken($brand, 20%);
-$primary-700: darken($brand, 35%);
-$primary-800: darken($brand, 50%);
-$primary-900: darken($brand, 65%);
-$primary-950: darken($brand, 80%);
+$primary: #0279e1 !default;
+$primary-50: tint($primary, 80%);
+$primary-100: tint($primary, 65%);
+$primary-200: tint($primary, 50%);
+$primary-300: tint($primary, 35%);
+$primary-400: tint($primary, 20%);
+$primary-500: $primary;
+$primary-600: darken($primary, 20%);
+$primary-700: darken($primary, 35%);
+$primary-800: darken($primary, 50%);
+$primary-900: darken($primary, 65%);
+$primary-950: darken($primary, 80%);
 
 // Data visualization color palette
 
@@ -237,6 +237,7 @@ $success: $green-500;
 $info: $blue-500;
 $warning: $orange-500;
 $danger: $red-500;
+$focus-color: $info !default;
 // --------------------Colors end-------------------------
 
 // Max widths
@@ -413,7 +414,7 @@ $spacers: (
   9: $ym-spacing-scale-11,
 );
 
-// $table-accent-bg: $gray-50;
+// $table-focus-color-bg: $gray-50;
 // $card-border-color: $gray-100;
 // $card-cap-bg: $gray-10 !default;
 

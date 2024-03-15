@@ -125,8 +125,8 @@
     border-color: $success;
 }
 
-@mixin ym-border-info {
-    border-color: $info;
+@mixin ym-border-focus-color {
+    border-color: $focus-color;
 }
 
 @mixin ym-border-warning {

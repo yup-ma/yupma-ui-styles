@@ -66,7 +66,7 @@ $breakpoints: (
 //     $outline-offset: $outline-offset) {
 //     @if $inset ==true {
 //         @if $color {
-//             box-shadow: inset 0 0 0 $outline-width info,
+//             box-shadow: inset 0 0 0 $outline-width $focus-color,
 //             inset 0 0 0 #{$outline-width + $outline-offset} $white,
 //             inset 0 0 0 #{$outline-width + $outline-offset + 1px} $color,
 //             $focus-ring-inset if-important($important);
@@ -79,7 +79,7 @@ $breakpoints: (
 //         }
 
 //         @else {
-//             box-shadow: inset 0 0 0 $outline-width info, $focus-ring-inset if-important($important);
+//             box-shadow: inset 0 0 0 $outline-width $focus-color, $focus-ring-inset if-important($important);
 //             outline: none if-important($important);
 //         }
 //     }
@@ -154,7 +154,9 @@ $breakpoints: (
         @media (pointer: coarse) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @media (pointer: fine) {
             @content;
         }
