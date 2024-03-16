@@ -6,7 +6,7 @@
 ![YupMa logo](https://cdn.yupma.com/assets/logo-full.png)
 
 
-**YupMa UI Styles** is a comprehensive base style library for the [YupMa design system](https://yupma.com/?src=npm-ui-styles). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need. It provide modifier that you can use to create majestic UI for your product.
+**YupMa UI Styles** is a comprehensive base style library for the [Mate design system](https://yupma.com/?src=npm-ui-styles). It provides a suite of CSS and SCSS files with tokens and classes that can easily be modified according to need. It provide modifier that you can use to create majestic UI for your product.
 
 ## Installation
 
@@ -48,18 +48,18 @@ You have two options to include those stylesheets:
 ```
 or
 ```html
-<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.68/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://www.unpkg.com/@yupma/ui-styles@0.1.69/lib/dist/index.min.css">
 ```
 or
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.68/lib/dist/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yupma/ui-styles@0.1.69/lib/dist/index.min.css">
 ```
 
 > The default font used is `'Roboto', sans-serif` & `'Courier New', Courier, monospace`.
 
 ## What's New
 
-### [0.1.16] - [0.1.68] 
+### [0.1.16] - [0.1.69] 
 - Added clasess for SCSS variables for easy use in html directly
 
 ### [0.1.8] - [0.1.15] 

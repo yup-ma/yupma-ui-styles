@@ -98,9 +98,9 @@
     --ym-shadow-layer-lg: 0px 0px 4px 0px rgba(23, 23, 23, 0.16), 0px 4px 12px 0px rgba(23, 23, 23, 0.16); // no var
     --ym-shadow-layer-xl: -40px -40px 72px 0px #f3f3f3, 40px 40px 72px 0px #b3b3b3; // no var
     --ym--focus: 0 0 0 1px #{$white},
-    0 0 0 3px #{$focus-color};
-    --ym--focus-inset: inset 0 0 0 2px #{$focus-color};
-    --ym--focus-border: 0 0 0 2px #{$focus-color};
+    0 0 0 3px #{$border-selected};
+    --ym--focus-inset: inset 0 0 0 2px #{$border-selected};
+    --ym--focus-border: 0 0 0 2px #{$border-selected};
     --ym-shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); // no var
     --ym-shadow-button-inset: 0px 2px 2px 0px rgba(0, 0, 0, 0.15) inset; // no var
     --ym-shadow-scroll: 0px 0px 8px 0px rgba(23, 23, 23, 0.26); // no var
@@ -466,7 +466,7 @@
     --ym-border-info: #{$info};
     --ym-border-warning: #{$warning};
     --ym-border-danger: #{$danger};
-    --ym-border-focus-color: #{$focus-color};
+    --ym-border-selected-color: #{$border-selected};
     --ym-border-gray-50: #{$gray-50};
     --ym-border-gray-100: #{$gray-100};
     --ym-border-gray-200: #{$gray-200};
