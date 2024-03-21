@@ -5,7 +5,7 @@
   "author": "YupMa",
   "main": "lib/dist/index.css",
   "style": "lib/scss/lib_ui.scss",
-  "homepage": "https://yupma.com/",
+  "homepage": "https://yupma.com?src=@yupma/ui-styles",
   "repository": {
     "type": "git",
     "url": "https://github.com/yup-ma/yupma-ui-styles.git"
